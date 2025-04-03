@@ -1,0 +1,289 @@
+---
+title: "WildTrax User Guide"
+format: html
+toc: true
+toc-depth: 5
+toc-location: left
+number-sections: true
+editor: visual
+theme: flatly
+include-in-header: |
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const tocItems = document.querySelectorAll('.toc a');
+      
+      tocItems.forEach(item => {
+        item.addEventListener('click', function(event) {
+          // Prevent default behavior
+          event.preventDefault();
+
+          // Collapse all other sections
+          tocItems.forEach(link => link.parentElement.classList.remove('expanded'));
+
+          // Expand clicked section
+          this.parentElement.classList.add('expanded');
+
+          // Scroll to the linked section
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    });
+  </script>
+  <style>
+    .toc .expanded {
+      font-weight: bold;
+    }
+    .toc .expanded ul {
+      display: block !important;
+    }
+    .toc ul {
+      display: none;
+    }
+  </style>
+---
+
+# Introduction
+
+## About WildTrax
+
+Let’s start from the very beginning – what is WildTrax and what are its objectives?
+
+-   To manage all components of environmental sensor and biological data from field metadata to media to species observations
+-   To store data safely and securely while still making it accessible to users
+-   To process environmental sensor data to a high degree of data quality and integrity
+-   To share environmental sensor and biological data with other WildTrax users, collaborators and the public
+-   To discover data in your study area or across the WildTrax system
+
+WildTrax is continuously improved based on user needs and stakeholder engagement processes. Sign up for the newsletter in @sec-user-settings or check out the [News](https://wildtrax.ca/resources/news/) page to get the most up-to-date feature releases.
+
+The WildTrax platform was developed by the Alberta Biodiversity Monitoring Institute (ABMI) and the [University of Alberta](https://www.ualberta.ca/en/index.html). The [ABMI](abmi.ca) is an arm’s length, not-for-profit scientific organization that has been providing scientifically credible tools and information products on Alberta’s biodiversity and human footprint to provincial government, industry, environmental decision-makers, and Albertans since 2003. The ABMI has since become a global leader in the application and development of biodiversity monitoring.
+
+Each sensor in WildTrax is supported organizations who have help pave the way for a multi-sensor experience in WildTrax.
+
+-   Autonomous recording units: [Environment and Climate Change Canada](), [Pathways Alliance](https://pathwaysalliance.ca/)
+-   Cameras: [Alberta Environment and Protected Areas](https://www.alberta.ca/environment-and-protected-areas)
+-   Point counts: [Boreal Avian Modelling Project](borealbirds.ca)
+
+You can visit out our full list of sponsors and partners in the [About](https://wildtrax.ca/about/) section of the site.
+
+*Note: The pronoun “you” throughout the guide refers to the reader. “We” refers to the WildTrax Team in general*
+
+## Environmental sensors and open biolgical data
+
+**Environmental sensors** (such as autonomous recording units \[ARUs\] or remote cameras) are an increasingly common monitoring method used to measure environmental and ecological attributes across broad geographic scales. These sensors allow for automated collection of data over an extended period and can generate large amounts of valuable biological data.
+
+**Biological data**, such as counts of animals, their behaviour, or other attributes, can be derived from environmental sensors. WildTrax seamlessly integrates such data across multiple sensors, with the additional capacity to incorporate data from point counts, a commonly used method for evaluating species’ relative abundance, especially birds.
+
+[**Open data**](https://wildtrax.ca/about/open-data/) is data that can be accessed, re-used or redistributed by anyone and is freely available in a usable and convenient format. Open data benefits the scientific community and society. Data accessibility allows users (e.g., researchers, conservation practitioners and the public) to find, manipulate and analyze data, as well as link data to other types of information. Open data can lead directly to conservation knowledge and action. This requires data to be usable, compatible with other datasets, and reliable.
+
+## Open data
+
+# Data Discover
+
+## Using filter panel
+
+## Searching an area of interest
+
+## Summaries and insights
+
+# Accounts and Member Types
+
+## Create an account
+
+## User settings {#sec-user-settings}
+
+## Membership
+
+# Organizations
+
+## Organization set up
+
+### Create an organization
+
+### Organization settings
+
+### Storage location
+
+### Default location privacy settings
+
+### Default image privacy settings
+
+### Manage organization members
+
+## Locations
+
+### Create locations
+
+### Location settings and privacy options
+
+### Sync locations
+
+### Merge locations
+
+### Delete locations
+
+### Map
+
+## Visits
+
+### Create visits
+
+### Sync visits
+
+### Delete visits
+
+## Equipment
+
+### Add equipment
+
+### Manage equipment
+
+### Sync equipment
+
+### Delete equipment
+
+## Deployments
+
+### Add deployments
+
+### Manage deployments
+
+### Sync deployments
+
+### Delete deployments
+
+## Recordings
+
+### Upload recordings
+
+### Acoustic classifiers
+
+### Filter recordings
+
+### Generate tasks
+
+### Delete recordings
+
+## Image Sets
+
+# ARU Projects
+
+## Audio data concepts
+
+### Sampling design
+
+### Recommended equipment
+
+## ARU project management
+
+### Create an ARU project
+
+### Species assignment
+
+### User assignment
+
+### Uploading recordings and creating tasks
+
+### Syncing data to ARU projects
+
+### Setting up an ultrasonic project
+
+#### Uploading recordings
+
+#### Syncing classifier tags
+
+### Downloading reports and media
+
+### Merge projects
+
+### Delete a project
+
+### Publishing a project
+
+## Acoustic Tagging
+
+### Spectrogram controls and audio settings
+
+### Noise, weather and malfunctions
+
+### Acoustic tagging methods
+
+### Avian individuals and abundance
+
+### Amphibian abundance
+
+### Confidence and classifying unknowns
+
+### Vocalization type
+
+### Ultrasonic species
+
+### Acoustic classifiers
+
+### Species verification
+
+# Camera Projects
+
+## Camera data concepts
+
+### Sampling design
+
+### Recommended equipment
+
+## Camera project management
+
+### Create a camera project
+
+### Camera project settings
+
+### Species assignment
+
+### User assignment
+
+### Uploading images and creating tasks
+
+### Image auto-classification
+
+### Syncing image data to camera projects
+
+### Downloading reports and media
+
+### Merge projects
+
+### Delete a project
+
+### Publishing a project
+
+## Image Tagging
+
+### Tagging page controls and settings
+
+### Individual-level tags
+
+### Image-level tags
+
+### Filter panel
+
+### Image classifiers
+
+### Field of view review
+
+### Species verification
+
+# Point Count Projects
+
+## Concepts
+
+## Point count project management
+
+### Syncing point count surveys
+
+### Adding location information
+
+## Viewing point count data
+
+## Publishing a point count project
