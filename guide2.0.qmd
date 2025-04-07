@@ -48,7 +48,7 @@ include-in-header: |
 
 # Introduction
 
-## About WildTrax
+![](assets/banner.png)
 
 Let’s start from the very beginning – what is WildTrax and what are its objectives?
 
@@ -62,6 +62,8 @@ WildTrax is continuously improved based on user needs and stakeholder engagement
 
 The WildTrax platform was developed by the Alberta Biodiversity Monitoring Institute (ABMI) and the [University of Alberta](https://www.ualberta.ca/en/index.html). The [ABMI](abmi.ca) is an arm’s length, not-for-profit scientific organization that has been providing scientifically credible tools and information products on Alberta’s biodiversity and human footprint to provincial government, industry, environmental decision-makers, and Albertans since 2003. The ABMI has since become a global leader in the application and development of biodiversity monitoring.
 
+WildTrax acknowledges that it was conceived and is developed on the territory of the Néhiyaw (Cree), Niitsitapi (Blackfoot), Métis, Nakoda (Stoney), Dene, Haudenosaunee (Iroquois) and Anishinaabe (Ojibway/Saulteaux), lands that are now known as part of Treaties 6, 7 and 8 and homeland of the Métis. We respect the sovereignty, lands, histories, languages, knowledge systems and cultures of all First Nations, Métis and Inuit nations.
+
 Each sensor in WildTrax is supported organizations who have help pave the way for a multi-sensor experience in WildTrax.
 
 -   Autonomous recording units: [Environment and Climate Change Canada](), [Pathways Alliance](https://pathwaysalliance.ca/)
@@ -70,9 +72,13 @@ Each sensor in WildTrax is supported organizations who have help pave the way fo
 
 You can visit out our full list of sponsors and partners in the [About](https://wildtrax.ca/about/) section of the site.
 
-*Note: The pronoun “you” throughout the guide refers to the reader. “We” refers to the WildTrax Team in general*
+::: {.callout-note collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
+The pronoun “you” throughout the guide refers to the reader. “We” refers to the WildTrax Team in general.
+:::
 
 ## Environmental sensors and open biolgical data
+
+WildTrax makes it easy for you to manage, process, store and share your environmental sensor and transfrom it into open, biological data. 
 
 **Environmental sensors** (such as autonomous recording units \[ARUs\] or remote cameras) are an increasingly common monitoring method used to measure environmental and ecological attributes across broad geographic scales. These sensors allow for automated collection of data over an extended period and can generate large amounts of valuable biological data.
 
@@ -80,25 +86,93 @@ You can visit out our full list of sponsors and partners in the [About](https://
 
 [**Open data**](https://wildtrax.ca/about/open-data/) is data that can be accessed, re-used or redistributed by anyone and is freely available in a usable and convenient format. Open data benefits the scientific community and society. Data accessibility allows users (e.g., researchers, conservation practitioners and the public) to find, manipulate and analyze data, as well as link data to other types of information. Open data can lead directly to conservation knowledge and action. This requires data to be usable, compatible with other datasets, and reliable.
 
-## Open data
-
 # Data Discover
 
-## Using filter panel
+![Data Discover](assets/data-discover-landing-page.png)
 
-## Searching an area of interest
+Data Discover is the central hub for exploring environmental sensor data in WildTrax. In Data Discover, you can search for data from ARUs, cameras, and point counts, using a variety of attribute filters, and create summary statistics within a dynamic mapping interface. Here, you can gain a comprehensive understanding of environmental sensor data in an area that interests you. Data Discover allows you to see which organizations have published data on WildTrax and which species were detected, and explore media elements such as images and sounds captured in the environment.
+
+Explore Data Discover and leverage the wealth of environmental sensor data available for scientific research. You can easily search for published data by project or organization; once you’ve found data that interests you, head over to the organization or project dashboard, Data Downloads, or wildRtrax for data download options.
+
+## Filters
+
+![Data Discover Filters](assets/data-discover-filter-panel.png)
+
+Use attribute filters or select a specific sensor to search available data. On the left side of the interface, the Filter Panel houses various filters for refining your search. Results will be displayed on the map and in a table below. Ensure locations with spatial coordinates are visible on the map, and toggle between different base maps (light or satellite) in the top right corner.
+
+You can search by:
+
+* **Taxonomy**: Classify data based on class, order, family, and genus.
+* **Species**: Search for individual species or add multiple species to your selection.
+* [**Organizations**](#sec-organizations)
+* **Projects** by sensor, either [ARU](#sec-aru-projects), [camera](#ec-camera-projects), or [point count](#sec-point-count-projects)
+* **Dates and times** (also months and hours) within set intervals or with start and end dates
+
+Note you must select one sensor must be selected before you can proceed with other You can delete the selected options in the filter panel at the bottom left of the panel using Delete Layer.
+
+## Layers
+
+![Data Discover Layers](assets/data-discover-layers.png)
+
+Explore data in depth with up to five customizable layers. Create a new layer by clicking on the ![](assets/data-discover-plus-layer.png){height=30px} icon. The colours for the points correspond to the layer in the filter panel. By hovering over the layer number, you can duplicate an existing layer ![](assets/data-discover-duplicate-layer.png){height=30px} to preserve its results and further refine your exploration, use the garbage can icon ![](assets/data-discover-delete-layer.png){height=30px} to delete the current layer, and the ![](assets/data-discover-layer-visibility.png){height=30px} to control the visibility of the layer on the map. Each summary insight in the bottom-right corner is also colour-coded to correspond with the layer's filter.
 
 ## Summaries and insights
+
+![Summary window](assets/data-discover-summaries.png)
+
+Summary Statistics offer a visual representation of the organizations, projects, species, and tag counts in your layer. Access the entire layer’s summary by clicking the Layer Summary icon in the bottom right corner. This will also bring up the Summary Window.  Within the Summary Window, insights are available in the Summary and Media tabs:
+
+* **Summary Tab**: View pie charts detailing the number of organizations, projects, and species for your selected area. Scroll down for bar charts representing tag counts across months and hours.
+* **Media Tab**: Tiles correspond to species tags. Play audio clips or view images. Observe the minimum and maximum frequency of an audio clip in its ARU spectogram. Note that point counts do not include any media.
+
+![](assets/media-tab.png)
+
+## Polygon Tool
+
+![Data Discover Polygon Tool](assets/data-discover-polygon.png)
+
+Refine your selection to an area of interest using the polygon tool in the top-right corner ![](assets/data-discover-polygon-tool.png){height=30px}. One polygon per layer is supported. To draw a polygon, click the tool, then click on the map to define points, completing the shape by clicking back to the original point. To remove a polygon, select it on the map and click the Garbage can icon.
+
+## Downloading data of interest
+
+After using Data Discover, you may have found an organization or project that you’re interested in – so what’s next? Head over to either the [Organization](#sec-organizations) or [Project](https://wildtrax.ca/projects) dashboard to find out more about the data owners or the project or to request access to the data. Once you are granted access by the project administrators, proceed to Data Downloads to acquire the data.
+
+Alternatively, you can use the R package [wildrtrax](https://abbiodiversity.github.io/wildrtrax) to download data.
 
 # Accounts and Member Types
 
 ## Create an account
 
+WildTrax operates under a role-based access control system, meaning a user in the system represents an individual, not an organization or a group of people. This restricts access to authorized users and is a policy-neutral mechanism designed to create roles and privileges. These users can then collaborate to manage data or share data to answer broader scientific questions.
+
+Click on LOGIN in the top ribbon.
+
+Follow the steps to create an account—after you verify your email and have logged in, your account will be activated and you can begin using WildTrax. When you are logged in, your first name will appear on the right side of the ribbon, as will the My Data menu.
+
 ## User settings {#sec-user-settings}
+
+![](assets/user-settings-panel.png)
+
+The user settings dashboard can be accessed by clicking on your username in the top right corner of the top ribbon when you’re logged into the system, for example ![](assets/user-name.png){height=30px}.
+
+The user settings dashboard controls the following properties related to your account:
+
+* **Name**: your full name
+* **Initials**: an acronym or set of initials you can use to define an observer or user
+* **Subscribe to Newsletter**: a toggle that will opt you in for occasional WildTrax newsletters delivered to your email
+* **Language**: your default language. Currently available in English and French.
+* **Affiliation (optional)**: the organization, institution or group of which you’re a member or user in the system.
+
+Once you’ve made your desired changes, click the ![](assets/update.png){height=30px} button.
+
+
+## Language
+
+You can change the language in the site at anytime from the top ribbon toggle ![](assets/top-ribbon-language.png){height=30px}. If you want to permanently change the language, go to [User settings](#sec-user-settings) and change it to your preferred language.
 
 ## Membership
 
-# Organizations
+# Organizations {#sec-organizations}
 
 ## Organization set up
 
@@ -116,17 +190,21 @@ You can visit out our full list of sponsors and partners in the [About](https://
 
 ## Locations
 
+![Locations tab](assets/locations-tab.png)
+
 ### Create locations
 
+### Mapping locations
+
 ### Location settings and privacy options
+
+### Location photos
 
 ### Sync locations
 
 ### Merge locations
 
 ### Delete locations
-
-### Map
 
 ## Visits
 
@@ -138,6 +216,8 @@ You can visit out our full list of sponsors and partners in the [About](https://
 
 ## Equipment
 
+![Equipment tab](assets/equipment-tab.png)
+
 ### Add equipment
 
 ### Manage equipment
@@ -147,6 +227,8 @@ You can visit out our full list of sponsors and partners in the [About](https://
 ### Delete equipment
 
 ## Deployments
+
+![Deployments tab](assets/deployments.png)
 
 ### Add deployments
 
@@ -158,19 +240,32 @@ You can visit out our full list of sponsors and partners in the [About](https://
 
 ## Recordings
 
+![Recordings tab](assets/recordings-tab.png)
+
 ### Upload recordings
 
 ### Acoustic classifiers
 
 ### Filter recordings
 
+![Filter panel](assets/filter-recordings.png)
+
+
 ### Generate tasks
+
+![](assets/generate-tasks.png)
 
 ### Delete recordings
 
-## Image Sets
+![](assets/multiselect-options.png)
 
-# ARU Projects
+## Image sets
+
+![Image sets tab](assets/imagesets-tab.png)
+
+# ARU Projects {#sec-aru-projects}
+
+![](assets/aru-projects.png)
 
 ## Audio data concepts
 
@@ -206,6 +301,8 @@ You can visit out our full list of sponsors and partners in the [About](https://
 
 ## Acoustic Tagging
 
+![](assets/aru-processing.png)
+
 ### Spectrogram controls and audio settings
 
 ### Noise, weather and malfunctions
@@ -226,19 +323,23 @@ You can visit out our full list of sponsors and partners in the [About](https://
 
 ### Species verification
 
-# Camera Projects
+# Camera Projects {#sec-camera-projects}
+
+![](assets/camera-projects.png)
 
 ## Camera data concepts
 
-### Sampling design
+A **remote camera** can be deployed at a location for a short or long period of time. One or several units can be deployed at a single location for years, swapping out the batteries and SD cards every so often depending on usage, or the unit(s) can be moved to a new location. This flexibility provides great benefit to a user or researcher, as the only limitation to data collection is storage space and battery life. Depending on the length of time these units will be in the field prior to being serviced, camera settings can be changed to optimize battery life. When developing a remote camera sampling design for questions related to density estimation, relative abundance, occupancy modeling, etc., strong considerations should be made regarding the length of time in the field, number of units to install and the distance between units. Resources on camera deployment methods, sampling protocols and analytical approaches can be found in the [Resources](https://wildtrax.ca/resources/) section. 
 
 ### Recommended equipment
 
 ## Camera project management
 
+![](assets/camera-project-page.png)
+
 ### Create a camera project
 
-### Camera project settings
+### Camera project settings {#sec-camera-project-settings}
 
 ### Species assignment
 
@@ -246,9 +347,24 @@ You can visit out our full list of sponsors and partners in the [About](https://
 
 ### Uploading images and creating tasks
 
+### Image sets
+
 ### Image auto-classification
 
+
+
+The use of remote cameras can lead to the capture of hundreds, thousands or even hundreds of thousands of images in a single image set. The large data sets collected are a benefit to users; however, image processing is also usually a bottleneck to producing meaningful data in a timely manner. The time required for humans to process each image and categorize animals or humans can be incredibly time-consuming and inefficient. WildTrax’s auto-tagger features allow you to reduce the time required to review remote camera images by applying tags to images, or **auto-tagging** before you begin manually tagging. WildTrax's current auto-tagging classification includes:
+
+* MegaDectector Version 6 (MDV6-yolov10-e) from [Pytorch Wildlife](https://github.com/microsoft/CameraTraps). 
+* The **STAFF/SETUP tagger** 
+
+The STAFF/SETUP tagger is a setting used to select the application of the STAFF/SETUP tag automatically to image sets. The auto-tagger will automatically tag images of humans that occur within the first or last series as “STAFF/SETUP” (using a 5-minute series gap), unless there are <2 images auto-tagged as human, or the STAFF/SETUP tag has already been applied.
+
+Once you’ve applied auto-tagger setting in [Camera project settings](#sec-camera-project-settings), any image data uploaded into the project will be run through the auto-tagger based on your selection of classifier categories before they become available for tagging. 
+
 ### Syncing image data to camera projects
+
+
 
 ### Downloading reports and media
 
@@ -259,6 +375,8 @@ You can visit out our full list of sponsors and partners in the [About](https://
 ### Publishing a project
 
 ## Image Tagging
+
+![](assets/image-tagging-page.png)
 
 ### Tagging page controls and settings
 
@@ -274,7 +392,9 @@ You can visit out our full list of sponsors and partners in the [About](https://
 
 ### Species verification
 
-# Point Count Projects
+# Point Count Projects {#sec-point-count-projects}
+
+![](assets/point-count-projects.png)
 
 ## Concepts
 
