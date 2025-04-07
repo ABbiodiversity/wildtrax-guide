@@ -1,12 +1,16 @@
 ---
 title: "WildTrax User Guide"
 format: html
+website:
+  search: 
+    location: navbar
+    type: overlay
 toc: true
 toc-depth: 5
 toc-location: left
 number-sections: true
 editor: visual
-theme: flatly
+theme: yeti
 include-in-header: |
   <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -83,6 +87,8 @@ WildTrax makes it easy for you to manage, process, store and share your environm
 **Biological data**, such as counts of animals, their behaviour, or other attributes, can be derived from environmental sensors. WildTrax seamlessly integrates such data across multiple sensors, with the additional capacity to incorporate data from point counts, a commonly used method for evaluating species’ relative abundance, especially birds.
 
 [**Open data**](https://wildtrax.ca/about/open-data/) is data that can be accessed, re-used or redistributed by anyone and is freely available in a usable and convenient format. Open data benefits the scientific community and society. Data accessibility allows users (e.g., researchers, conservation practitioners and the public) to find, manipulate and analyze data, as well as link data to other types of information. Open data can lead directly to conservation knowledge and action. This requires data to be usable, compatible with other datasets, and reliable.
+
+{{< pagebreak >}}
 
 # Data Discover
 
@@ -170,7 +176,13 @@ Once you’ve made your desired changes, click the ![](assets/update.png){height
 
 You can change the language in the site at anytime from the top ribbon toggle ![](assets/top-ribbon-language.png){height=30px}. If you want to permanently change the language, go to [User settings](#sec-user-settings) and change it to your preferred language.
 
-## Membership
+## Membership and privacy settings
+
+:::{.callout-tip}
+Check out this video tutorial on WildTrax's Privacy Settings.
+
+{{< video https://www.youtube.com/watch?v=xnfvLjwrJgY&list=PLe2MuPH7fHN0nSZxNJUd7JANZQyxDcuV1&index=16 >}}
+:::
 
 # Organizations {#sec-organizations}
 
@@ -178,13 +190,19 @@ You can change the language in the site at anytime from the top ribbon toggle ![
 
 Organizations sit at the top of the WildTrax hierarchy and are the central entity to which environmental sensor data, biological data and metadata are associated. When in doubt, if you’re looking for any information in WildTrax, you can likely find it under the organization. Organizations represent groups of users who collect data, design and publish projects, manage equipment and survey locations. Organizations allow you to coordinate efforts with multiple WildTrax users to create a structured, standardized dataset. Examples of organizations include government branches, industry, research labs and non-profits.
 
+:::{.callout-tip}
+Check out this video tutorial on WildTrax's Hierarchy.
+
+{{< video https://www.youtube.com/watch?v=g88-M6IH1X8&list=PLe2MuPH7fHN0nSZxNJUd7JANZQyxDcuV1&index=15 >}}
+:::
+
 ## Organization settings
 
 Click on My Data in the top ribbon, followed by My Organizations. This will take you to the organization dashboard. Click Create an Organization. From here the organization settings form will appear.
 
-Fill in the fields in the form and click Save. A WildTrax administrator will need to confirm your identity before approving your new organization request. If you’re having any technical difficulties creating an organization contact WildTrax Support.
+![](assets/new-organization.png)
 
-### Organization settings
+Fill in the fields in the form and click Save. A WildTrax administrator will need to confirm your identity before approving your new organization request. If you’re having any technical difficulties creating an organization contact WildTrax Support.
 
 - **Organization acronym**: a short-hand name for your organization (e.g., ABMI)
 - **Organization full name**: the full name of the organization
@@ -322,6 +340,12 @@ Fill in the fields in the form and click Save. A WildTrax administrator will nee
 ### Delete a project
 
 ### Publishing a project
+
+:::{.callout-tip}
+Need to understand more about how to publish a project? Check out the video tutorial below.
+
+{{< video https://www.youtube.com/watch?v=4SSVJ5ahpbo&list=PLe2MuPH7fHN0nSZxNJUd7JANZQyxDcuV1&index=11 >}}
+:::
 
 ## Acoustic Tagging
 
