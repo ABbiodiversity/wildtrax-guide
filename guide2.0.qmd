@@ -46,7 +46,7 @@ include-in-header: |
   </style>
 ---
 
-# Introduction
+# About WildTrax
 
 ![](assets/banner.png)
 
@@ -58,7 +58,7 @@ Let’s start from the very beginning – what is WildTrax and what are its obje
 -   To share environmental sensor and biological data with other WildTrax users, collaborators and the public
 -   To discover data in your study area or across the WildTrax system
 
-WildTrax is continuously improved based on user needs and stakeholder engagement processes. Sign up for the newsletter in @sec-user-settings or check out the [News](https://wildtrax.ca/resources/news/) page to get the most up-to-date feature releases.
+WildTrax is continuously improved based on user needs and stakeholder engagement processes. Sign up for the newsletter in [User settings](#sec-user-settings) or check out the [News](https://wildtrax.ca/resources/news/) page to get the most up-to-date feature releases.
 
 The WildTrax platform was developed by the Alberta Biodiversity Monitoring Institute (ABMI) and the [University of Alberta](https://www.ualberta.ca/en/index.html). The [ABMI](abmi.ca) is an arm’s length, not-for-profit scientific organization that has been providing scientifically credible tools and information products on Alberta’s biodiversity and human footprint to provincial government, industry, environmental decision-makers, and Albertans since 2003. The ABMI has since become a global leader in the application and development of biodiversity monitoring.
 
@@ -75,8 +75,6 @@ You can visit out our full list of sponsors and partners in the [About](https://
 ::: {.callout-note collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
 The pronoun “you” throughout the guide refers to the reader. “We” refers to the WildTrax Team in general.
 :::
-
-## Environmental sensors and open biolgical data
 
 WildTrax makes it easy for you to manage, process, store and share your environmental sensor and transfrom it into open, biological data. 
 
@@ -133,17 +131,19 @@ Summary Statistics offer a visual representation of the organizations, projects,
 
 Refine your selection to an area of interest using the polygon tool in the top-right corner ![](assets/data-discover-polygon-tool.png){height=30px}. One polygon per layer is supported. To draw a polygon, click the tool, then click on the map to define points, completing the shape by clicking back to the original point. To remove a polygon, select it on the map and click the Garbage can icon.
 
-## Downloading data of interest
+## Downloading data
 
 After using Data Discover, you may have found an organization or project that you’re interested in – so what’s next? Head over to either the [Organization](#sec-organizations) or [Project](https://wildtrax.ca/projects) dashboard to find out more about the data owners or the project or to request access to the data. Once you are granted access by the project administrators, proceed to Data Downloads to acquire the data.
 
-Alternatively, you can use the R package [wildrtrax](https://abbiodiversity.github.io/wildrtrax) to download data.
+:::{.callout-tip icon=false collapse="true" style="padding: 20px;"}
+Advanced users can also download data using the package [wildrtrax](https://abbiodiversity.github.io/wildrtrax) to download data.
+:::
 
 # Accounts and Member Types
 
-## Create an account
-
 WildTrax operates under a role-based access control system, meaning a user in the system represents an individual, not an organization or a group of people. This restricts access to authorized users and is a policy-neutral mechanism designed to create roles and privileges. These users can then collaborate to manage data or share data to answer broader scientific questions.
+
+## Create an account
 
 Click on LOGIN in the top ribbon.
 
@@ -174,11 +174,35 @@ You can change the language in the site at anytime from the top ribbon toggle ![
 
 # Organizations {#sec-organizations}
 
-## Organization set up
+![](assets/organizations.png)
 
-### Create an organization
+Organizations sit at the top of the WildTrax hierarchy and are the central entity to which environmental sensor data, biological data and metadata are associated. When in doubt, if you’re looking for any information in WildTrax, you can likely find it under the organization. Organizations represent groups of users who collect data, design and publish projects, manage equipment and survey locations. Organizations allow you to coordinate efforts with multiple WildTrax users to create a structured, standardized dataset. Examples of organizations include government branches, industry, research labs and non-profits.
+
+## Organization settings
+
+Click on My Data in the top ribbon, followed by My Organizations. This will take you to the organization dashboard. Click Create an Organization. From here the organization settings form will appear.
+
+Fill in the fields in the form and click Save. A WildTrax administrator will need to confirm your identity before approving your new organization request. If you’re having any technical difficulties creating an organization contact WildTrax Support.
 
 ### Organization settings
+
+- **Organization acronym**: a short-hand name for your organization (e.g., ABMI)
+- **Organization full name**: the full name of the organization
+- **Institution / company / group**: the institution the organization is a part of, such as a university or government branch
+- **Storage location**: where the data will be stored
+- **Default location buffering**: the organization’s default for whether the coordinates entered are exact (“True Locations”) or randomly offset (“Buffered Locations”) by a specified radius.
+  - **True Locations**: used if the coordinates entered pertain to exact location coordinates.
+  - **Buffered Locations**: used if the coordinates entered are randomly offset by a specified radius (i.e., the “default buffer radius [m]”).
+- **Default buffer radius (m)**: the organization’s default location buffer radius (m). This is the radius of the buffer around the location (in metres) within which the coordinates have been randomized (0 m if coordinates have not been hidden).
+- **Allow location reports**: creates location summary reports when enabled.
+- **Default visit image access**: default privacy setting that will be applied to visit photos uploaded to the organization.
+- **Human blurring**: an organization-wide setting for the type of users for which the Auto-tagger will blur humans detected in images, if any. Options include:
+  - **Blur for anonymous users**: images of humans will be blurred for all non-read only/non-admin WildTrax users if project data is visible based on the project status.
+  - **Blur for everyone**: images of humans will be blurred for all WildTrax users regardless of their organization or project membership.
+  - **Blur for non-admins**: images of humans will be blurred for all read-only WildTrax users.
+  - Images categorized as “Human” are blurred if the human and vehicle prediction thresholds sum to >95.
+- **Organization description**: a short description of the organization.
+- **Default settings**: can be applied at the organization level if you do not want to manually perform operations such as location buffering or visit image access.
 
 ### Storage location
 
