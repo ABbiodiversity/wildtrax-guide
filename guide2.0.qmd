@@ -53,7 +53,7 @@ include-in-header: |
 
 ![](assets/banner.png)
 
-WildTrax makes it easy for you to manage, process, store and share your environmental sensor and transfrom it into biological data that you can share with others. With WildTrax you can:
+WildTrax makes it easy for you to manage, process, store and share your environmental sensor and transform it into biological data that you can share with others. With WildTrax you can:
 
 -   Manage all components of environmental sensor and biological data from field metadata to media to species observations
 -   Store data safely and securely while still making it accessible to users
@@ -81,13 +81,29 @@ WildTrax is continuously improved based on user needs and stakeholder engagement
 The pronoun “you” throughout this guide refers to the reader. “We” refers to the WildTrax Team in general.
 :::
 
+# Getting Started
+
+## Creating an account
+
+Click on LOGIN in the top ribbon.
+
+Follow the steps to create an account—after you verify your email and have logged in, your account will be activated and you can begin using WildTrax. When you are logged in, your first name will appear on the right side of the ribbon, as will the My Data menu.
+
+## Understanding the data hierarchy
+
+## Understanding the data workflows
+
+## Understanding permissions
+
+## Publishing and sharing data
+
 # Data Discover
 
 ![Data Discover](assets/data-discover-landing-page.png)
 
-**Data Discover** is the central hub for exploring environmental sensor data in WildTrax. In Data Discover, you can search for data from ARUs, cameras, and point counts, using a variety of attribute filters, and create summary statistics within a dynamic mapping interface. Here, you can gain a comprehensive understanding of environmental sensor data in an area that interests you. Data Discover allows you to see which organizations have published data on WildTrax and which species were detected, and explore media elements such as images and sounds captured in the environment.
+**Data Discover** is the central hub for exploring environmental sensor data in WildTrax. Data Discover allows you to see which organizations have published data on WildTrax and which species were detected, and explore media elements such as images and sounds captured in the environment. In Data Discover, you can search for data from ARUs, cameras, and point counts, using a variety of attribute filters, and create summary statistics within a dynamic mapping interface where you can gain a comprehensive understanding of environmental sensor data in an area that interests you.
 
-After using Data Discover, you may have found an organization or project that you’re interested in – so what’s next? Head over to either the [Organization](#sec-organizations) or [Project](https://wildtrax.ca/projects) dashboard to find out more about the data owners or the project or to request access to the data. Once you are granted access by the project administrators, proceed to Data Downloads to acquire the data.
+After using Data Discover, you may have found an organization or project that you’re interested in – so what’s next? Head over to either the [Organization](#sec-organizations) or [Project](https://portal.wildtrax.ca/projects) dashboard to find out more about the data owners or the project or to request access to the data. Once you are granted access by the project administrators, proceed to Data Downloads to acquire the data.
 
 ::: {.callout-tip icon="false" collapse="true" style="padding: 20px;"}
 Advanced users can also download data using the package [wildrtrax](https://abbiodiversity.github.io/wildrtrax) to download data.
@@ -132,21 +148,19 @@ Summary Statistics offer a visual representation of the organizations, projects,
 
 Refine your selection to an area of interest using the polygon tool in the top-right corner ![](assets/data-discover-polygon-tool.png){height="30px"}. One polygon per layer is supported. To draw a polygon, click the tool, then click on the map to define points, completing the shape by clicking back to the original point. To remove a polygon, select it on the map and click the Garbage can icon.
 
-# Accounts and Member Types
+![Data Discover one polygon per layer](assets/data-discover-two-polygons.png)
+
+# Accounts, membership and permissions
 
 WildTrax operates under a role-based access control system, meaning a user in the system represents an individual, not an organization or a group of people. This restricts access to authorized users and is a policy-neutral mechanism designed to create roles and privileges. These users can then collaborate to manage data or share data to answer broader scientific questions.
+
+This means that you may not have access to certain features, tools or data depending on your **permissions level**. Permission to project data is also limited by the [location settings](), and [publication status](). 
 
 ::: {.callout-tip icon="false" collapse="true" style="padding: 20px;"}
 Check out this video tutorial on WildTrax's Privacy Settings.
 
 {{< video https://www.youtube.com/watch?v=xnfvLjwrJgY&list=PLe2MuPH7fHN0nSZxNJUd7JANZQyxDcuV1&index=16 >}}
 :::
-
-## Create an account
-
-Click on LOGIN in the top ribbon.
-
-Follow the steps to create an account—after you verify your email and have logged in, your account will be activated and you can begin using WildTrax. When you are logged in, your first name will appear on the right side of the ribbon, as will the My Data menu.
 
 ## User settings {#sec-user-settings}
 
@@ -156,11 +170,11 @@ The user settings dashboard can be accessed by clicking on your username in the 
 
 The user settings dashboard controls the following properties related to your account:
 
--   **Name**: your full name
--   **Initials**: an acronym or set of initials you can use to define an observer or user
--   **Subscribe to Newsletter**: a toggle that will opt you in for occasional WildTrax newsletters delivered to your email
--   **Language**: your default language. Currently available in English and French.
--   **Affiliation (optional)**: the organization, institution or group of which you’re a member or user in the system.
+* **Name**: your full name
+* **Initials**: an acronym or set of initials you can use to define an observer or user
+* **Subscribe to Newsletter**: a toggle that will opt you in for occasional WildTrax newsletters delivered to your email
+* **Language**: your default language. Currently available in English and French.
+* **Affiliation (optional)**: the organization, institution or group of which you’re a member or user in the system.
 
 Once you’ve made your desired changes, click the ![](assets/update.png){height="30px"} button.
 
@@ -190,23 +204,23 @@ Click on My Data in the top ribbon, followed by My Organizations. This will take
 
 Fill in the fields in the form and click Save. A WildTrax administrator will need to confirm your identity before approving your new organization request. If you’re having any technical difficulties creating an organization contact WildTrax Support.
 
--   **Organization acronym**: a short-hand name for your organization (e.g., ABMI)
--   **Organization full name**: the full name of the organization
--   **Institution / company / group**: the institution the organization is a part of, such as a university or government branch
--   **Storage location**: where the data will be stored
--   **Default location buffering**: the organization’s default for whether the coordinates entered are exact (“True Locations”) or randomly offset (“Buffered Locations”) by a specified radius.
-    -   **True Locations**: used if the coordinates entered pertain to exact location coordinates.
-    -   **Buffered Locations**: used if the coordinates entered are randomly offset by a specified radius (i.e., the “default buffer radius \[m\]”).
--   **Default buffer radius (m)**: the organization’s default location buffer radius (m). This is the radius of the buffer around the location (in metres) within which the coordinates have been randomized (0 m if coordinates have not been hidden).
--   **Allow location reports**: creates location summary reports when enabled.
--   **Default visit image access**: default privacy setting that will be applied to visit photos uploaded to the organization.
--   **Human blurring**: an organization-wide setting for the type of users for which the Auto-tagger will blur humans detected in images, if any. Options include:
-    -   **Blur for anonymous users**: images of humans will be blurred for all non-read only/non-admin WildTrax users if project data is visible based on the project status.
-    -   **Blur for everyone**: images of humans will be blurred for all WildTrax users regardless of their organization or project membership.
-    -   **Blur for non-admins**: images of humans will be blurred for all read-only WildTrax users.
-    -   Images categorized as “Human” are blurred if the human and vehicle prediction thresholds sum to \>95.
--   **Organization description**: a short description of the organization.
--   **Default settings**: can be applied at the organization level if you do not want to manually perform operations such as location buffering or visit image access.
+* **Organization acronym**: a short-hand name for your organization (e.g., ABMI)
+* **Organization full name**: the full name of the organization
+* **Institution / company / group**: the institution the organization is a part of, such as a university or government branch
+* **Storage location**: where the data will be stored
+* **Default location buffering**: the organization’s default for whether the coordinates entered are exact (“True Locations”) or randomly offset (“Buffered Locations”) by a specified radius.
+    * **True Locations**: used if the coordinates entered pertain to exact location coordinates.
+    * **Buffered Locations**: used if the coordinates entered are randomly offset by a specified radius (i.e., the “default buffer radius \[m\]”).
+* **Default buffer radius (m)**: the organization’s default location buffer radius (m). This is the radius of the buffer around the location (in metres) within which the coordinates have been randomized (0 m if coordinates have not been hidden).
+* **Allow location reports**: creates location summary reports when enabled.
+* **Default visit image access**: default privacy setting that will be applied to visit photos uploaded to the organization.
+* **Human blurring**: an organization-wide setting for the type of users for which the Auto-tagger will blur humans detected in images, if any. Options include:
+    * **Blur for anonymous users**: images of humans will be blurred for all non-read only/non-admin WildTrax users if project data is visible based on the project status.
+    * **Blur for everyone**: images of humans will be blurred for all WildTrax users regardless of their organization or project membership.
+    * **Blur for non-admins**: images of humans will be blurred for all read-only WildTrax users.
+    * Images categorized as “Human” are blurred if the human and vehicle prediction thresholds sum to \>95.
+* **Organization description**: a short description of the organization.
+* **Default settings**: can be applied at the organization level if you do not want to manually perform operations such as location buffering or visit image access.
 
 ### Storage location
 
