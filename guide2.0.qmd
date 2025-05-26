@@ -4,12 +4,19 @@ format: html
 website:
   search: 
     keyboard-shortcut: ["?","H"]
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+author: 
+  - name: "Alex MacPhail"
+    affiliation: "Biodiversity Pathways Ltd."
+  - name: "Another author"
+    affiliation: "Another affiliation"
 toc: true
 toc-depth: 5
 toc-location: left
 number-sections: true
 editor: visual
-theme: yeti
+theme: simplex
+styles: styles.css
 include-in-header: |
   <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -49,61 +56,192 @@ include-in-header: |
   </style>
 ---
 
-# Introduction
+```{r}
+#| echo: false
+library(DT)
+
+```
+
+
+# The Basics
 
 ![](assets/banner.png)
 
-WildTrax makes it easy for you to manage, process, store and share your environmental sensor and transform it into biological data that you can share with others. With WildTrax you can:
+WildTrax is the leading platform to help you manage, store and process your environmental sensor data while sharing and discovering the biological data from them that you can share with others. With WildTrax you can:
 
--   Manage all components of environmental sensor and biological data from field metadata to media to species observations
--   Store data safely and securely while still making it accessible to users
--   Process environmental sensor data to a high degree of data quality and integrity
--   Share environmental sensor and biological data with other WildTrax users, collaborators and the public
--   Discover data in your study area or across the WildTrax system
-
-------------------------------------------------------------------------
+- Manage all components of environmental sensor and biological data from field metadata to media to species observations
+- Store data safely and securely while still making it accessible to users
+- Process environmental sensor data to a high degree of data quality and integrity
+- Share environmental sensor and biological data with other WildTrax users, collaborators and the public
+- Discover data in your study area or across the WildTrax system
 
 **Environmental sensors** (such as autonomous recording units \[ARUs\] or remote cameras) are an increasingly common monitoring method used to measure environmental and ecological attributes across broad geographic scales. These sensors allow for automated collection of data over an extended period and can generate large amounts of valuable biological data.
 
 **Biological data**, such as counts of animals, their behaviour, or other attributes, can be derived from environmental sensors. WildTrax seamlessly integrates such data across multiple sensors, with the additional capacity to incorporate data from point counts, a commonly used method for evaluating species’ relative abundance, especially birds.
 
-[**Open data**](https://wildtrax.ca/about/open-data/) is data that can be accessed, re-used or redistributed by anyone and is freely available in a usable and convenient format. Open data benefits the scientific community and society. Data accessibility allows users (e.g., researchers, conservation practitioners and the public) to find, manipulate and analyze data, as well as link data to other types of information. Open data can lead directly to conservation knowledge and action. This requires data to be usable, compatible with other datasets, and reliable.
+[**Open data**](https://wildtrax.ca/about/open-data/) is data that can be accessed, re-used or redistributed by anyone and is freely available in a usable and convenient format. Open data benefits the scientific community and society. Data accessibility allows users (e.g., researchers, conservation practitioners and the public) to find, manipulate and analyze data, as well as link data to other types of information. Open data can lead directly to conservation knowledge and action. This requires data to be usable, compatible with other datasets, and reliable. 
 
 ------------------------------------------------------------------------
 
-The WildTrax platform was developed by the Alberta Biodiversity Monitoring Institute (ABMI) and the [University of Alberta](https://www.ualberta.ca/en/index.html). The [ABMI](abmi.ca) is an arm’s length, not-for-profit scientific organization that has been providing scientifically credible tools and information products on Alberta’s biodiversity and human footprint to provincial government, industry, environmental decision-makers, and Albertans since 2003. The ABMI has since become a global leader in the application and development of biodiversity monitoring.
+<div class="small-grey">
+The WildTrax platform was developed by the Alberta Biodiversity Monitoring Institute (ABMI) and the [University of Alberta](https://www.ualberta.ca/en/index.html). The [ABMI](https://abmi.ca) is an arm’s length, not-for-profit scientific organization that has been providing scientifically credible tools and information products on Alberta’s biodiversity and human footprint to provincial government, industry, environmental decision-makers, and Albertans since 2003. The ABMI has since become a global leader in the application and development of biodiversity monitoring.
 
 WildTrax acknowledges that it was conceived and is developed on the territory of the Néhiyaw (Cree), Niitsitapi (Blackfoot), Métis, Nakoda (Stoney), Dene, Haudenosaunee (Iroquois) and Anishinaabe (Ojibway/Saulteaux), lands that are now known as part of Treaties 6, 7 and 8 and homeland of the Métis. We respect the sovereignty, lands, histories, languages, knowledge systems and cultures of all First Nations, Métis and Inuit nations.
 
 WildTrax is continuously improved based on user needs and stakeholder engagement processes. Sign up for the newsletter in [User settings](#sec-user-settings) or check out the [News](https://wildtrax.ca/resources/news/) page to get the most up-to-date feature releases. Each sensor in WildTrax is supported organizations who have help pave the way for a multi-sensor experience in WildTrax. Visit our full list of [Partners and Sponsors](https://wildtrax.ca/about/partners-and-sponsors/).
+</div>
 
 ::: {.callout-note collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
 The pronoun “you” throughout this guide refers to the reader. “We” refers to the WildTrax Team in general.
 :::
 
-# Getting Started
-
 ## Creating an account
 
-Click on LOGIN in the top ribbon.
+You can explore WildTrax data for free anytime. While the [Data Discover](https://discover.wildtrax.ca) tool lets you browse and map public data without an account, creating an account unlocks roles and privileges to fully access and use the system. Visit [**wildtrax.ca**](wildtrax.ca) and click on the ![](assets/login.png){height=30px} button in the top ribbon.
 
-Follow the steps to create an account—after you verify your email and have logged in, your account will be activated and you can begin using WildTrax. When you are logged in, your first name will appear on the right side of the ribbon, as will the My Data menu.
+![](assets/login-home.png)
 
-## Understanding the data hierarchy
+You can log in to WildTrax using either a social account, such as Google, or a username and password linked to your email address. After creating your account, you’ll need to verify it through an email sent to your inbox. This step is required before you can start using your account. For a detailed walkthrough, check out the video tutorial below.
 
-## Understanding the data workflows
+::: {.callout-tip collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
+### Video tutorial - Creating an account
+{{< video https://www.youtube.com/watch?v=Oy_Fg4IYMEU >}}
+:::
 
-## Understanding permissions
+## Data hierarchy and permissions made simple
 
-## Publishing and sharing data
+WildTrax uses role-based access with individual user accounts to ensure data security. Access to data depends on factors like your role, location settings, and project publication status. WildTrax operates on a structured data hierarchy governed by permissions at different levels:  
+
+- [**Organizations**](#sec-organizations): Represent the top level, encompassing groups of researchers and users working on various research initiatives
+- [**Locations**](#sec-locations): Geographic sites where environmental sensors are deployed or biological data is collected. They link media and [equipment](#sec-equipment) metadata in WildTrax and are managed by organizations.
+- **Projects**: Create a project to group specific media to address specific research questions or study designs. Projects can be one of three sensors: [ARUs](#sec-aru-projects), [cameras](#sec-camera-projects) or [point counts](#sec-point-count-projects).
+- **Tasks**: Assign users to process media, like audio recordings or image sets, into biological data. Within tasks, species **tags** are applied to extract meaningful biological data, such as species presence, absence, or counts, which contribute to further metrics. 
+
+After processing, projects can be published and shared with other WildTrax users or the public.  
+
+::: {.callout-tip collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
+### Video tutorial - Data hierarchy
+
+Check out this video tutorial on WildTrax's Hierarchy.
+
+{{< video https://www.youtube.com/watch?v=g88-M6IH1X8&list=PLe2MuPH7fHN0nSZxNJUd7JANZQyxDcuV1&index=15 >}}
+:::
+
+As roles are assigned in the system, data is kept data secure and accessible only to the right people. Each user has their own account with your access depending on your role, which determines the tools, features, and data sets you can see and use. [Organization]() and [project]() data availability considers factors like [location settings]() and whether the data has been [published](), ensuring it’s [shared responsibly and securely](https://wildtrax.ca/about/open-data/).
+
+::: {.callout-tip collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
+### Video tutorial - Privacy settings
+
+Check out this video tutorial on WildTrax's Privacy Settings.
+
+{{< video https://www.youtube.com/watch?v=xnfvLjwrJgY&list=PLe2MuPH7fHN0nSZxNJUd7JANZQyxDcuV1&index=16 >}}
+:::
+
+## Mastering data workflows
+
+WildTrax provides robust tools to manage environmental sensor data. Following these steps will help you seamlessly integrate your data and maximize the platform's capabilities. The general life cycle of data within WildTrax involves:
+
+- **Create an [Organization](#sec-organizations)**: Set up an organization to manage and store your data.  
+- **Create a [Project](#sec-aru-projects)**: Establish a project to process your data.  
+- **Add Users**: Invite team members to your organization and project for collaborative data management.  
+- **Upload Media**: Upload and organize media files for processing.  
+- **Create or Upload Tasks/Surveys**: Define tasks or upload surveys to guide data processing.  
+- **Process or Upload Tags/Observations**: Generate tags or observations during processing, or upload pre-existing ones.  
+- **Verify and Quality Control**: Review and validate tags to ensure accuracy.  
+- **Publish the Project**: Finalize and publish the project for access and use.  
+
+## Publishing and sharing data {#sec-publishing-and-sharing}
+
+When publishing and sharing data, it’s essential to ensure accuracy, transparency, and adherence to ethical guidelines. Consider including comprehensive metadata, maintaining proper permissions, and specifying intended audiences to optimize the impact and usability of your shared data sets. Ultimately, the visibility of your finalized project to other users or the public depends on the publication level you select. See more about sharing data within an open data network like WildTrax in the [Open Data](https://wildtrax.ca/about/open-data/) section.
+
+When the project is completed and all data processed, the status of the project can be changed to a published status. Project publication allows other WildTrax users, who are not project members, to access the media, metadata or species detections from the project either through the project dashboard or [Data Discover](#sec-data-discover). The publication status will control how data will become visible across the system. Project publication will lock users from editing species detections and is considered the final version of the data. You can change the status of a project at any time. [Location](#sec-location) and project membership settings will also determine what you and others can see. Ensure you have these correctly set before publishing a project. Here are some in-depth descriptions of each of the published statuses and what they mean.
+
+- **Active**: Active projects are currently being processed or designed, or are in the preliminary stages of data uploading. Use this status for any general use or if the project is actively being worked on. This is the default project status when it is first created.
+- **Test**: Just getting started with an environmental sensor program? Or have some media you want to upload to test WildTrax’s functionalities? Use the Test status in these cases. Project data will not be visible in Data Downloads or Data Discover except to project members. 
+- **Published – Private**: In Published – Private, the project data will only be available to project members. Users will need to request access to the project in order to view any details such as species or locations.
+- **Published – Map Only**: In Published – Map Only, the project data will be accessible through Data Discover but the media and report are not accessible to users who are not project members. If you’re not a project or organization member, the location buffering and visibility settings will apply.
+- **Published – Map + Report Only**: In Published – Map + Report Only, the project data become available to all WildTrax users through Data Downloads and Data Discover, however, the media is not accessible. Use this setting if you want to make your data publicly available but there are privacy concerns with your media. If you’re not a project or organization member, the location buffering and visibility settings will apply. This status does not exist for point counts since the sensor does not contain media.
+- **Published – Public**: In Published – Public all of the project data become available to any WildTrax user as well as the public in [Data Discover](#sec-data-discover). If you’re not a project or organization member, the location buffering and visibility settings will apply.
+
+::: {.callout-tip collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
+### Video tutorial - Publishing data
+
+Need to understand more about how to publish a project? Check out the video tutorial below.
+
+{{< video https://www.youtube.com/watch?v=4SSVJ5ahpbo&list=PLe2MuPH7fHN0nSZxNJUd7JANZQyxDcuV1&index=11 >}}
+:::
+
+## Recommended equipment
+
+Proper equipment will enhance your experience and data quality using WildTrax. The following equipment is recommended for processing camera image data.
+
+- A computer with a minimum screen size of 15″
+- A stable, high speed internet connection
+
+For acoustic data processing:
+
+- Headphones with the following specifications:
+ - Stereo
+ - Circumaural (fully enclosing the ear)
+ - Minimum frequency response: 20 – 20000 Hz
+ - No bass boost (flat frequency response)
+ 
+------
+
+# Accounts, membership and permissions
+
+WildTrax operates under a role-based access control system, meaning a user in the system represents an individual, not an organization or a group of people. This restricts access to authorized users and is a policy-neutral mechanism designed to create roles and privileges. These users can then collaborate to manage data or share data to answer broader scientific questions. This means that you may not have access to certain features, tools or data depending on your **permissions level**. Permission to project data for example can be limited by the [location settings](#sec-location-settings), and project publication status.
+
+## Membership and privacy settings
+
+WildTrax is designed with flexible roles and permissions to ensure secure and tailored access to its features. Your account can have different levels of access, depending on your role and privileges. Here's an overview of the key permissions levels:
+
+- [Organization membership](#sec-manage-organization-members) all you to see or govern access to all projects and data under an Organization. Permissions at the Organization level include:
+  - Administrator
+  - Read-Only Member
+- [Location visibility](#sec=location-settings) and buffering controls whether whether locations are visible or hidden for privacy purposes
+- [Project membership](#sec-aru-project-users) dictates what you can do within specific projects such as uploading media, processing tasks or verify species tags roles include:
+  - Administrator
+  - Editor
+  - Read-Only Member
+- Project status
+
+The interplay of these different permissions level ultimately affect what data you see and how you can interface with data on WildTrax. Organizations are parent to projects, therefore any Organization Administrator automatically get Project Administrator privileges. Conversely, if a user is added to a project as a read-only member, they will not have access to the Organization which is parent to the project.
+
+
+## User settings {#sec-user-settings}
+
+![](assets/user-settings-panel.png)
+
+The user settings dashboard can be accessed by clicking on your username in the top right corner of the top ribbon when you’re logged into the system, for example ![](assets/user-name.png){height="30px"}.
+
+The user settings dashboard controls the following properties related to your account:
+
+* **Name**: your full name
+* **Initials**: an acronym or set of initials you can use to define an observer or user
+* **Subscribe to Newsletter**: a toggle that will opt you in for occasional WildTrax newsletters delivered to your email
+* **Language**: your default language. Currently available in English and French.
+* **Affiliation (optional)**: the organization, institution or group of which you’re a member or user in the system.
+
+Once you’ve made your desired changes, click the ![](assets/update.png){height="30px"} button.
+
+::: {.callout-note collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
+The JWT token is a unique authentication token used for accessing WildTrax via the **wildrtrax** package associated to your email. It also enables secure and flexible integration with WildTrax APIs for building custom applications.
+:::
+
+## Language
+
+You can change the language in the site at anytime from the top ribbon toggle ![](assets/top-ribbon-language.png){height="30px"}. If you want to permanently change the language, go to [User settings](#sec-user-settings) and change it to your preferred language.
+
+------------------------------------------------------------------------
 
 # Data Discover
 
-![Data Discover](assets/data-discover-landing-page.png)
+![](assets/data-discover-landing-page.png)
 
 **Data Discover** is the central hub for exploring environmental sensor data in WildTrax. Data Discover allows you to see which organizations have published data on WildTrax and which species were detected, and explore media elements such as images and sounds captured in the environment. In Data Discover, you can search for data from ARUs, cameras, and point counts, using a variety of attribute filters, and create summary statistics within a dynamic mapping interface where you can gain a comprehensive understanding of environmental sensor data in an area that interests you.
 
-After using Data Discover, you may have found an organization or project that you’re interested in – so what’s next? Head over to either the [Organization](#sec-organizations) or [Project](https://portal.wildtrax.ca/projects) dashboard to find out more about the data owners or the project or to request access to the data. Once you are granted access by the project administrators, proceed to Data Downloads to acquire the data.
+After using Data Discover, you may have found an organization or project that you’re interested in – so what’s next? Head over to either the [Organization](#sec-organizations) or [Project](#sec-projects) dashboard to find out more about the data owners or the project or to request access to the data. Once you are granted access by the project administrators, proceed to Data Downloads to acquire the data.
 
 ::: {.callout-tip icon="false" collapse="true" style="padding: 20px;"}
 Advanced users can also download data using the package [wildrtrax](https://abbiodiversity.github.io/wildrtrax) to download data.
@@ -117,11 +255,11 @@ Use attribute filters or select a specific sensor to search available data. On t
 
 You can search by:
 
--   **Taxonomy**: Classify data based on class, order, family, and genus.
--   **Species**: Search for individual species or add multiple species to your selection.
--   [**Organizations**](#sec-organizations)
--   **Projects** by sensor, either [ARU](#sec-aru-projects), [camera](#ec-camera-projects), or [point count](#sec-point-count-projects)
--   **Dates and times** (also months and hours) within set intervals or with start and end dates
+- **Taxonomy**: Classify data based on class, order, family, and genus.
+- **Species**: Search for individual species or add multiple species to your selection.
+- [**Organizations**](#sec-organizations)
+- **Projects** by sensor, either [ARU](#sec-aru-projects), [camera](#ec-camera-projects), or [point count](#sec-point-count-projects)
+- **Dates and times** (also months and hours) within set intervals or with start and end dates
 
 Note you must select one sensor must be selected before you can proceed with other You can delete the selected options in the filter panel at the bottom left of the panel using Delete Layer.
 
@@ -150,39 +288,7 @@ Refine your selection to an area of interest using the polygon tool in the top-r
 
 ![Data Discover one polygon per layer](assets/data-discover-two-polygons.png)
 
-# Accounts, membership and permissions
-
-WildTrax operates under a role-based access control system, meaning a user in the system represents an individual, not an organization or a group of people. This restricts access to authorized users and is a policy-neutral mechanism designed to create roles and privileges. These users can then collaborate to manage data or share data to answer broader scientific questions.
-
-This means that you may not have access to certain features, tools or data depending on your **permissions level**. Permission to project data is also limited by the [location settings](), and [publication status](). 
-
-::: {.callout-tip icon="false" collapse="true" style="padding: 20px;"}
-Check out this video tutorial on WildTrax's Privacy Settings.
-
-{{< video https://www.youtube.com/watch?v=xnfvLjwrJgY&list=PLe2MuPH7fHN0nSZxNJUd7JANZQyxDcuV1&index=16 >}}
-:::
-
-## User settings {#sec-user-settings}
-
-![](assets/user-settings-panel.png)
-
-The user settings dashboard can be accessed by clicking on your username in the top right corner of the top ribbon when you’re logged into the system, for example ![](assets/user-name.png){height="30px"}.
-
-The user settings dashboard controls the following properties related to your account:
-
-* **Name**: your full name
-* **Initials**: an acronym or set of initials you can use to define an observer or user
-* **Subscribe to Newsletter**: a toggle that will opt you in for occasional WildTrax newsletters delivered to your email
-* **Language**: your default language. Currently available in English and French.
-* **Affiliation (optional)**: the organization, institution or group of which you’re a member or user in the system.
-
-Once you’ve made your desired changes, click the ![](assets/update.png){height="30px"} button.
-
-## Language
-
-You can change the language in the site at anytime from the top ribbon toggle ![](assets/top-ribbon-language.png){height="30px"}. If you want to permanently change the language, go to [User settings](#sec-user-settings) and change it to your preferred language.
-
-## Membership and privacy settings
+------------------------------------------------------------------------
 
 # Organizations {#sec-organizations}
 
@@ -190,65 +296,222 @@ You can change the language in the site at anytime from the top ribbon toggle ![
 
 Organizations sit at the top of the WildTrax hierarchy and are the central entity to which environmental sensor data, biological data and metadata are associated. When in doubt, if you’re looking for any information in WildTrax, you can likely find it under the organization. Organizations represent groups of users who collect data, design and publish projects, manage equipment and survey locations. Organizations allow you to coordinate efforts with multiple WildTrax users to create a structured, standardized dataset. Examples of organizations include government branches, industry, research labs and non-profits.
 
-::: {.callout-tip icon="false" collapse="true" style="padding: 20px;"}
-Check out this video tutorial on WildTrax's Hierarchy.
+## Create an Organization
 
-{{< video https://www.youtube.com/watch?v=g88-M6IH1X8&list=PLe2MuPH7fHN0nSZxNJUd7JANZQyxDcuV1&index=15 >}}
-:::
-
-## Organization settings
-
-Click on My Data in the top ribbon, followed by My Organizations. This will take you to the organization dashboard. Click Create an Organization. From here the organization settings form will appear.
+Click on My Data in the top ribbon, followed by My Organizations. This will take you to the organization dashboard. Click the ![](assets/create-organization){height=40px} button, from here the Organization Settings form will appear.
 
 ![](assets/new-organization.png)
 
-Fill in the fields in the form and click Save. A WildTrax administrator will need to confirm your identity before approving your new organization request. If you’re having any technical difficulties creating an organization contact WildTrax Support.
+Fill in the fields in the form and click Save. A WildTrax administrator will need to confirm your identity before approving your new Organization request. If you’re having any technical difficulties creating an Organization contact WildTrax Support at support@widltrax.ca.
 
-* **Organization acronym**: a short-hand name for your organization (e.g., ABMI)
-* **Organization full name**: the full name of the organization
-* **Institution / company / group**: the institution the organization is a part of, such as a university or government branch
-* **Storage location**: where the data will be stored
-* **Default location buffering**: the organization’s default for whether the coordinates entered are exact (“True Locations”) or randomly offset (“Buffered Locations”) by a specified radius.
-    * **True Locations**: used if the coordinates entered pertain to exact location coordinates.
-    * **Buffered Locations**: used if the coordinates entered are randomly offset by a specified radius (i.e., the “default buffer radius \[m\]”).
-* **Default buffer radius (m)**: the organization’s default location buffer radius (m). This is the radius of the buffer around the location (in metres) within which the coordinates have been randomized (0 m if coordinates have not been hidden).
-* **Allow location reports**: creates location summary reports when enabled.
-* **Default visit image access**: default privacy setting that will be applied to visit photos uploaded to the organization.
-* **Human blurring**: an organization-wide setting for the type of users for which the Auto-tagger will blur humans detected in images, if any. Options include:
-    * **Blur for anonymous users**: images of humans will be blurred for all non-read only/non-admin WildTrax users if project data is visible based on the project status.
-    * **Blur for everyone**: images of humans will be blurred for all WildTrax users regardless of their organization or project membership.
-    * **Blur for non-admins**: images of humans will be blurred for all read-only WildTrax users.
-    * Images categorized as “Human” are blurred if the human and vehicle prediction thresholds sum to \>95.
-* **Organization description**: a short description of the organization.
-* **Default settings**: can be applied at the organization level if you do not want to manually perform operations such as location buffering or visit image access.
+```{r}
+data <- data.frame(
+  Field = c(
+    "Organization acronym", 
+    "Organization full name", 
+    "Institution / company / group", 
+    "Storage location", 
+    "Default location buffering", 
+    "Default buffer radius (m)", 
+    "Allow location reports", 
+    "Default visit image access", 
+    "Human blurring", 
+    "Organization description", 
+    "Default settings"
+  ),
+  Description = c(
+    "A short-hand name for your organization (e.g., ABMI).",
+    "The full name of the organization.",
+    "The institution the organization is part of, such as a university or government branch.",
+    "Where the data will be stored.",
+    "The organization’s default for whether the coordinates entered are exact ('True Locations') or randomly offset ('Buffered Locations') by a specified radius.",
+    "The organization’s default location buffer radius (in metres). The radius of the buffer around the location within which the coordinates are randomized (0 if not hidden).",
+    "Enables location summary reports when turned on.",
+    "Default privacy setting for visit photos uploaded to the organization.",
+    "An organization-wide setting for human blurring in images. Options include 'Blur for anonymous users,' 'Blur for everyone,' and 'Blur for non-admins.'",
+    "A short description of the organization.",
+    "Default settings can be applied at the organization level for tasks such as location buffering or visit image access."
+  )
+)
 
-### Storage location
+datatable(
+  data, 
+  colnames = c("Field", "Description"), 
+  options = list(
+    pageLength = 10, 
+    autoWidth = TRUE, 
+    dom = 't'
+  )
+)
+```
+
+### Media storage
+
+WildTrax offers an enhanced server infrastructure designed to support the platform's growing user base and evolving data management needs. Each Organization must select the storage location where they need to store their media. This allows you to quickly access an image or recording at a moment's need.
+
+- **WildTrax Live Servers**: Hosted at the University of Alberta in Edmonton, Alberta, Canada. These servers provide a cost-effective and sustainable solution with live and off-site backups using Amazon Deep Glacier, ensuring secure and reliable data storage for Canadian and international organizations.
+- [**Amazon Web Services (AWS)**](https://aws.amazon.com/): Retained as an option for users requiring cloud-based storage with global accessibility and high-performance capabilities with international storage base options. 
+
+The selection of a default storage location now balances data sovereignty, cost efficiency, and upload/download performance based on geographic proximity. For detailed guidance, refer to WildTrax’s [Terms and Conditions of Use and Data Access Policies](https://wildtrax.ca/about/policies/), or contact info@wildtrax.ca for additional support.
+
+::: {.callout-tip collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
+Note that each option comes with a cost-recovery model when Organizations exceed a certain limit of data. Organizations will be charged for these storage fees on an annual basis starting in 2026.
+:::
 
 ### Default location privacy settings
 
 ### Default image privacy settings
 
-### Manage organization members
+### Manage organization members {#sec-manage-organization-members}
 
-## Locations
+## Locations {#sec-locations}
 
-![Locations tab](assets/locations-tab.png)
+![](assets/locations-tab.png)
+
+**Locations** refer to the physical, geographic places at which environmental sensors were deployed and/or biological data was collected on the landscape. They are one of the most important components in WildTrax as media and metadata are linked by the location.
 
 ### Create locations
 
-### Mapping locations
+Click the Locations tab in your organization dashboard. Clicking ”Create Location” will open the location form, where you can add the spatial metadata to the location or configure the location’s settings. You only need to enter the location name, latitude and longitude in order to create a location. When you’ve filled in the form click Save. The map tab will appear allowing you to visualize the point on the landscape. The location will also be visible on maps across WildTrax.
 
-### Location settings and privacy options
+```{r}
+#| eval: true
+#| include: true
+#| echo: false
 
-### Location photos
+data <- data.frame(
+  Field = c(
+    "Location", "Latitude", "Longitude", "Elevation (m)", 
+    "Location visibility", "Location buffering", 
+    "Buffer radius (m)", "Location description"
+  ),
+  Description = c(
+    "Name of the location.",
+    "Latitude in decimal degrees (max 10 digits)",
+    "Longitude in decimal degrees (max 10 digits)",
+    "Elevation above sea level (metres)",
+    "Privacy setting: 'Visible,' 'Hidden – Location,' or 'Hidden – Location+Data'",
+    "Exact ('True Location') or offset ('Buffered Location')",
+    "Buffer radius (metres) for randomized coordinates (0 if not hidden)",
+    "Brief description; more details in visit metadata"
+  ),
+  Example = c(
+    "LOCATION-ABC", "54.11910100", "-118.1728210", "500", 
+    "Visible", "True Location", "0", "Mountain Range Area"
+  )
+)
+
+datatable(data, 
+          colnames = c("Field", "Description", "Example"), 
+          options = list(pageLength = 10, autoWidth = TRUE))
+
+```
+
+
+::: {.callout-tip collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
+Did you know locations are created in the organization when media are uploaded even via a project? If a location name already exists in the organization, WildTrax will append the media to it, and if it is a new location WildTrax will even prompt you during the upload process if you want to add spatial coordinates to these new locations.
+
+![](assets/aru-upload-coordinates.png)
+:::
+
+### Location settings and privacy options {#sec-location-settings}
+
+You can control each location’s settings by clicking on the ![](assets/pencil.png){height=20px} beside the location name. Location settings control who and what users can see across the system. WildTrax provides multiple ways for organization administrators to control how WildTrax members can see locations and data collected at them. These location privacy options keep data protected when needed. 
+
+The **location visibility** setting is used to hide locations and data from WildTrax users who are not part of the organization or project the location belongs to.
+
+- Use **Hidden – Location** if you want to hide only the location—only organization and project administrators will see the location in the maps across the system. Species data can still be downloaded by non-members but with no coordinates, non-members will not know where the data comes from. 
+- Use **Hidden – Location + Data** if you want to hide both the location and the species information. This setting will effectively hide everything from users who are not organization or project members.
+- Use **Visible** if you want the location and data to be visible to everyone once the project is published
+
+If you are using Hidden – Location + Data, you can refer to location reporting to learn how to share data with users who are not members of the organization or project. This may include landowners, collaborators, or other users to whom you do not wish to grant privileges but are still able to share your data.
+
+**Location buffering** is another way to mask sensitive locations. You can use the location buffering toggle in two ways:
+
+- You can enter coordinates for the true location in the form and then instruct WildTrax to provide a buffer (indicated in the buffer radius (m) field)
+- You can enter previously buffered locations (done outside of WildTrax) and indicate the buffer radius you provided. This way WildTrax and other users will never know the true location.
+
+If you’re an organization administrator, you can allow **location reports** independently for each location in the organization. This lets organization users share specific location reports with collaborators without having to give full project or organization access. This is particularly useful for organizations that need to provide reports to landowners, leaseholders, partners, and collaborators.
+
+To generate and access location reports:
+
+- Go to your organization’s settings and click on Allow under Allow Location Reports.
+- Next, within the Organization view, click on the Locations tab and then on  next to any location.
+- At the bottom of the location settings you should see a link under "Report Link". Copy this link. Open the link in your browser or share it with the desired recipient.
+- You can then easily access elements of the report by clicking on the different tabs depending on the sensors or data that were collected.
+
+
 
 ### Sync locations
 
+WildTrax also allows you to batch upload and download locations and location metadata by clicking the Manage button. This allows you to manage and edit location information more flexibly outside of WildTrax and then sync it back with your modifications. You need to be an organization administrator in order to upload data, however, as a read-only member, you can download data.
+
+To sync locations:
+
+- Click the Download Location CSV button under “Manage” to get the current list of all locations and metadata in your organization. If you don’t have any metadata yet, a template CSV will be provided.
+- Conduct the edits or changes to your CSV. You can modify entries that were downloaded, or
+-Click on Upload Location CSV
+This will take you to the Upload CSV form; choose your local CSV file and click Preview  Changes – this will allow you to preview the changes you’ll be making to your location data. If there are no differences, a prompt indicating ”No changes detected in this file” will appear
+To accept the modifications, scroll down and click Apply Changes. 
+All batch upload processes to WildTrax work on add and update only. You cannot delete anything in batch, even if you are an administrator and accidentally uploaded an empty csv, for example.
+
 ### Merge locations
+
+WildTrax allows you to merge multiple locations together. You may want to merge locations if the location has been visited multiple times but was named something different on each visit or if the locations are at the same place on the landscape. 
+
+To merge locations:
+
+- Select a location and click the drop-down arrow
+Click ”Merge Location”
+The location merge form will appear; ensure you are selecting the correct source location (location you want to change) and target location (location you are merging to) which you can choose from the dropdown list. The media will merge together but only the metadata from the target location is preserved.
+Click Merge; you should now see data for only the target location chosen in the previous step.
+
+Only locations that have the same spatial coordinates can be merged. If a source or target location is missing spatial coordinates, WildTrax uses the existing entry during the merge. The merged location will also not generate spatial coordinates if a source and target location both did not contain any.
 
 ### Delete locations
 
+You can delete locations using the Delete Location button located using the drop-down arrow beside any location name. If any data (i.e., visits, media or tags) require a location to be supported, you will not be able to delete the location until these other data are removed first (button will appear grey). The sections on projects and the three sensor types (ARU, camera, point count) discuss how to do this more in depth. Given that locations support all cascading data beneath them, WildTrax has implemented these security measures to ensure that it is difficult to lose data. 
+
+### Mapping locations
+
+## Location photos
+
+![](lots-of-aru.png)
+
+Location photos are photos taken as a 
+
+### Uploading location photos
+
+Each location photo will also have the following properties that can be assigned to each photo. 
+
+- Direction: cardinal direction of the location broken down into sub-cardinal units
+- Vertical Angle: angle at which the image was taken relative to cardinal north
+- **Access**: the accessibility of the visit image; this is determined by organization administrators (see [Default image privacy settings]())
+- Visit Image Comments: any useful information about the visit image
+
+
+### Syncing location photo properties
+
 ## Visits
+
+A **visit** is when an observer has gone to a location to collect environmental sensor or biological data. When equipment is placed at a location during a visit, WildTrax calls this a deployment. Conversely, if you are visiting a location to pick up a sensor, or the data it collected, this is its retrieval. At each of these times, you can add sensor (i.e., equipment) metadata to support the visit. Conversely, when media are uploaded into WildTrax, there is the capacity to generate the visit automatically. 
+
+WildTrax supports a variety of visit metadata and uses an integrated approach based on feedback from major WildTrax users. The goal is to provide ways of standardizing field metadata collection so that it can be easily shared with other organizations or WildTrax users. You can request additional functions or features by contacting WildTrax Support.
+
+Why are visits important?
+
+Visit metadata provides quality control for environmental sensor media and metadata collected at the location
+Visits relate field activities on the landscape to equipment, media and biological data
+Visits record general information about the landscape where the environmental sensor was placed or the biological data collected
+Do I need to collect visit data?
+
+ Visit metadata is not a requirement however you will not be able to upload visit images or equipment metadata without a visit. 
+
+What visit data is supported in WildTrax?
+
+Two major activities can take place during a visit: using an environmental sensor or conducting a point count. 
+
+WildTrax currently supports the addition of general landscape information, visit images and sensor and equipment inventory information
 
 ### Create visits
 
@@ -256,7 +519,7 @@ Fill in the fields in the form and click Save. A WildTrax administrator will nee
 
 ### Delete visits
 
-## Equipment
+## Equipment {#sec-equipment}
 
 ![Equipment tab](assets/equipment-tab.png)
 
@@ -270,6 +533,8 @@ Fill in the fields in the form and click Save. A WildTrax administrator will nee
 
 ## Deployments
 
+Deployments are equipment with their associated location and visit during deployment and / or retrieval from the field. Once locations and visits are created and equipment inventories added to the [Equipment]() table, users can then take advantage of the Deployments table to associate the history of what is happening at location or equipment over time. 
+
 ![Deployments tab](assets/deployments.png)
 
 ### Add deployments
@@ -281,6 +546,8 @@ Fill in the fields in the form and click Save. A WildTrax administrator will nee
 ### Delete deployments
 
 ## Recordings
+
+
 
 ![Recordings tab](assets/recordings-tab.png)
 
@@ -302,29 +569,78 @@ Fill in the fields in the form and click Save. A WildTrax administrator will nee
 
 ## Image sets
 
+You can access image set metadata from the image sets tab. Note that this information differs in the project’s image sets tab.
+
+Here you will find summaries of the following information:
+
+Location: the name of the location
+Image set start date/time: the date and time of the first image collected in the image set (in the format YYYY-MM-DD HH:MM:SS)
+End date: the date and time of the last image collected in the image set (in the format YYYY-MM-DD HH:MM:SS)
+Total image count: the total number of images
+Motion image count: the total number of images where the camera was triggered due to heat or motion (i.e., Trigger mode = “Motion Detection” or “M”) in an image set
+Task count: the total number of tasks
+Details drop-down: clicking on the drop-down arrow will show the projects the image set is associated with, the observer who tagged the task, the number of unique species detected, and the series gap used in the project.
+
 ![Image sets tab](assets/imagesets-tab.png)
+## DOIs
+
+Within the DOIs tab, users can create DOIs via [DataCite]() that allows users to create DOIs links for their projects. There are certain restrictions for creating DOIs:
+
+- You must at least an Organization administrator to create DOIs for the underlying projects
+- DOIs can only be created for projects belonging to the Organization
+
+### Creating a DOI
+
+
+
 
 # ARU Projects {#sec-aru-projects}
 
+Projects are purposeful groupings of an organization‘s media and metadata to answer specific questions or implement a study design. Projects can be one of three sensors: ARUs, cameras or point counts. For each of these sensor types, a collection of tasks (ARU), image sets (camera) or surveys (point counts) are processed or uploaded in order retrieve species data. 
+
+The goal of an ARU project is to upload media, process tasks, verify tags and publish the results. Projects belong to organizations and use organization media on order to generate and report on a certain set of results designed by the project administrators. Clicking on the ARU sensor on the main project dashboard will show which projects you have access to. The list of projects you see is determined by your organization membership, project membership and status of the project. You can use the filter and sort some of the project attributes to find what you’re looking for:
+
 ![](assets/aru-projects.png)
 
-## Audio data concepts
+::: {.callout-note collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
+This section pertains to managing ARU projects. If you are looking to create or manage [camera]() or [point count data](), jump to the appropriate sections.
+:::
 
-### Sampling design
+## Acoustic data concepts
 
-### Recommended equipment
+Acoustic recordings are made by sampling sound pressure waves from the environment. Sampling rate (the number of samples taken per second) and bit depth (degree of quantization of pressure measurements) are two important values to consider when making sound recordings. Waveforms or the shape of the total acoustic signal over time are difficult to interpret.
 
-## ARU project management
+These waveforms can be transformed into spectrograms. This is done using algorithms called Fourier transformations to make acoustic data more intelligible to a human or other software. These spectrograms contain patterns that a human can more easily use to recognize an acoustic signal and convert into biological data, such as animal vocalizations.
+
+Animals use acoustic signals to communicate messages for mate attraction, territorial defense, identification, or alarm. Acoustic signals are important metrics that biologists and scientists can use to study animal populations, community assemblages, or individual fitness. Collecting sound signals also provides a permanent, unbiased, analyzable, and reproducible dataset for researchers in contrast to point count data. 
+
+An ARU can be deployed at a location for a long period of time. This provides a number of benefits to users processing acoustic data and project administrators to optimize their study design. If you’re just getting started using ARUs, WildTrax’s recommendations on how to best process acoustic data are based on the analyses, reports and publications that can be found in the Resources section. 
+
+How long you leave an ARU out at a location and how much data you process depends on your objective. Thus, there is no one answer that optimizes results for all species or for all questions. The inclusion of groups such as amphibians, owls, or nocturnal species changes the optimal ways of sampling with ARUs.
+For songbirds, there is strong evidence that shorter duration surveys (e.g., 1 minute) will increase detection rates and allow for a greater number of recordings from different days to be processed. This will result in more species found faster. However, trade-offs with other methodological approaches will occur. For example, 1 minute methods have higher detection error per visit but cumulatively have higher detection overall if you put in equal effort (10 x 1-minute point counts vs. 1 x 10 minute point counts). More work is needed to understand the implications of using occupancy estimates from short versus longer periods of sampling time per individual point counts in terms of the stability of occupancy estimates.
+There are no firm recommendations on whether the total time should be 3, 5, or 10 minutes, etc. per recording processed. However, we do strongly recommend that listening in 1-minute time blocks within any longer interval provides the greatest flexibility in methods and highest return on processing investment. The ability to estimate parameters such as song rate with USPM methods increases the utility of such data and has the potential to help better measure a greater array of state variables (e.g., singing rate, occurrence or density).
+A single day of recording does not seem to be the best way to estimate occupancy or assess probability of occurrence. Leaving an ARU to record at a location for several days seems to provide a reasonable balance in getting detections from species that hold territories close to an ARU while also increasing the probability of getting rarer species with larger home ranges that only periodically are near an ARU. Less is gained by leaving them out for a month if it comes at the cost of visiting more locations.
+
+## Acoustic project management
 
 ### Create an ARU project
 
 ### Species assignment
 
-### User assignment
+### User assignment {#sec-aru-project-users}
 
 ### Uploading recordings and creating tasks
 
+In order to process data, a task must be generated and assigned in WildTrax. A task is a unique combination of an acoustic recording, a processing method, and an observer. The observer needs to be at least a read-only project member and assigned the recording in order to process it. WildTrax has the ability to process acoustic recordings with multiple methods and users, however, please contact WildTrax Support to provide this service. 
+
 ### Syncing data to ARU projects
+
+You can sync locations, tasks and tags via an ARU project. This allows you to make changes across many locations, tasks or tags as needed throughout the processing workflow. You may need to use sync to make large changes to location names or visibility settings, edit who is assigned tasks, or change metadata related to species tags. The logic of sync lies in downloading the data from a project (or a template with column headers if there is no data in the project yet). 
+
+::: {.callout-warning icon="false" collapse="true"}
+You may be running a classifier outside of WildTrax on your raw media, wishing to sync the classifier hits as tags within a project. Note that some classifiers use windows of data, and syncing these as tags should be proceed with caution. Your best bet when syncing classifier hits is simply to note the start_time of the t
+:::
+
 
 ### Setting up an ultrasonic project
 
@@ -350,13 +666,21 @@ WildTrax supports ultrasonic data syncing bIf you have ran your data through an 
 
 ### Publishing a project
 
-::: callout-tip
-Need to understand more about how to publish a project? Check out the video tutorial below.
-
-{{< video https://www.youtube.com/watch?v=4SSVJ5ahpbo&list=PLe2MuPH7fHN0nSZxNJUd7JANZQyxDcuV1&index=11 >}}
-:::
-
 ## Acoustic Tagging
+
+### Recommended equipment
+
+Recommended equipment
+The following equipment is recommended for processing acoustic data. Proper equipment will enhance your experience and data quality using WildTrax.
+
+Computer with stable, high-speed internet connection and a minimum screen size of 15”
+Headphones with the following specifications:
+Stereo
+Circumaural (fully enclosing the ear)
+Minimum frequency response: 20 – 20000 Hz
+No bass boost (flat frequency response)
+Contact WildTrax Info regarding headphone specifications if you are unsure if your headphones meet specifications.
+
 
 ![](assets/aru-processing.png)
 
@@ -376,7 +700,9 @@ Need to understand more about how to publish a project? Check out the video tuto
 
 ### Ultrasonic species
 
-### Acoustic classifiers
+### Acoustic classifier overlays
+
+If enabled in the project, each processing tasks includes the ability to overlay acoustic classifier detections. Within WildTrax, the goal is to help promote
 
 ### Species verification
 
@@ -384,11 +710,11 @@ Need to understand more about how to publish a project? Check out the video tuto
 
 ![](assets/camera-projects.png)
 
+The goal of a camera project is to upload image sets (i.e., tasks), process tasks (i.e., tag species and individuals within images), verify tags, and publish the results. The main interface you will interact with when processing image sets is the camera project dashboard. Projects are purposeful groupings of an organization’s media and metadata to answer specific questions or implement a study design.
+
 ## Camera data concepts
 
 A **remote camera** can be deployed at a location for a short or long period of time. One or several units can be deployed at a single location for years, swapping out the batteries and SD cards every so often depending on usage, or the unit(s) can be moved to a new location. This flexibility provides great benefit to a user or researcher, as the only limitation to data collection is storage space and battery life. Depending on the length of time these units will be in the field prior to being serviced, camera settings can be changed to optimize battery life. When developing a remote camera sampling design for questions related to density estimation, relative abundance, occupancy modeling, etc., strong considerations should be made regarding the length of time in the field, number of units to install and the distance between units. Resources on camera deployment methods, sampling protocols and analytical approaches can be found in the [Resources](https://wildtrax.ca/resources/) section.
-
-### Recommended equipment
 
 ## Camera project management
 
@@ -410,8 +736,8 @@ A **remote camera** can be deployed at a location for a short or long period of 
 
 The use of remote cameras can lead to the capture of hundreds, thousands or even hundreds of thousands of images in a single image set. The large data sets collected are a benefit to users; however, image processing is also usually a bottleneck to producing meaningful data in a timely manner. The time required for humans to process each image and categorize animals or humans can be incredibly time-consuming and inefficient. WildTrax’s auto-tagger features allow you to reduce the time required to review remote camera images by applying tags to images, or **auto-tagging** before you begin manually tagging. WildTrax's current auto-tagging classification includes:
 
--   MegaDectector Version 6 (MDV6-yolov10-e) from [Pytorch Wildlife](https://github.com/microsoft/CameraTraps).
--   The **STAFF/SETUP tagger**
+* MegaDectector Version 6 (MDV6-yolov10-e) from [Pytorch Wildlife](https://github.com/microsoft/CameraTraps).
+* The **STAFF/SETUP tagger**
 
 The STAFF/SETUP tagger is a setting used to select the application of the STAFF/SETUP tag automatically to image sets. The auto-tagger will automatically tag images of humans that occur within the first or last series as “STAFF/SETUP” (using a 5-minute series gap), unless there are \<2 images auto-tagged as human, or the STAFF/SETUP tag has already been applied.
 
@@ -449,9 +775,16 @@ Once you’ve applied auto-tagger setting in [Camera project settings](#sec-came
 
 ![](assets/point-count-projects.png)
 
-## Concepts
+**Point counts** are a methodology used to survey animals, mainly birds. It involves an observer standing at a pre-determined location for specific period of time, counting the individuals they detect. Specifically for birds, this detection can either be aurally or visually. To account for error in detecting a species, either because it didn’t sing or wasn't observed during the survey, or the observer misses or misidentifies it, distance estimation and duration intervals are used. All these attributes are what define a survey in WildTrax. When the observer detects a species, it is assigned into a **distance band**, the **duration interval** it was detected, a species and the abundance (or count of individuals). Each detection then becomes an observation. 
+
+The majority of the point count data available in WildTrax is through a collaboration with the [Boreal Avian Modelling Centre](borealbirds.ca) who support the conservation of North America’s boreal birds through high-quality, data-driven and collaborative science and help users harmonize their point count data to a standard that can be used with many other data sets, including ARUs. 
 
 ## Point count project management
+
+The general life cycle of a point count project includes:
+
+- Creating
+
 
 ### Syncing point count surveys
 
@@ -459,4 +792,10 @@ Once you’ve applied auto-tagger setting in [Camera project settings](#sec-came
 
 ## Viewing point count data
 
+![](assets/point-count-survey-page.png)
+
+The point count survey page outlines the observations and many other attributes of the survey. The header contains information on the duration method, distance method, location name and date and time of the survey. It also contains the weather panel indicating the local weather conditions. You can also use the ![](assets/pencil.png){height=20px} or ![](assets/dropdwon.png){height=20px} at any time to access any project level functions. Species are then listed on the left side of the page with their appropriate distance and time intervals bins they were detected in. You also have the location map available on the map from where the survey took place.
+
 ## Publishing a point count project
+
+To publish a point count project first ensure that all surveys have been added to the project and that all associated metadata is prepared as intended (e.g. check location spatial coordinates to ensure everything is there). Next go to the ![](assets/pencil.png){height=20px} and go to the Status field. Refer to [Publishing and sharing data](#sec-publishing-and-sharing) for which data privacy level is best for you.
