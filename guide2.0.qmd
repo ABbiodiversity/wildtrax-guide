@@ -3,7 +3,8 @@ title: "WildTrax User Guide"
 format: html
 website:
   search: 
-    keyboard-shortcut: ["?","H"]
+    location: navbar
+    type: overlay
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 author: 
   - name: "Alex MacPhail"
@@ -67,7 +68,7 @@ library(DT)
 
 ![](assets/banner.png)
 
-WildTrax is the leading platform to help you manage, store and process your environmental sensor data while sharing and discovering the biological data from them that you can share with others. With WildTrax you can:
+**WildTrax** is the leading platform for managing, storing, and processing environmental sensor data, while also enabling the sharing and discovery of biological insights gained from it. With WildTrax, you can:
 
 - Manage all components of environmental sensor and biological data from field metadata to media to species observations
 - Store data safely and securely while still making it accessible to users
@@ -152,8 +153,6 @@ WildTrax provides robust tools to manage environmental sensor data. Following th
 
 ## Publishing and sharing data {#sec-publishing-and-sharing}
 
-When publishing and sharing data, it’s essential to ensure accuracy, transparency, and adherence to ethical guidelines. Consider including comprehensive metadata, maintaining proper permissions, and specifying intended audiences to optimize the impact and usability of your shared data sets. Ultimately, the visibility of your finalized project to other users or the public depends on the publication level you select. See more about sharing data within an open data network like WildTrax in the [Open Data](https://wildtrax.ca/about/open-data/) section.
-
 When the project is completed and all data processed, the status of the project can be changed to a published status. Project publication allows other WildTrax users, who are not project members, to access the media, metadata or species detections from the project either through the project dashboard or [Data Discover](#sec-data-discover). The publication status will control how data will become visible across the system. Project publication will lock users from editing species detections and is considered the final version of the data. You can change the status of a project at any time. [Location](#sec-location) and project membership settings will also determine what you and others can see. Ensure you have these correctly set before publishing a project. Here are some in-depth descriptions of each of the published statuses and what they mean.
 
 - **Active**: Active projects are currently being processed or designed, or are in the preliminary stages of data uploading. Use this status for any general use or if the project is actively being worked on. This is the default project status when it is first created.
@@ -170,6 +169,8 @@ Need to understand more about how to publish a project? Check out the video tuto
 
 {{< video https://www.youtube.com/watch?v=4SSVJ5ahpbo&list=PLe2MuPH7fHN0nSZxNJUd7JANZQyxDcuV1&index=11 >}}
 :::
+
+See more about sharing data within an open data network like WildTrax in the [Open Data](https://wildtrax.ca/about/open-data/) section.
 
 ## Recommended equipment
 
@@ -190,11 +191,7 @@ For acoustic data processing:
 
 # Accounts, membership and permissions
 
-WildTrax operates under a role-based access control system, meaning a user in the system represents an individual, not an organization or a group of people. This restricts access to authorized users and is a policy-neutral mechanism designed to create roles and privileges. These users can then collaborate to manage data or share data to answer broader scientific questions. This means that you may not have access to certain features, tools or data depending on your **permissions level**. Permission to project data for example can be limited by the [location settings](#sec-location-settings), and project publication status.
-
-## Membership and privacy settings
-
-WildTrax is designed with flexible roles and permissions to ensure secure and tailored access to its features. Your account can have different levels of access, depending on your role and privileges. Here's an overview of the key permissions levels:
+WildTrax operates under a role-based access control system, meaning a user in the system represents an individual, not an organization or a group of people. This restricts access to authorized users and is a policy-neutral mechanism designed to create roles and privileges. These users can then collaborate to manage data or share data to answer broader scientific questions. This means that you may not have access to certain features, tools or data depending on your **permissions level**. Permission to project data for example can be limited by the [location settings](#sec-location-settings), and project publication status. WildTrax is designed with flexible roles and permissions to ensure secure and tailored access to its features. Your account can have different levels of access, depending on your role and privileges. Here's an overview of the key permissions levels:
 
 - [Organization membership](#sec-manage-organization-members) all you to see or govern access to all projects and data under an Organization. Permissions at the Organization level include:
   - Administrator
@@ -204,10 +201,11 @@ WildTrax is designed with flexible roles and permissions to ensure secure and ta
   - Administrator
   - Editor
   - Read-Only Member
-- Project status
+- [Project Status](#sec-publishing-and-sharing) dictates whether members or the public can access a project or its data. Active and Test projects are accessible only to members of the respective Organization or Project. Once a project is published, the visibility and access to its data depend on the permission level assigned to the user.
 
-The interplay of these different permissions level ultimately affect what data you see and how you can interface with data on WildTrax. Organizations are parent to projects, therefore any Organization Administrator automatically get Project Administrator privileges. Conversely, if a user is added to a project as a read-only member, they will not have access to the Organization which is parent to the project.
+The interaction of these permission levels defines the scope of data you can view and how you can engage with it on WildTrax. Since Organizations are parent entities to projects, Organization administrators automatically inherit Project Administrator privileges. However, users assigned read-only access at the project level will not gain access to the parent Organization.
 
+If certain components are not available or options are locked or greyed out, it is likely that you do not have access to those data. member of that organization. **Requesting access** is the easiest way to gain higher level access by having [Organization](#sec-organizations) or [Project](#sec-aru-projects) administrators approve your access request. Click the drop-down arrow beside the organization name and then click Request Access and fill in the Request Access form to request membership. Administrators of the organization will receive a notification and will either approve or deny your membership request.
 
 ## User settings {#sec-user-settings}
 
@@ -241,7 +239,7 @@ You can change the language in the site at anytime from the top ribbon toggle ![
 
 **Data Discover** is the central hub for exploring environmental sensor data in WildTrax. Data Discover allows you to see which organizations have published data on WildTrax and which species were detected, and explore media elements such as images and sounds captured in the environment. In Data Discover, you can search for data from ARUs, cameras, and point counts, using a variety of attribute filters, and create summary statistics within a dynamic mapping interface where you can gain a comprehensive understanding of environmental sensor data in an area that interests you.
 
-After using Data Discover, you may have found an organization or project that you’re interested in – so what’s next? Head over to either the [Organization](#sec-organizations) or [Project](#sec-projects) dashboard to find out more about the data owners or the project or to request access to the data. Once you are granted access by the project administrators, proceed to Data Downloads to acquire the data.
+After using Data Discover, you may have found an organization or project that you’re interested in – so what’s next? Head over to either the [Organization](#sec-organizations) or [Project](#sec-aru-projects) dashboard to find out more about the data owners or the project or to request access to the data. Once you are granted access by the project administrators, proceed to Data Downloads to acquire the data.
 
 ::: {.callout-tip icon="false" collapse="true" style="padding: 20px;"}
 Advanced users can also download data using the package [wildrtrax](https://abbiodiversity.github.io/wildrtrax) to download data.
@@ -305,6 +303,10 @@ Click on My Data in the top ribbon, followed by My Organizations. This will take
 Fill in the fields in the form and click Save. A WildTrax administrator will need to confirm your identity before approving your new Organization request. If you’re having any technical difficulties creating an Organization contact WildTrax Support at support@widltrax.ca.
 
 ```{r}
+#| eval: true
+#| include: true
+#| echo: false
+
 data <- data.frame(
   Field = c(
     "Organization acronym", 
@@ -345,11 +347,15 @@ datatable(
 )
 ```
 
+### Principal Investigators
+
+The **principal investigators** of the organization are users who respond to access requests related to the organization or its projects. Without a principal or secondary investigator, all organization and project access requests will default to organization then project administrators, in order. Once you create an Organization, you can add yourself as one of the principal investigators or [add more users](#sec-organization-membership) to your Organization and then assign them those privileges. 
+
 ### Media storage
 
 WildTrax offers an enhanced server infrastructure designed to support the platform's growing user base and evolving data management needs. Each Organization must select the storage location where they need to store their media. This allows you to quickly access an image or recording at a moment's need.
 
-- **WildTrax Live Servers**: Hosted at the University of Alberta in Edmonton, Alberta, Canada. These servers provide a cost-effective and sustainable solution with live and off-site backups using Amazon Deep Glacier, ensuring secure and reliable data storage for Canadian and international organizations.
+- **WildTrax Live Servers**: Hosted at the University of Alberta in Edmonton, Alberta, Canada. These servers provide a cost-effective and sustainable solution with live and off-site backups using [Amazon Deep Glacier](https://aws.amazon.com/s3/storage-classes/glacier/), ensuring secure and reliable data storage for Canadian and international organizations.
 - [**Amazon Web Services (AWS)**](https://aws.amazon.com/): Retained as an option for users requiring cloud-based storage with global accessibility and high-performance capabilities with international storage base options. 
 
 The selection of a default storage location now balances data sovereignty, cost efficiency, and upload/download performance based on geographic proximity. For detailed guidance, refer to WildTrax’s [Terms and Conditions of Use and Data Access Policies](https://wildtrax.ca/about/policies/), or contact info@wildtrax.ca for additional support.
@@ -358,11 +364,39 @@ The selection of a default storage location now balances data sovereignty, cost 
 Note that each option comes with a cost-recovery model when Organizations exceed a certain limit of data. Organizations will be charged for these storage fees on an annual basis starting in 2026.
 :::
 
-### Default location privacy settings
+### Default privacy settings {#sec-location-privacy-settings}
 
-### Default image privacy settings
+An organization can control aspects of the [locations](#sec-locations) it manages. 
 
-### Manage organization members {#sec-manage-organization-members}
+The default buffering of all the locations it manages.
+
+“Allow location reports” creates links you can share with external audiences (e.g., collaborators or landowners) without giving them organizational privileges or unwieldy information.
+
+The visit image access field controls global access to your visit images.
+
+Human blurring is an organization-wide setting for the type of users for which the auto-tagger will blur humans detected in images, if any. The options include “Blur for anonymous users (if applicable),” “Blur for non-admins,” and “Blur for everyone”. See the section on Human blurring for more information.
+
+Organizations that opt-out of Human blurring understand that images they upload, and (potentially) publish publicly may contain humans and are doing so at their own risk. Once you make a selection, it cannot be undone; however, this will be adjustable in the near future.
+
+### Organization memmbership {#sec-organization-membership}
+
+Once your organization is approved, the User Assignment tab will appear in the organization settings form. This will allow you to add any WildTrax user to your organization either as an administrator or read-only member.
+
+**Organization administrators** collaboratively manage the media and metadata of the organization and have the ability to:
+
+* Enjoy administrator privileges by default on all organizational projects
+* Add WildTrax users to the organization or its projects
+* Read and write to organizational locations
+* Read and write to the visit, equipment, deployment and media metadata
+
+**Organization read-only members** can:
+
+* Read the unbuffered locations, i.e., read-only members can see the true locations if they are buffered but cannot modify them
+* Read the visit, equipment, and media metadata
+* Enjoy read-only access to all organizational projects
+* The organization dashboard lists all organizations in WildTrax. The View Only My Organizations toggle in the top-right filters the list to only organizations you’re a part of.
+
+If the organization is greyed out, you are not a member of that organization. Click the drop-down arrow beside the organization name and then click Request Access and fill in the Request Access form to request membership. Administrators of the organization will receive a notification and will either approve or deny your membership request.
 
 ## Locations {#sec-locations}
 
@@ -584,19 +618,19 @@ Details drop-down: clicking on the drop-down arrow will show the projects the im
 ![Image sets tab](assets/imagesets-tab.png)
 ## DOIs
 
-Within the DOIs tab, users can create DOIs via [DataCite]() that allows users to create DOIs links for their projects. There are certain restrictions for creating DOIs:
+Within the DOIs tab, users can create DOIs via [DataCite](https://datacite.org/) that allows users to create DOIs links for their projects. There are certain restrictions for creating DOIs:
 
 - You must at least an Organization administrator to create DOIs for the underlying projects
 - DOIs can only be created for projects belonging to the Organization
 
 ### Creating a DOI
 
-
+Click on the DOIs tab in the Organization. Go to 
 
 
 # ARU Projects {#sec-aru-projects}
 
-Projects are purposeful groupings of an organization‘s media and metadata to answer specific questions or implement a study design. Projects can be one of three sensors: ARUs, cameras or point counts. For each of these sensor types, a collection of tasks (ARU), image sets (camera) or surveys (point counts) are processed or uploaded in order retrieve species data. 
+**Projects** are purposeful groupings of an organization‘s media and metadata to answer specific questions or implement a study design. Projects can be one of three sensors: ARUs, cameras or point counts. For each of these sensor types, a collection of tasks (ARU), image sets (camera) or surveys (point counts) are processed or uploaded in order retrieve species data. 
 
 The goal of an ARU project is to upload media, process tasks, verify tags and publish the results. Projects belong to organizations and use organization media on order to generate and report on a certain set of results designed by the project administrators. Clicking on the ARU sensor on the main project dashboard will show which projects you have access to. The list of projects you see is determined by your organization membership, project membership and status of the project. You can use the filter and sort some of the project attributes to find what you’re looking for:
 
@@ -666,7 +700,7 @@ WildTrax supports ultrasonic data syncing bIf you have ran your data through an 
 
 ### Publishing a project
 
-## Acoustic Tagging
+## Acoustic tagging
 
 ### Recommended equipment
 
@@ -696,7 +730,7 @@ Contact WildTrax Info regarding headphone specifications if you are unsure if yo
 
 ### Confidence and classifying unknowns
 
-### Vocalization type
+### Vocalization types
 
 ### Ultrasonic species
 
@@ -783,10 +817,20 @@ The majority of the point count data available in WildTrax is through a collabor
 
 The general life cycle of a point count project includes:
 
-- Creating
-
+- Creating the project and adding users
+- Uploading surveys
+- Publishing the project
 
 ### Syncing point count surveys
+
+You can synchronize your point count with WildTrax in order to batch upload or download and modify and re-upload surveys within the system. The format of the Survey Sync can be found in @tbl-survey-sync. 
+
+```{r}
+#| eval: false
+
+wt_get_sync_columns("download-point-count-by-project-id", project = 804)
+
+```
 
 ### Adding location information
 

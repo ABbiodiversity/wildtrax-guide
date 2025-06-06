@@ -8,7 +8,7 @@
 
 <meta name="author" content="Alex MacPhail">
 <meta name="author" content="Another author">
-<meta name="dcterms.date" content="2025-05-26">
+<meta name="dcterms.date" content="2025-06-06">
 
 <title>WildTrax User Guide</title>
 <style>
@@ -102,9 +102,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#accounts-membership-and-permissions" id="toc-accounts-membership-and-permissions" class="nav-link" data-scroll-target="#accounts-membership-and-permissions"><span class="header-section-number">2</span> Accounts, membership and permissions</a>
   <ul>
-  <li><a href="#membership-and-privacy-settings" id="toc-membership-and-privacy-settings" class="nav-link" data-scroll-target="#membership-and-privacy-settings"><span class="header-section-number">2.1</span> Membership and privacy settings</a></li>
-  <li><a href="#sec-user-settings" id="toc-sec-user-settings" class="nav-link" data-scroll-target="#sec-user-settings"><span class="header-section-number">2.2</span> User settings</a></li>
-  <li><a href="#language" id="toc-language" class="nav-link" data-scroll-target="#language"><span class="header-section-number">2.3</span> Language</a></li>
+  <li><a href="#sec-user-settings" id="toc-sec-user-settings" class="nav-link" data-scroll-target="#sec-user-settings"><span class="header-section-number">2.1</span> User settings</a></li>
+  <li><a href="#language" id="toc-language" class="nav-link" data-scroll-target="#language"><span class="header-section-number">2.2</span> Language</a></li>
   </ul></li>
   <li><a href="#data-discover" id="toc-data-discover" class="nav-link" data-scroll-target="#data-discover"><span class="header-section-number">3</span> Data Discover</a>
   <ul>
@@ -117,10 +116,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#create-an-organization" id="toc-create-an-organization" class="nav-link" data-scroll-target="#create-an-organization"><span class="header-section-number">4.1</span> Create an Organization</a>
   <ul>
-  <li><a href="#media-storage" id="toc-media-storage" class="nav-link" data-scroll-target="#media-storage"><span class="header-section-number">4.1.1</span> Media storage</a></li>
-  <li><a href="#default-location-privacy-settings" id="toc-default-location-privacy-settings" class="nav-link" data-scroll-target="#default-location-privacy-settings"><span class="header-section-number">4.1.2</span> Default location privacy settings</a></li>
-  <li><a href="#default-image-privacy-settings" id="toc-default-image-privacy-settings" class="nav-link" data-scroll-target="#default-image-privacy-settings"><span class="header-section-number">4.1.3</span> Default image privacy settings</a></li>
-  <li><a href="#sec-manage-organization-members" id="toc-sec-manage-organization-members" class="nav-link" data-scroll-target="#sec-manage-organization-members"><span class="header-section-number">4.1.4</span> Manage organization members</a></li>
+  <li><a href="#principal-investigators" id="toc-principal-investigators" class="nav-link" data-scroll-target="#principal-investigators"><span class="header-section-number">4.1.1</span> Principal Investigators</a></li>
+  <li><a href="#media-storage" id="toc-media-storage" class="nav-link" data-scroll-target="#media-storage"><span class="header-section-number">4.1.2</span> Media storage</a></li>
+  <li><a href="#sec-location-privacy-settings" id="toc-sec-location-privacy-settings" class="nav-link" data-scroll-target="#sec-location-privacy-settings"><span class="header-section-number">4.1.3</span> Default privacy settings</a></li>
+  <li><a href="#sec-organization-membership" id="toc-sec-organization-membership" class="nav-link" data-scroll-target="#sec-organization-membership"><span class="header-section-number">4.1.4</span> Organization memmbership</a></li>
   </ul></li>
   <li><a href="#sec-locations" id="toc-sec-locations" class="nav-link" data-scroll-target="#sec-locations"><span class="header-section-number">4.2</span> Locations</a>
   <ul>
@@ -189,7 +188,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#delete-a-project" id="toc-delete-a-project" class="nav-link" data-scroll-target="#delete-a-project"><span class="header-section-number">5.2.9</span> Delete a project</a></li>
   <li><a href="#publishing-a-project" id="toc-publishing-a-project" class="nav-link" data-scroll-target="#publishing-a-project"><span class="header-section-number">5.2.10</span> Publishing a project</a></li>
   </ul></li>
-  <li><a href="#acoustic-tagging" id="toc-acoustic-tagging" class="nav-link" data-scroll-target="#acoustic-tagging"><span class="header-section-number">5.3</span> Acoustic Tagging</a>
+  <li><a href="#acoustic-tagging" id="toc-acoustic-tagging" class="nav-link" data-scroll-target="#acoustic-tagging"><span class="header-section-number">5.3</span> Acoustic tagging</a>
   <ul>
   <li><a href="#recommended-equipment-1" id="toc-recommended-equipment-1" class="nav-link" data-scroll-target="#recommended-equipment-1"><span class="header-section-number">5.3.1</span> Recommended equipment</a></li>
   <li><a href="#spectrogram-controls-and-audio-settings" id="toc-spectrogram-controls-and-audio-settings" class="nav-link" data-scroll-target="#spectrogram-controls-and-audio-settings"><span class="header-section-number">5.3.2</span> Spectrogram controls and audio settings</a></li>
@@ -198,7 +197,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#avian-individuals-and-abundance" id="toc-avian-individuals-and-abundance" class="nav-link" data-scroll-target="#avian-individuals-and-abundance"><span class="header-section-number">5.3.5</span> Avian individuals and abundance</a></li>
   <li><a href="#amphibian-abundance" id="toc-amphibian-abundance" class="nav-link" data-scroll-target="#amphibian-abundance"><span class="header-section-number">5.3.6</span> Amphibian abundance</a></li>
   <li><a href="#confidence-and-classifying-unknowns" id="toc-confidence-and-classifying-unknowns" class="nav-link" data-scroll-target="#confidence-and-classifying-unknowns"><span class="header-section-number">5.3.7</span> Confidence and classifying unknowns</a></li>
-  <li><a href="#vocalization-type" id="toc-vocalization-type" class="nav-link" data-scroll-target="#vocalization-type"><span class="header-section-number">5.3.8</span> Vocalization type</a></li>
+  <li><a href="#vocalization-types" id="toc-vocalization-types" class="nav-link" data-scroll-target="#vocalization-types"><span class="header-section-number">5.3.8</span> Vocalization types</a></li>
   <li><a href="#ultrasonic-species" id="toc-ultrasonic-species" class="nav-link" data-scroll-target="#ultrasonic-species"><span class="header-section-number">5.3.9</span> Ultrasonic species</a></li>
   <li><a href="#acoustic-classifier-overlays" id="toc-acoustic-classifier-overlays" class="nav-link" data-scroll-target="#acoustic-classifier-overlays"><span class="header-section-number">5.3.10</span> Acoustic classifier overlays</a></li>
   <li><a href="#species-verification" id="toc-species-verification" class="nav-link" data-scroll-target="#species-verification"><span class="header-section-number">5.3.11</span> Species verification</a></li>
@@ -284,7 +283,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 26, 2025</p>
+      <p class="date">June 6, 2025</p>
     </div>
   </div>
   
@@ -299,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="the-basics" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> The Basics</h1>
 <p><img src="assets/banner.png" class="img-fluid"></p>
-<p>WildTrax is the leading platform to help you manage, store and process your environmental sensor data while sharing and discovering the biological data from them that you can share with others. With WildTrax you can:</p>
+<p><strong>WildTrax</strong> is the leading platform for managing, storing, and processing environmental sensor data, while also enabling the sharing and discovery of biological insights gained from it. With WildTrax, you can:</p>
 <ul>
 <li>Manage all components of environmental sensor and biological data from field metadata to media to species observations</li>
 <li>Store data safely and securely while still making it accessible to users</li>
@@ -423,7 +422,6 @@ Video tutorial - Privacy settings
 </section>
 <section id="sec-publishing-and-sharing" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="sec-publishing-and-sharing"><span class="header-section-number">1.4</span> Publishing and sharing data</h2>
-<p>When publishing and sharing data, it’s essential to ensure accuracy, transparency, and adherence to ethical guidelines. Consider including comprehensive metadata, maintaining proper permissions, and specifying intended audiences to optimize the impact and usability of your shared data sets. Ultimately, the visibility of your finalized project to other users or the public depends on the publication level you select. See more about sharing data within an open data network like WildTrax in the <a href="https://wildtrax.ca/about/open-data/">Open Data</a> section.</p>
 <p>When the project is completed and all data processed, the status of the project can be changed to a published status. Project publication allows other WildTrax users, who are not project members, to access the media, metadata or species detections from the project either through the project dashboard or <a href="#sec-data-discover">Data Discover</a>. The publication status will control how data will become visible across the system. Project publication will lock users from editing species detections and is considered the final version of the data. You can change the status of a project at any time. <a href="#sec-location">Location</a> and project membership settings will also determine what you and others can see. Ensure you have these correctly set before publishing a project. Here are some in-depth descriptions of each of the published statuses and what they mean.</p>
 <ul>
 <li><strong>Active</strong>: Active projects are currently being processed or designed, or are in the preliminary stages of data uploading. Use this status for any general use or if the project is actively being worked on. This is the default project status when it is first created.</li>
@@ -450,6 +448,7 @@ Video tutorial - Publishing data
 </div>
 </div>
 </div>
+<p>See more about sharing data within an open data network like WildTrax in the <a href="https://wildtrax.ca/about/open-data/">Open Data</a> section.</p>
 </section>
 <section id="recommended-equipment" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="recommended-equipment"><span class="header-section-number">1.5</span> Recommended equipment</h2>
@@ -471,10 +470,7 @@ Video tutorial - Publishing data
 </section>
 <section id="accounts-membership-and-permissions" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Accounts, membership and permissions</h1>
-<p>WildTrax operates under a role-based access control system, meaning a user in the system represents an individual, not an organization or a group of people. This restricts access to authorized users and is a policy-neutral mechanism designed to create roles and privileges. These users can then collaborate to manage data or share data to answer broader scientific questions. This means that you may not have access to certain features, tools or data depending on your <strong>permissions level</strong>. Permission to project data for example can be limited by the <a href="#sec-location-settings">location settings</a>, and project publication status.</p>
-<section id="membership-and-privacy-settings" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="membership-and-privacy-settings"><span class="header-section-number">2.1</span> Membership and privacy settings</h2>
-<p>WildTrax is designed with flexible roles and permissions to ensure secure and tailored access to its features. Your account can have different levels of access, depending on your role and privileges. Here’s an overview of the key permissions levels:</p>
+<p>WildTrax operates under a role-based access control system, meaning a user in the system represents an individual, not an organization or a group of people. This restricts access to authorized users and is a policy-neutral mechanism designed to create roles and privileges. These users can then collaborate to manage data or share data to answer broader scientific questions. This means that you may not have access to certain features, tools or data depending on your <strong>permissions level</strong>. Permission to project data for example can be limited by the <a href="#sec-location-settings">location settings</a>, and project publication status. WildTrax is designed with flexible roles and permissions to ensure secure and tailored access to its features. Your account can have different levels of access, depending on your role and privileges. Here’s an overview of the key permissions levels:</p>
 <ul>
 <li><a href="#sec-manage-organization-members">Organization membership</a> all you to see or govern access to all projects and data under an Organization. Permissions at the Organization level include:
 <ul>
@@ -488,12 +484,12 @@ Video tutorial - Publishing data
 <li>Editor</li>
 <li>Read-Only Member</li>
 </ul></li>
-<li>Project status</li>
+<li><a href="#sec-publishing-and-sharing">Project Status</a> dictates whether members or the public can access a project or its data. Active and Test projects are accessible only to members of the respective Organization or Project. Once a project is published, the visibility and access to its data depend on the permission level assigned to the user.</li>
 </ul>
-<p>The interplay of these different permissions level ultimately affect what data you see and how you can interface with data on WildTrax. Organizations are parent to projects, therefore any Organization Administrator automatically get Project Administrator privileges. Conversely, if a user is added to a project as a read-only member, they will not have access to the Organization which is parent to the project.</p>
-</section>
-<section id="sec-user-settings" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="sec-user-settings"><span class="header-section-number">2.2</span> User settings</h2>
+<p>The interaction of these permission levels defines the scope of data you can view and how you can engage with it on WildTrax. Since Organizations are parent entities to projects, Organization administrators automatically inherit Project Administrator privileges. However, users assigned read-only access at the project level will not gain access to the parent Organization.</p>
+<p>If certain components are not available or options are locked or greyed out, it is likely that you do not have access to those data. member of that organization. <strong>Requesting access</strong> is the easiest way to gain higher level access by having <a href="#sec-organizations">Organization</a> or <a href="#sec-aru-projects">Project</a> administrators approve your access request. Click the drop-down arrow beside the organization name and then click Request Access and fill in the Request Access form to request membership. Administrators of the organization will receive a notification and will either approve or deny your membership request.</p>
+<section id="sec-user-settings" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-user-settings"><span class="header-section-number">2.1</span> User settings</h2>
 <p><img src="assets/user-settings-panel.png" class="img-fluid"></p>
 <p>The user settings dashboard can be accessed by clicking on your username in the top right corner of the top ribbon when you’re logged into the system, for example <img src="assets/user-name.png" height="30">.</p>
 <p>The user settings dashboard controls the following properties related to your account:</p>
@@ -522,8 +518,8 @@ Note
 </div>
 </div>
 </section>
-<section id="language" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="language"><span class="header-section-number">2.3</span> Language</h2>
+<section id="language" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="language"><span class="header-section-number">2.2</span> Language</h2>
 <p>You can change the language in the site at anytime from the top ribbon toggle <img src="assets/top-ribbon-language.png" height="30">. If you want to permanently change the language, go to <a href="#sec-user-settings">User settings</a> and change it to your preferred language.</p>
 <hr>
 </section>
@@ -532,7 +528,7 @@ Note
 <h1 data-number="3"><span class="header-section-number">3</span> Data Discover</h1>
 <p><img src="assets/data-discover-landing-page.png" class="img-fluid"></p>
 <p><strong>Data Discover</strong> is the central hub for exploring environmental sensor data in WildTrax. Data Discover allows you to see which organizations have published data on WildTrax and which species were detected, and explore media elements such as images and sounds captured in the environment. In Data Discover, you can search for data from ARUs, cameras, and point counts, using a variety of attribute filters, and create summary statistics within a dynamic mapping interface where you can gain a comprehensive understanding of environmental sensor data in an area that interests you.</p>
-<p>After using Data Discover, you may have found an organization or project that you’re interested in – so what’s next? Head over to either the <a href="#sec-organizations">Organization</a> or <a href="#sec-projects">Project</a> dashboard to find out more about the data owners or the project or to request access to the data. Once you are granted access by the project administrators, proceed to Data Downloads to acquire the data.</p>
+<p>After using Data Discover, you may have found an organization or project that you’re interested in – so what’s next? Head over to either the <a href="#sec-organizations">Organization</a> or <a href="#sec-aru-projects">Project</a> dashboard to find out more about the data owners or the project or to request access to the data. Once you are granted access by the project administrators, proceed to Data Downloads to acquire the data.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled" style="padding: 20px;">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -621,54 +617,20 @@ Tip
 <p><img src="assets/new-organization.png" class="img-fluid"></p>
 <p>Fill in the fields in the form and click Save. A WildTrax administrator will need to confirm your identity before approving your new Organization request. If you’re having any technical difficulties creating an Organization contact WildTrax Support at support@widltrax.ca.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">Field =</span> <span class="fu">c</span>(</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Organization acronym"</span>, </span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Organization full name"</span>, </span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Institution / company / group"</span>, </span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Storage location"</span>, </span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Default location buffering"</span>, </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Default buffer radius (m)"</span>, </span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Allow location reports"</span>, </span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Default visit image access"</span>, </span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Human blurring"</span>, </span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Organization description"</span>, </span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Default settings"</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  ),</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">Description =</span> <span class="fu">c</span>(</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">"A short-hand name for your organization (e.g., ABMI)."</span>,</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">"The full name of the organization."</span>,</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">"The institution the organization is part of, such as a university or government branch."</span>,</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Where the data will be stored."</span>,</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">"The organization’s default for whether the coordinates entered are exact ('True Locations') or randomly offset ('Buffered Locations') by a specified radius."</span>,</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">"The organization’s default location buffer radius (in metres). The radius of the buffer around the location within which the coordinates are randomized (0 if not hidden)."</span>,</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Enables location summary reports when turned on."</span>,</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Default privacy setting for visit photos uploaded to the organization."</span>,</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">"An organization-wide setting for human blurring in images. Options include 'Blur for anonymous users,' 'Blur for everyone,' and 'Blur for non-admins.'"</span>,</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">"A short description of the organization."</span>,</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Default settings can be applied at the organization level for tasks such as location buffering or visit image access."</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">datatable</span>(</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  data, </span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  <span class="at">colnames =</span> <span class="fu">c</span>(<span class="st">"Field"</span>, <span class="st">"Description"</span>), </span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  <span class="at">options =</span> <span class="fu">list</span>(</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">pageLength =</span> <span class="dv">10</span>, </span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">autoWidth =</span> <span class="cn">TRUE</span>, </span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    <span class="at">dom =</span> <span class="st">'t'</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-fa45c911b63ebd82d705" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-fa45c911b63ebd82d705">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11"],["Organization acronym","Organization full name","Institution / company / group","Storage location","Default location buffering","Default buffer radius (m)","Allow location reports","Default visit image access","Human blurring","Organization description","Default settings"],["A short-hand name for your organization (e.g., ABMI).","The full name of the organization.","The institution the organization is part of, such as a university or government branch.","Where the data will be stored.","The organization’s default for whether the coordinates entered are exact ('True Locations') or randomly offset ('Buffered Locations') by a specified radius.","The organization’s default location buffer radius (in metres). The radius of the buffer around the location within which the coordinates are randomized (0 if not hidden).","Enables location summary reports when turned on.","Default privacy setting for visit photos uploaded to the organization.","An organization-wide setting for human blurring in images. Options include 'Blur for anonymous users,' 'Blur for everyone,' and 'Blur for non-admins.'","A short description of the organization.","Default settings can be applied at the organization level for tasks such as location buffering or visit image access."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Field<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Field","targets":1},{"name":"Description","targets":2}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-a555c72319d8f0f4335a" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-a555c72319d8f0f4335a">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11"],["Organization acronym","Organization full name","Institution / company / group","Storage location","Default location buffering","Default buffer radius (m)","Allow location reports","Default visit image access","Human blurring","Organization description","Default settings"],["A short-hand name for your organization (e.g., ABMI).","The full name of the organization.","The institution the organization is part of, such as a university or government branch.","Where the data will be stored.","The organization’s default for whether the coordinates entered are exact ('True Locations') or randomly offset ('Buffered Locations') by a specified radius.","The organization’s default location buffer radius (in metres). The radius of the buffer around the location within which the coordinates are randomized (0 if not hidden).","Enables location summary reports when turned on.","Default privacy setting for visit photos uploaded to the organization.","An organization-wide setting for human blurring in images. Options include 'Blur for anonymous users,' 'Blur for everyone,' and 'Blur for non-admins.'","A short description of the organization.","Default settings can be applied at the organization level for tasks such as location buffering or visit image access."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Field<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Field","targets":1},{"name":"Description","targets":2}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
-<section id="media-storage" class="level3" data-number="4.1.1">
-<h3 data-number="4.1.1" class="anchored" data-anchor-id="media-storage"><span class="header-section-number">4.1.1</span> Media storage</h3>
+<section id="principal-investigators" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="principal-investigators"><span class="header-section-number">4.1.1</span> Principal Investigators</h3>
+<p>The <strong>principal investigators</strong> of the organization are users who respond to access requests related to the organization or its projects. Without a principal or secondary investigator, all organization and project access requests will default to organization then project administrators, in order. Once you create an Organization, you can add yourself as one of the principal investigators or <a href="#sec-organization-membership">add more users</a> to your Organization and then assign them those privileges.</p>
+</section>
+<section id="media-storage" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="media-storage"><span class="header-section-number">4.1.2</span> Media storage</h3>
 <p>WildTrax offers an enhanced server infrastructure designed to support the platform’s growing user base and evolving data management needs. Each Organization must select the storage location where they need to store their media. This allows you to quickly access an image or recording at a moment’s need.</p>
 <ul>
-<li><strong>WildTrax Live Servers</strong>: Hosted at the University of Alberta in Edmonton, Alberta, Canada. These servers provide a cost-effective and sustainable solution with live and off-site backups using Amazon Deep Glacier, ensuring secure and reliable data storage for Canadian and international organizations.</li>
+<li><strong>WildTrax Live Servers</strong>: Hosted at the University of Alberta in Edmonton, Alberta, Canada. These servers provide a cost-effective and sustainable solution with live and off-site backups using <a href="https://aws.amazon.com/s3/storage-classes/glacier/">Amazon Deep Glacier</a>, ensuring secure and reliable data storage for Canadian and international organizations.</li>
 <li><a href="https://aws.amazon.com/"><strong>Amazon Web Services (AWS)</strong></a>: Retained as an option for users requiring cloud-based storage with global accessibility and high-performance capabilities with international storage base options.</li>
 </ul>
 <p>The selection of a default storage location now balances data sovereignty, cost efficiency, and upload/download performance based on geographic proximity. For detailed guidance, refer to WildTrax’s <a href="https://wildtrax.ca/about/policies/">Terms and Conditions of Use and Data Access Policies</a>, or contact info@wildtrax.ca for additional support.</p>
@@ -689,14 +651,33 @@ Tip
 </div>
 </div>
 </section>
-<section id="default-location-privacy-settings" class="level3" data-number="4.1.2">
-<h3 data-number="4.1.2" class="anchored" data-anchor-id="default-location-privacy-settings"><span class="header-section-number">4.1.2</span> Default location privacy settings</h3>
+<section id="sec-location-privacy-settings" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="sec-location-privacy-settings"><span class="header-section-number">4.1.3</span> Default privacy settings</h3>
+<p>An organization can control aspects of the <a href="#sec-locations">locations</a> it manages.</p>
+<p>The default buffering of all the locations it manages.</p>
+<p>“Allow location reports” creates links you can share with external audiences (e.g., collaborators or landowners) without giving them organizational privileges or unwieldy information.</p>
+<p>The visit image access field controls global access to your visit images.</p>
+<p>Human blurring is an organization-wide setting for the type of users for which the auto-tagger will blur humans detected in images, if any. The options include “Blur for anonymous users (if applicable),” “Blur for non-admins,” and “Blur for everyone”. See the section on Human blurring for more information.</p>
+<p>Organizations that opt-out of Human blurring understand that images they upload, and (potentially) publish publicly may contain humans and are doing so at their own risk. Once you make a selection, it cannot be undone; however, this will be adjustable in the near future.</p>
 </section>
-<section id="default-image-privacy-settings" class="level3" data-number="4.1.3">
-<h3 data-number="4.1.3" class="anchored" data-anchor-id="default-image-privacy-settings"><span class="header-section-number">4.1.3</span> Default image privacy settings</h3>
-</section>
-<section id="sec-manage-organization-members" class="level3" data-number="4.1.4">
-<h3 data-number="4.1.4" class="anchored" data-anchor-id="sec-manage-organization-members"><span class="header-section-number">4.1.4</span> Manage organization members</h3>
+<section id="sec-organization-membership" class="level3" data-number="4.1.4">
+<h3 data-number="4.1.4" class="anchored" data-anchor-id="sec-organization-membership"><span class="header-section-number">4.1.4</span> Organization memmbership</h3>
+<p>Once your organization is approved, the User Assignment tab will appear in the organization settings form. This will allow you to add any WildTrax user to your organization either as an administrator or read-only member.</p>
+<p><strong>Organization administrators</strong> collaboratively manage the media and metadata of the organization and have the ability to:</p>
+<ul>
+<li>Enjoy administrator privileges by default on all organizational projects</li>
+<li>Add WildTrax users to the organization or its projects</li>
+<li>Read and write to organizational locations</li>
+<li>Read and write to the visit, equipment, deployment and media metadata</li>
+</ul>
+<p><strong>Organization read-only members</strong> can:</p>
+<ul>
+<li>Read the unbuffered locations, i.e., read-only members can see the true locations if they are buffered but cannot modify them</li>
+<li>Read the visit, equipment, and media metadata</li>
+<li>Enjoy read-only access to all organizational projects</li>
+<li>The organization dashboard lists all organizations in WildTrax. The View Only My Organizations toggle in the top-right filters the list to only organizations you’re a part of.</li>
+</ul>
+<p>If the organization is greyed out, you are not a member of that organization. Click the drop-down arrow beside the organization name and then click Request Access and fill in the Request Access form to request membership. Administrators of the organization will receive a notification and will either approve or deny your membership request.</p>
 </section>
 </section>
 <section id="sec-locations" class="level2" data-number="4.2">
@@ -708,8 +689,8 @@ Tip
 <p>Click the Locations tab in your organization dashboard. Clicking ”Create Location” will open the location form, where you can add the spatial metadata to the location or configure the location’s settings. You only need to enter the location name, latitude and longitude in order to create a location. When you’ve filled in the form click Save. The map tab will appear allowing you to visualize the point on the landscape. The location will also be visible on maps across WildTrax.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-9e58c0135d276b87f766" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-9e58c0135d276b87f766">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Location","Latitude","Longitude","Elevation (m)","Location visibility","Location buffering","Buffer radius (m)","Location description"],["Name of the location.","Latitude in decimal degrees (max 10 digits)","Longitude in decimal degrees (max 10 digits)","Elevation above sea level (metres)","Privacy setting: 'Visible,' 'Hidden – Location,' or 'Hidden – Location+Data'","Exact ('True Location') or offset ('Buffered Location')","Buffer radius (metres) for randomized coordinates (0 if not hidden)","Brief description; more details in visit metadata"],["LOCATION-ABC","54.11910100","-118.1728210","500","Visible","True Location","0","Mountain Range Area"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Field<\/th>\n      <th>Description<\/th>\n      <th>Example<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Field","targets":1},{"name":"Description","targets":2},{"name":"Example","targets":3}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-3d34c2413d1ab33c4f3d" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-3d34c2413d1ab33c4f3d">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Location","Latitude","Longitude","Elevation (m)","Location visibility","Location buffering","Buffer radius (m)","Location description"],["Name of the location.","Latitude in decimal degrees (max 10 digits)","Longitude in decimal degrees (max 10 digits)","Elevation above sea level (metres)","Privacy setting: 'Visible,' 'Hidden – Location,' or 'Hidden – Location+Data'","Exact ('True Location') or offset ('Buffered Location')","Buffer radius (metres) for randomized coordinates (0 if not hidden)","Brief description; more details in visit metadata"],["LOCATION-ABC","54.11910100","-118.1728210","500","Visible","True Location","0","Mountain Range Area"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Field<\/th>\n      <th>Description<\/th>\n      <th>Example<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Field","targets":1},{"name":"Description","targets":2},{"name":"Example","targets":3}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" style="background-color: #f4f4f4; padding: 20px;">
@@ -899,19 +880,20 @@ Tip
 <p>Here you will find summaries of the following information:</p>
 <p>Location: the name of the location Image set start date/time: the date and time of the first image collected in the image set (in the format YYYY-MM-DD HH:MM:SS) End date: the date and time of the last image collected in the image set (in the format YYYY-MM-DD HH:MM:SS) Total image count: the total number of images Motion image count: the total number of images where the camera was triggered due to heat or motion (i.e., Trigger mode = “Motion Detection” or “M”) in an image set Task count: the total number of tasks Details drop-down: clicking on the drop-down arrow will show the projects the image set is associated with, the observer who tagged the task, the number of unique species detected, and the series gap used in the project.</p>
 <p><img src="assets/imagesets-tab.png" class="img-fluid" alt="Image sets tab"> ## DOIs</p>
-<p>Within the DOIs tab, users can create DOIs via <a href="">DataCite</a> that allows users to create DOIs links for their projects. There are certain restrictions for creating DOIs:</p>
+<p>Within the DOIs tab, users can create DOIs via <a href="https://datacite.org/">DataCite</a> that allows users to create DOIs links for their projects. There are certain restrictions for creating DOIs:</p>
 <ul>
 <li>You must at least an Organization administrator to create DOIs for the underlying projects</li>
 <li>DOIs can only be created for projects belonging to the Organization</li>
 </ul>
 <section id="creating-a-doi" class="level3" data-number="4.8.1">
 <h3 data-number="4.8.1" class="anchored" data-anchor-id="creating-a-doi"><span class="header-section-number">4.8.1</span> Creating a DOI</h3>
+<p>Click on the DOIs tab in the Organization. Go to</p>
 </section>
 </section>
 </section>
 <section id="sec-aru-projects" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> ARU Projects</h1>
-<p>Projects are purposeful groupings of an organization‘s media and metadata to answer specific questions or implement a study design. Projects can be one of three sensors: ARUs, cameras or point counts. For each of these sensor types, a collection of tasks (ARU), image sets (camera) or surveys (point counts) are processed or uploaded in order retrieve species data.</p>
+<p><strong>Projects</strong> are purposeful groupings of an organization‘s media and metadata to answer specific questions or implement a study design. Projects can be one of three sensors: ARUs, cameras or point counts. For each of these sensor types, a collection of tasks (ARU), image sets (camera) or surveys (point counts) are processed or uploaded in order retrieve species data.</p>
 <p>The goal of an ARU project is to upload media, process tasks, verify tags and publish the results. Projects belong to organizations and use organization media on order to generate and report on a certain set of results designed by the project administrators. Clicking on the ARU sensor on the main project dashboard will show which projects you have access to. The list of projects you see is determined by your organization membership, project membership and status of the project. You can use the filter and sort some of the project attributes to find what you’re looking for:</p>
 <p><img src="assets/aru-projects.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-note callout-titled" style="background-color: #f4f4f4; padding: 20px;">
@@ -1015,7 +997,7 @@ Warning
 </section>
 </section>
 <section id="acoustic-tagging" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="acoustic-tagging"><span class="header-section-number">5.3</span> Acoustic Tagging</h2>
+<h2 data-number="5.3" class="anchored" data-anchor-id="acoustic-tagging"><span class="header-section-number">5.3</span> Acoustic tagging</h2>
 <section id="recommended-equipment-1" class="level3" data-number="5.3.1">
 <h3 data-number="5.3.1" class="anchored" data-anchor-id="recommended-equipment-1"><span class="header-section-number">5.3.1</span> Recommended equipment</h3>
 <p>Recommended equipment The following equipment is recommended for processing acoustic data. Proper equipment will enhance your experience and data quality using WildTrax.</p>
@@ -1040,8 +1022,8 @@ Warning
 <section id="confidence-and-classifying-unknowns" class="level3" data-number="5.3.7">
 <h3 data-number="5.3.7" class="anchored" data-anchor-id="confidence-and-classifying-unknowns"><span class="header-section-number">5.3.7</span> Confidence and classifying unknowns</h3>
 </section>
-<section id="vocalization-type" class="level3" data-number="5.3.8">
-<h3 data-number="5.3.8" class="anchored" data-anchor-id="vocalization-type"><span class="header-section-number">5.3.8</span> Vocalization type</h3>
+<section id="vocalization-types" class="level3" data-number="5.3.8">
+<h3 data-number="5.3.8" class="anchored" data-anchor-id="vocalization-types"><span class="header-section-number">5.3.8</span> Vocalization types</h3>
 </section>
 <section id="ultrasonic-species" class="level3" data-number="5.3.9">
 <h3 data-number="5.3.9" class="anchored" data-anchor-id="ultrasonic-species"><span class="header-section-number">5.3.9</span> Ultrasonic species</h3>
@@ -1145,10 +1127,16 @@ Warning
 <h2 data-number="7.1" class="anchored" data-anchor-id="point-count-project-management"><span class="header-section-number">7.1</span> Point count project management</h2>
 <p>The general life cycle of a point count project includes:</p>
 <ul>
-<li>Creating</li>
+<li>Creating the project and adding users</li>
+<li>Uploading surveys</li>
+<li>Publishing the project</li>
 </ul>
 <section id="syncing-point-count-surveys" class="level3" data-number="7.1.1">
 <h3 data-number="7.1.1" class="anchored" data-anchor-id="syncing-point-count-surveys"><span class="header-section-number">7.1.1</span> Syncing point count surveys</h3>
+<p>You can synchronize your point count with WildTrax in order to batch upload or download and modify and re-upload surveys within the system. The format of the Survey Sync can be found in <strong>?@tbl-survey-sync</strong>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wt_get_sync_columns</span>(<span class="st">"download-point-count-by-project-id"</span>, <span class="at">project =</span> <span class="dv">804</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="adding-location-information" class="level3" data-number="7.1.2">
 <h3 data-number="7.1.2" class="anchored" data-anchor-id="adding-location-information"><span class="header-section-number">7.1.2</span> Adding location information</h3>
