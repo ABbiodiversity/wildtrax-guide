@@ -106,14 +106,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#sec-permissions" id="toc-sec-permissions" class="nav-link" data-scroll-target="#sec-permissions"><span class="header-section-number">2</span> Accounts, membership and permissions 👥</a>
   <ul>
   <li><a href="#sec-user-settings" id="toc-sec-user-settings" class="nav-link" data-scroll-target="#sec-user-settings"><span class="header-section-number">2.1</span> User settings</a></li>
-  <li><a href="#language" id="toc-language" class="nav-link" data-scroll-target="#language"><span class="header-section-number">2.2</span> Language</a></li>
   </ul></li>
   <li><a href="#sec-data-discover" id="toc-sec-data-discover" class="nav-link" data-scroll-target="#sec-data-discover"><span class="header-section-number">3</span> Data Discover 🌍</a>
   <ul>
   <li><a href="#filters" id="toc-filters" class="nav-link" data-scroll-target="#filters"><span class="header-section-number">3.1</span> Filters</a></li>
   <li><a href="#layers" id="toc-layers" class="nav-link" data-scroll-target="#layers"><span class="header-section-number">3.2</span> Layers</a></li>
-  <li><a href="#summaries-and-insights" id="toc-summaries-and-insights" class="nav-link" data-scroll-target="#summaries-and-insights"><span class="header-section-number">3.3</span> Summaries and insights</a></li>
-  <li><a href="#polygon-tool" id="toc-polygon-tool" class="nav-link" data-scroll-target="#polygon-tool"><span class="header-section-number">3.4</span> Polygon Tool</a></li>
+  <li><a href="#searching-an-area-of-interest" id="toc-searching-an-area-of-interest" class="nav-link" data-scroll-target="#searching-an-area-of-interest"><span class="header-section-number">3.3</span> Searching an area of interest</a></li>
+  <li><a href="#summaries-and-insights" id="toc-summaries-and-insights" class="nav-link" data-scroll-target="#summaries-and-insights"><span class="header-section-number">3.4</span> Summaries and insights</a></li>
   </ul></li>
   <li><a href="#sec-organizations" id="toc-sec-organizations" class="nav-link" data-scroll-target="#sec-organizations"><span class="header-section-number">4</span> Organizations 🏢</a>
   <ul>
@@ -122,14 +121,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#media-storage" id="toc-media-storage" class="nav-link" data-scroll-target="#media-storage"><span class="header-section-number">4.1.1</span> Media storage</a></li>
   <li><a href="#sec-default-privacy-settings" id="toc-sec-default-privacy-settings" class="nav-link" data-scroll-target="#sec-default-privacy-settings"><span class="header-section-number">4.1.2</span> Default privacy settings</a></li>
   <li><a href="#sec-organization-membership" id="toc-sec-organization-membership" class="nav-link" data-scroll-target="#sec-organization-membership"><span class="header-section-number">4.1.3</span> Organization membership</a></li>
+  <li><a href="#starting-a-project" id="toc-starting-a-project" class="nav-link" data-scroll-target="#starting-a-project"><span class="header-section-number">4.1.4</span> Starting a project</a></li>
   </ul></li>
   <li><a href="#sec-locations" id="toc-sec-locations" class="nav-link" data-scroll-target="#sec-locations"><span class="header-section-number">4.2</span> Locations</a>
   <ul>
   <li><a href="#create-locations" id="toc-create-locations" class="nav-link" data-scroll-target="#create-locations"><span class="header-section-number">4.2.1</span> Create locations</a></li>
   <li><a href="#sec-location-settings" id="toc-sec-location-settings" class="nav-link" data-scroll-target="#sec-location-settings"><span class="header-section-number">4.2.2</span> Location privacy settings</a></li>
-  <li><a href="#sync-locations" id="toc-sync-locations" class="nav-link" data-scroll-target="#sync-locations"><span class="header-section-number">4.2.3</span> Sync locations</a></li>
-  <li><a href="#merge-locations" id="toc-merge-locations" class="nav-link" data-scroll-target="#merge-locations"><span class="header-section-number">4.2.4</span> Merge locations</a></li>
-  <li><a href="#delete-locations" id="toc-delete-locations" class="nav-link" data-scroll-target="#delete-locations"><span class="header-section-number">4.2.5</span> Delete locations</a></li>
+  <li><a href="#sec-location-sync" id="toc-sec-location-sync" class="nav-link" data-scroll-target="#sec-location-sync"><span class="header-section-number">4.2.3</span> Sync Locations</a></li>
+  <li><a href="#merge-locations" id="toc-merge-locations" class="nav-link" data-scroll-target="#merge-locations"><span class="header-section-number">4.2.4</span> Merge Locations</a></li>
+  <li><a href="#delete-locations" id="toc-delete-locations" class="nav-link" data-scroll-target="#delete-locations"><span class="header-section-number">4.2.5</span> Delete Locations</a></li>
   <li><a href="#mapping-locations" id="toc-mapping-locations" class="nav-link" data-scroll-target="#mapping-locations"><span class="header-section-number">4.2.6</span> Mapping locations</a></li>
   <li><a href="#sec-location-reports" id="toc-sec-location-reports" class="nav-link" data-scroll-target="#sec-location-reports"><span class="header-section-number">4.2.7</span> Location reports</a></li>
   </ul></li>
@@ -166,14 +166,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#generate-tasks" id="toc-generate-tasks" class="nav-link" data-scroll-target="#generate-tasks"><span class="header-section-number">4.7.4</span> Generate tasks</a></li>
   <li><a href="#delete-recordings" id="toc-delete-recordings" class="nav-link" data-scroll-target="#delete-recordings"><span class="header-section-number">4.7.5</span> Delete recordings</a></li>
   </ul></li>
-  <li><a href="#image-sets" id="toc-image-sets" class="nav-link" data-scroll-target="#image-sets"><span class="header-section-number">4.8</span> Image sets</a>
+  <li><a href="#image-sets" id="toc-image-sets" class="nav-link" data-scroll-target="#image-sets"><span class="header-section-number">4.8</span> Image sets</a></li>
+  <li><a href="#dois" id="toc-dois" class="nav-link" data-scroll-target="#dois"><span class="header-section-number">4.9</span> DOIs</a>
   <ul>
-  <li><a href="#creating-a-doi" id="toc-creating-a-doi" class="nav-link" data-scroll-target="#creating-a-doi"><span class="header-section-number">4.8.1</span> Creating a DOI</a></li>
+  <li><a href="#creating-a-doi" id="toc-creating-a-doi" class="nav-link" data-scroll-target="#creating-a-doi"><span class="header-section-number">4.9.1</span> Creating a DOI</a></li>
+  <li><a href="#deleting-a-doi" id="toc-deleting-a-doi" class="nav-link" data-scroll-target="#deleting-a-doi"><span class="header-section-number">4.9.2</span> Deleting a DOI</a></li>
   </ul></li>
   </ul></li>
   <li><a href="#sec-aru-projects" id="toc-sec-aru-projects" class="nav-link" data-scroll-target="#sec-aru-projects"><span class="header-section-number">5</span> ARU Projects 🎧</a>
   <ul>
-  <li><a href="#acoustic-data-concepts" id="toc-acoustic-data-concepts" class="nav-link" data-scroll-target="#acoustic-data-concepts"><span class="header-section-number">5.1</span> Acoustic data concepts</a></li>
+  <li><a href="#sec-acoustic-data-concepts" id="toc-sec-acoustic-data-concepts" class="nav-link" data-scroll-target="#sec-acoustic-data-concepts"><span class="header-section-number">5.1</span> Acoustic data concepts</a></li>
   <li><a href="#acoustic-project-management" id="toc-acoustic-project-management" class="nav-link" data-scroll-target="#acoustic-project-management"><span class="header-section-number">5.2</span> Acoustic project management</a>
   <ul>
   <li><a href="#create-an-aru-project" id="toc-create-an-aru-project" class="nav-link" data-scroll-target="#create-an-aru-project"><span class="header-section-number">5.2.1</span> Create an ARU project</a></li>
@@ -181,7 +183,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#sec-aru-project-users" id="toc-sec-aru-project-users" class="nav-link" data-scroll-target="#sec-aru-project-users"><span class="header-section-number">5.2.3</span> User assignment</a></li>
   <li><a href="#sec-upload-recordings-tasks" id="toc-sec-upload-recordings-tasks" class="nav-link" data-scroll-target="#sec-upload-recordings-tasks"><span class="header-section-number">5.2.4</span> Uploading recordings and creating tasks</a></li>
   <li><a href="#syncing-data-to-aru-projects" id="toc-syncing-data-to-aru-projects" class="nav-link" data-scroll-target="#syncing-data-to-aru-projects"><span class="header-section-number">5.2.5</span> Syncing data to ARU projects</a></li>
-  <li><a href="#setting-up-an-ultrasonic-project" id="toc-setting-up-an-ultrasonic-project" class="nav-link" data-scroll-target="#setting-up-an-ultrasonic-project"><span class="header-section-number">5.2.6</span> Setting up an ultrasonic project 🦇</a>
+  <li><a href="#sec-setting-up-ultrasonic" id="toc-sec-setting-up-ultrasonic" class="nav-link" data-scroll-target="#sec-setting-up-ultrasonic"><span class="header-section-number">5.2.6</span> Setting up an ultrasonic project 🦇</a>
   <ul class="collapse">
   <li><a href="#uploading-recordings" id="toc-uploading-recordings" class="nav-link" data-scroll-target="#uploading-recordings"><span class="header-section-number">5.2.6.1</span> Uploading recordings</a></li>
   <li><a href="#syncing-classifier-tags" id="toc-syncing-classifier-tags" class="nav-link" data-scroll-target="#syncing-classifier-tags"><span class="header-section-number">5.2.6.2</span> Syncing classifier tags</a></li>
@@ -339,7 +341,7 @@ Note
 <h2 data-number="1.1" class="anchored" data-anchor-id="creating-an-account"><span class="header-section-number">1.1</span> Creating an account</h2>
 <p>You can explore WildTrax data for free anytime. While the <a href="https://discover.wildtrax.ca">Data Discover</a> tool lets you browse and map public data without an account, creating an account unlocks roles and privileges to fully access and use the system. Visit <a href="wildtrax.ca"><strong>wildtrax.ca</strong></a> and click on the <img src="assets/login.png" height="30"> button in the top ribbon.</p>
 <p><a href="assets/login-home.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="assets/login-home.png" class="img-fluid"></a></p>
-<p>You can log in to WildTrax using either a social account, such as Google, or a username and password linked to your email address. After creating your account, you’ll need to verify it through an email sent to your inbox. This step is required before you can start using your account. For a detailed walkthrough, check out the video tutorial below.</p>
+<p>You can log in to WildTrax using either a social account, such as Google, or a username and password linked to your email address. After creating your account, you’ll need to verify it through an email sent to your inbox. This step is required before you can start using your account. For a detailed walkthrough, <mark>check out the video tutorial below.</mark></p>
 <div class="callout callout-style-default callout-tip callout-titled" style="background-color: #f4f4f4; padding: 20px;">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -363,7 +365,7 @@ Video tutorial - Creating an account
 <ul>
 <li><a href="#sec-organizations"><strong>Organizations</strong></a>: Represent the top level, encompassing groups of researchers and users working on various research initiatives</li>
 <li><a href="#sec-locations"><strong>Locations</strong></a>: Geographic sites where environmental sensors are deployed or biological data is collected. They link media and <a href="#sec-equipment">equipment</a> metadata in WildTrax and are managed by organizations.</li>
-<li><strong>Projects</strong>: Create a project to group specific media to address specific research questions or study designs. Projects can be one of three sensors: <a href="#sec-aru-projects">ARUs</a>, <a href="#sec-camera-projects">cameras</a> or <a href="#sec-point-count-projects">point counts</a>.</li>
+<li><strong>Projects</strong>: Projects are groups of specific media to address research questions or implement study designs. Projects can be one of three sensors: <a href="#sec-aru-projects">ARUs</a>, <a href="#sec-camera-projects">cameras</a> or <a href="#sec-point-count-projects">point counts</a>.</li>
 <li><strong>Tasks</strong>: Assign users to process media, like audio recordings or image sets, into biological data. Within tasks, species <strong>tags</strong> are applied to extract meaningful biological data, such as species presence, absence, or counts, which contribute to further metrics.</li>
 </ul>
 <p>After processing, projects can be published and shared with other WildTrax users or the public.</p>
@@ -413,8 +415,7 @@ Video tutorial - Privacy settings
 </li>
 <li><strong>Add Users</strong>: Invite team members with specific roles to your organization and project for collaborative data management.<br>
 </li>
-<li><strong>Upload media: recordings or images</strong>: Upload and organize your recordings and images files for upload and processing.<br>
-</li>
+<li><strong>Upload recordings or images</strong>: Upload and organize your recordings and images files for upload and processing.</li>
 <li><strong>Create or Upload Tasks/Surveys</strong>: Define tasks or upload surveys to guide data processing with specific methodology.</li>
 <li><strong>Process or Upload Tags/Observations</strong>: Generate tags or observations during processing, or upload pre-existing ones.<br>
 </li>
@@ -425,15 +426,7 @@ Video tutorial - Privacy settings
 </section>
 <section id="sec-publishing-and-sharing" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="sec-publishing-and-sharing"><span class="header-section-number">1.4</span> Publishing and sharing data</h2>
-<p>When the project is completed and all data processed, the status of the project can be changed to a published status. Project publication allows other WildTrax users, who are not project members, to access the media, metadata or species detections from the project either through the project dashboard or <a href="#sec-data-discover">Data Discover</a>. The publication status will control how data will become visible across the system. Project publication will lock users from editing species detections and is considered the final version of the data. You can change the status of a project at any time. <a href="#sec-locations">Location</a> and project membership settings will also determine what you and others can see. Ensure you have these correctly set before publishing a project. Here are some in-depth descriptions of each of the published statuses and what they mean.</p>
-<ul>
-<li><strong>Active</strong>: Active projects are currently being processed or designed, or are in the preliminary stages of data uploading. Use this status for any general use or if the project is actively being worked on. This is the default project status when it is first created.</li>
-<li><strong>Test</strong>: Just getting started with an environmental sensor program? Or have some media you want to upload to test WildTrax’s functionalities? Use the Test status in these cases. Project data will not be visible in Data Downloads or Data Discover except to project members.</li>
-<li><strong>Published – Private</strong>: In Published – Private, the project data will only be available to project members. Users will need to request access to the project in order to view any details such as species or locations.</li>
-<li><strong>Published – Map Only</strong>: In Published – Map Only, the project data will be accessible through Data Discover but the media and report are not accessible to users who are not project members. If you’re not a project or organization member, the location buffering and visibility settings will apply.</li>
-<li><strong>Published – Map + Report Only</strong>: In Published – Map + Report Only, the project data become available to all WildTrax users through Data Downloads and Data Discover, however, the media is not accessible. Use this setting if you want to make your data publicly available but there are privacy concerns with your media. If you’re not a project or organization member, the location buffering and visibility settings will apply. This status does not exist for point counts since the sensor does not contain media.</li>
-<li><strong>Published – Public</strong>: In Published – Public all of the project data become available to any WildTrax user as well as the public in <a href="#sec-data-discover">Data Discover</a>. If you’re not a project or organization member, the location buffering and visibility settings will apply.</li>
-</ul>
+<p>When the project is completed and all data processed, the status of the project can be changed to a published status. Project publication allows other WildTrax users, who are not project members, to access the media, metadata or species detections from the project either through the project dashboard or <a href="#sec-data-discover">Data Discover</a>. The publication status will control how data will become visible across the system. Project publication will also lock users from editing species detections and is considered the final version of the data. You can change the status of a project at any time. <a href="#sec-locations">Location</a> and project membership settings will also determine what you and others can see. Ensure you have these correctly set before publishing a project. Here are some in-depth descriptions of each of the published statuses and what they mean.</p>
 <div class="callout callout-style-default callout-tip callout-titled" style="background-color: #f4f4f4; padding: 20px;">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -451,6 +444,18 @@ Video tutorial - Publishing data
 </div>
 </div>
 </div>
+<p><em>Active Projects</em></p>
+<ul>
+<li><strong>Active</strong>: Active projects are currently being processed or designed, or are in the preliminary stages of data uploading. Use this status for any general use or if the project is actively being worked on. This is the default project status when it is first created.</li>
+<li><strong>Test</strong>: Just getting started with an environmental sensor program? Or have some media you want to upload to test WildTrax’s functionalities? Use the Test status in these cases. Project data will not be visible in Data Downloads or Data Discover except to project members.</li>
+</ul>
+<p><em>Published Projects</em></p>
+<ul>
+<li><strong>Published – Private</strong>: Project data will only be available to project members. Users will need to request access to the project in order to view any details such as species or locations.</li>
+<li><strong>Published – Map Only</strong>: Project data will be accessible through Data Discover but the media and report are not accessible to users who are not project members. If you’re not a project or organization member, the location buffering and visibility settings will apply.</li>
+<li><strong>Published – Map + Report Only</strong>: Project data become available to all WildTrax users through Data Downloads and Data Discover, however, the media is not accessible. Use this setting if you want to make your data publicly available but there are privacy concerns with your media. If you’re not a project or organization member, the location buffering and visibility settings will apply. This status does not exist for point counts since the sensor does not contain media.</li>
+<li><strong>Published – Public</strong>: All of the project data become available to any WildTrax user as well as the public in <a href="#sec-data-discover">Data Discover</a>. If you’re not a project or organization member, <a href="#sec-location-privacy-settings">location buffering and visibility settings</a> will stil apply.</li>
+</ul>
 <p>See more about sharing data within an open data network like WildTrax in the <a href="https://wildtrax.ca/about/open-data/">Open Data</a> section.</p>
 </section>
 <section id="recommended-equipment" class="level2" data-number="1.5">
@@ -490,11 +495,10 @@ Video tutorial - Publishing data
 <li><a href="#sec-publishing-and-sharing">Project Status</a> dictates whether members or the public can access a project or its data. Active and Test projects are accessible only to members of the respective Organization or Project. Once a project is published, the visibility and access to its data depend on the permission level assigned to the user.</li>
 </ul>
 <p>The interaction of these permission levels defines the scope of data you can view and how you can engage with it on WildTrax. Since Organizations are parent entities to projects, Organization administrators automatically inherit Project Administrator privileges. However, users assigned read-only access at the project level will not gain access to the parent Organization.</p>
-<p>If certain components are not available or options are locked or greyed out, it is likely that you do not have access to those data. member of that organization. <strong>Requesting access</strong> is the easiest way to gain higher level access by having <a href="#sec-organizations">Organization</a> or <a href="#sec-aru-projects">Project</a> administrators approve your access request. Click the drop-down arrow beside the organization name and then click <img src="assets/request-access-button.png" height="50"> and fill in the Request Access form to request membership. Administrators of the organization will receive a notification and will either approve or deny your membership request.</p>
+<p>If certain components are not available or options are locked or greyed out, it is likely that you do not have access to those data. member of that organization. <strong>Requesting access</strong> is the easiest way to gain higher level access by having <a href="#sec-organizations">Organization</a> or <a href="#sec-aru-projects">Project</a> administrators approve your access request. Click the drop-down arrow beside the organization name and then click <img src="assets/request-access-button.png" height="30"> and fill in the Request Access form to request membership. Administrators of the organization will receive a notification and will either approve or deny your membership request. Clearly specify the type of access privileges you are requesting, such as read-only access or administrator-level permissions.</p>
 <p><a href="assets/request-access.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="assets/request-access.png" class="img-fluid"></a></p>
 <section id="sec-user-settings" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="sec-user-settings"><span class="header-section-number">2.1</span> User settings</h2>
-<p><a href="assets/user-settings-panel.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="assets/user-settings-panel.png" class="img-fluid"></a></p>
 <p>The user settings dashboard can be accessed by clicking on your username in the top right corner of the top ribbon when you’re logged into the system, for example <img src="assets/user-name.png" height="30">.</p>
 <p>The user settings dashboard controls the following properties related to your account:</p>
 <ul>
@@ -505,6 +509,7 @@ Video tutorial - Publishing data
 <li><strong>Affiliation (optional)</strong>: the organization, institution or group of which you’re a member or user in the system.</li>
 </ul>
 <p>Once you’ve made your desired changes, click the <img src="assets/update.png" height="30"> button.</p>
+<p><a href="assets/user-settings-panel.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="assets/user-settings-panel.png" class="img-fluid"></a></p>
 <div class="callout callout-style-default callout-note callout-titled" style="background-color: #f4f4f4; padding: 20px;">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -521,9 +526,6 @@ Note
 </div>
 </div>
 </div>
-</section>
-<section id="language" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="language"><span class="header-section-number">2.2</span> Language</h2>
 <p>You can change the language in the site at anytime from the top ribbon toggle <img src="assets/top-ribbon-language.png" height="30">. If you want to permanently change the language, go to <a href="#sec-user-settings">User settings</a> and change it to your preferred language.</p>
 <hr>
 </section>
@@ -570,44 +572,44 @@ Tip
 </section>
 <section id="layers" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="layers"><span class="header-section-number">3.2</span> Layers</h2>
+<p>Explore data in depth with up to five customizable layers. Create a new layer by clicking on the <img src="assets/data-discover-plus-layer.png" height="30"> icon. The colours for the points correspond to the layer in the filter panel. By hovering over the layer number, you can duplicate an existing layer <img src="assets/data-discover-duplicate-layer.png" height="30"> to preserve its results and further refine your exploration, use the garbage can icon <img src="assets/data-discover-delete-layer.png" height="30"> to delete the current layer, and the <img src="assets/data-discover-layer-visibility.png" height="30"> to control the visibility of the layer on the map. Each summary insight in the bottom-right corner is also colour-coded to correspond with the layer’s filter.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="assets/data-discover-layers.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Data Discover Layers"><img src="assets/data-discover-layers.png" class="img-fluid figure-img" alt="Data Discover Layers"></a></p>
 <figcaption>Data Discover Layers</figcaption>
 </figure>
 </div>
-<p>Explore data in depth with up to five customizable layers. Create a new layer by clicking on the <img src="assets/data-discover-plus-layer.png" height="30"> icon. The colours for the points correspond to the layer in the filter panel. By hovering over the layer number, you can duplicate an existing layer <img src="assets/data-discover-duplicate-layer.png" height="30"> to preserve its results and further refine your exploration, use the garbage can icon <img src="assets/data-discover-delete-layer.png" height="30"> to delete the current layer, and the <img src="assets/data-discover-layer-visibility.png" height="30"> to control the visibility of the layer on the map. Each summary insight in the bottom-right corner is also colour-coded to correspond with the layer’s filter.</p>
 </section>
-<section id="summaries-and-insights" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="summaries-and-insights"><span class="header-section-number">3.3</span> Summaries and insights</h2>
+<section id="searching-an-area-of-interest" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="searching-an-area-of-interest"><span class="header-section-number">3.3</span> Searching an area of interest</h2>
+<p>Refine your selection to an area of interest using the polygon tool in the top-right corner <img src="assets/data-discover-polygon-tool.png" height="30">. One polygon per layer is supported. To draw a polygon, click the tool, then click on the map to define points, completing the shape by clicking back to the original point. To remove a polygon, select it on the map and click the Garbage can icon.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="assets/data-discover-summaries.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Summary window"><img src="assets/data-discover-summaries.png" class="img-fluid figure-img" alt="Summary window"></a></p>
+<p><a href="assets/data-discover-polygon.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Data Discover Polygon Tool"><img src="assets/data-discover-polygon.png" class="img-fluid figure-img" alt="Data Discover Polygon Tool"></a></p>
+<figcaption>Data Discover Polygon Tool</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="assets/data-discover-two-polygons.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Data Discover one polygon per layer"><img src="assets/data-discover-two-polygons.png" class="img-fluid figure-img" alt="Data Discover one polygon per layer"></a></p>
+<figcaption>Data Discover one polygon per layer</figcaption>
+</figure>
+</div>
+</section>
+<section id="summaries-and-insights" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="summaries-and-insights"><span class="header-section-number">3.4</span> Summaries and insights</h2>
+<p>Click the <strong>Layer Summary</strong> icon in the bottom-right corner to view a visual representation of the organizations, projects, species, and tag counts in your layer. This action opens the Summary Window, where you can explore detailed insights. Within the Summary Window, the Summary tab provides an overview, while the Media tab offers media-specific details.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="assets/data-discover-summaries.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Summary window"><img src="assets/data-discover-summaries.png" class="img-fluid figure-img" alt="Summary window"></a></p>
 <figcaption>Summary window</figcaption>
 </figure>
 </div>
-<p>Summary Statistics offer a visual representation of the organizations, projects, species, and tag counts in your layer. Access the entire layer’s summary by clicking the Layer Summary icon in the bottom right corner. This will also bring up the Summary Window. Within the Summary Window, insights are available in the Summary and Media tabs:</p>
 <ul>
 <li><strong>Summary Tab</strong>: View pie charts detailing the number of organizations, projects, and species for your selected area. Scroll down for bar charts representing tag counts across months and hours.</li>
 <li><strong>Media Tab</strong>: Tiles correspond to species tags. Play audio clips or view images. Observe the minimum and maximum frequency of an audio clip in its ARU spectogram. Note that point counts do not include any media.</li>
 </ul>
-<p><a href="assets/media-tab.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="assets/media-tab.png" class="img-fluid"></a></p>
-</section>
-<section id="polygon-tool" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="polygon-tool"><span class="header-section-number">3.4</span> Polygon Tool</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="assets/data-discover-polygon.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Data Discover Polygon Tool"><img src="assets/data-discover-polygon.png" class="img-fluid figure-img" alt="Data Discover Polygon Tool"></a></p>
-<figcaption>Data Discover Polygon Tool</figcaption>
-</figure>
-</div>
-<p>Refine your selection to an area of interest using the polygon tool in the top-right corner <img src="assets/data-discover-polygon-tool.png" height="30">. One polygon per layer is supported. To draw a polygon, click the tool, then click on the map to define points, completing the shape by clicking back to the original point. To remove a polygon, select it on the map and click the Garbage can icon.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="assets/data-discover-two-polygons.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Data Discover one polygon per layer"><img src="assets/data-discover-two-polygons.png" class="img-fluid figure-img" alt="Data Discover one polygon per layer"></a></p>
-<figcaption>Data Discover one polygon per layer</figcaption>
-</figure>
-</div>
+<p><a href="assets/media-tab.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="assets/media-tab.png" class="img-fluid"></a></p>
 <hr>
 </section>
 </section>
@@ -639,25 +641,31 @@ Tip
 <p>Fill in the fields in the form and click Save. A WildTrax administrator will need to confirm your identity before approving your new Organization request. If you’re having any technical difficulties creating an Organization contact WildTrax Support at support@widltrax.ca.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-4ac4fefa98b131f1b1c0" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-4ac4fefa98b131f1b1c0">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11"],["Organization acronym","Organization full name","Institution / company / group","Storage location","Default location buffering","Default buffer radius (m)","Allow location reports","Default visit image access","Human blurring","Organization description","Default settings"],["A short-hand name for your organization (e.g., ABMI).","The full name of the organization.","The institution the organization is part of, such as a university or government branch.","Where the data will be stored.","The organization’s default for whether the coordinates entered are exact ('True Locations') or randomly offset ('Buffered Locations') by a specified radius.","The organization’s default location buffer radius (in metres). The radius of the buffer around the location within which the coordinates are randomized (0 if not hidden).","Enables location summary reports when turned on.","Default privacy setting for visit photos uploaded to the organization.","An organization-wide setting for human blurring in images. Options include 'Blur for anonymous users,' 'Blur for everyone,' and 'Blur for non-admins.'","A short description of the organization.","Default settings can be applied at the organization level for tasks such as location buffering or visit image access."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Field<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Field","targets":1},{"name":"Description","targets":2}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-feba991f04ddb371d2ff" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-feba991f04ddb371d2ff">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11"],["Organization acronym","Organization full name","Institution / company / group","Storage location","Default location buffering","Default buffer radius (m)","Allow location reports","Default visit image access","Human blurring","Organization description","Default settings"],["A short-hand name for your organization (e.g., ABMI).","The full name of the organization.","The institution the organization is part of, such as a university or government branch.","Where the data will be stored.","The organization’s default for whether the coordinates entered are exact ('True Locations') or randomly offset ('Buffered Locations') by a specified radius.","The organization’s default location buffer radius (in metres). The radius of the buffer around the location within which the coordinates are randomized (0 if not hidden).","Enables location summary reports when turned on.","Default privacy setting for visit photos uploaded to the organization.","An organization-wide setting for human blurring in images. Options include 'Blur for anonymous users,' 'Blur for everyone,' and 'Blur for non-admins.'","A short description of the organization.","Default settings can be applied at the organization level for tasks such as location buffering or visit image access."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Field<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Field","targets":1},{"name":"Description","targets":2}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="media-storage" class="level3" data-number="4.1.1">
 <h3 data-number="4.1.1" class="anchored" data-anchor-id="media-storage"><span class="header-section-number">4.1.1</span> Media storage</h3>
-<p>WildTrax offers an enhanced server infrastructure designed to support the platform’s growing user base and evolving data management needs. Each Organization must select the storage location where they need to store their media. This allows you to quickly access an image or recording at a moment’s need.</p>
+<p>WildTrax offers multiple choices for data storage designed to support the platform’s growing user base and evolving data management needs. Each Organization must select the storage location where they need to store their media. This allows you to quickly access an image or recording at a moment’s need. The current options as of June 06, 2025 currently include:</p>
 <ul>
-<li><strong>WildTrax Live Servers</strong>: Hosted at the University of Alberta in Edmonton, Alberta, Canada. These servers provide a cost-effective and sustainable solution with live and off-site backups using <a href="https://aws.amazon.com/s3/storage-classes/glacier/">Amazon Deep Glacier</a>, ensuring secure and reliable data storage for Canadian and international organizations.</li>
-<li><a href="https://aws.amazon.com/"><strong>Amazon Web Services (AWS)</strong></a>: Retained as an option for users requiring cloud-based storage with global accessibility and high-performance capabilities with international storage base options. Current locations include <strong>Oregon</strong> and <strong>Montreal</strong>.</li>
+<li><strong>WildTrax Live Servers</strong>: Hosted at the University of Alberta in Edmonton, Alberta, Canada. These servers provide a cost-effective and sustainable solution with live and off-site backups using <a href="https://aws.amazon.com/s3/storage-classes/glacier/">Amazon Deep Glacier</a>, ensuring secure and reliable data storage for Canadian and international organizations.
+<ul>
+<li><mark>Free Storage Tier: 250 GB, Annual Cost: $ 75.00 CAD / TB</mark></li>
+</ul></li>
+<li><a href="https://aws.amazon.com/"><strong>Amazon Web Services (AWS)</strong></a>: Retained as an option for users requiring cloud-based storage with global accessibility and high-performance capabilities with international storage base options. Current locations include <strong>Oregon</strong> and <strong>Montreal</strong>.
+<ul>
+<li><mark>Free Storage Tier: 50 GB, Annual Cost: $ 360.00 CAD / TB</mark></li>
+</ul></li>
 </ul>
 <p>The selection of a default storage location now balances data sovereignty, cost efficiency, and upload/download performance based on geographic proximity. For detailed guidance, refer to WildTrax’s <a href="https://wildtrax.ca/about/policies/">Terms and Conditions of Use and Data Access Policies</a>, or contact info@wildtrax.ca for additional support.</p>
-<div class="callout callout-style-default callout-tip callout-titled" style="background-color: #f4f4f4; padding: 20px;">
+<div class="callout callout-style-default callout-note callout-titled" style="background-color: #f4f4f4; padding: 20px;">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Note
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -670,7 +678,7 @@ Tip
 </section>
 <section id="sec-default-privacy-settings" class="level3" data-number="4.1.2">
 <h3 data-number="4.1.2" class="anchored" data-anchor-id="sec-default-privacy-settings"><span class="header-section-number">4.1.2</span> Default privacy settings</h3>
-<p>Organizations can manage the privacy of locations and images within the system to control what other users can access when data becomes published and more widely available.</p>
+<p>Organizations can manage the privacy of locations and images within the system to control what other users can access when data becomes published and more widely available. Location privacy can also be managed individually; see <a href="#sec-location-settings">Location privacy settings</a> for more information.</p>
 <p><a href="assets/abmi-organization.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="assets/abmi-organization.png" class="img-fluid"></a></p>
 <p>For location privacy, two approaches are available within the <strong>Default Location Buffering</strong> field.</p>
 <ul>
@@ -683,17 +691,19 @@ Tip
 <li><strong>Project-level Access</strong>: members of the project can view the location photos, but non-members cannot even if the project is published</li>
 <li><strong>Publicly Viewable</strong>: if a project is published, non-members can view the location photos within the tasks</li>
 </ul>
-<p>Location privacy can also be managed individually; see <a href="#sec-location-settings">Location privacy settings</a> for more information. <strong>Human Blurring</strong> applies organization-wide settings to blur humans detected in images. The available options include:</p>
+<p><strong>Human Blurring</strong> applies organization-wide settings to blur humans detected in images. The available options include:</p>
 <ul>
-<li><strong>Blur for anonymous users (if applicable)</strong>:</li>
-<li><strong>Blur for non-admins</strong>:</li>
-<li><strong>Blur for everyone</strong>:</li>
+<li><strong>Blur for anonymous users (if applicable)</strong>: images of humans will be blurred for all non-read only/non-admin WildTrax users if project data is visible based on the project status.</li>
+<li><strong>Blur for non-admins</strong>: images of humans will be blurred for all WildTrax users regardless of their organization or project membership.</li>
+<li><strong>Blur for everyone</strong>: images of humans will be blurred for all read-only WildTrax users.</li>
 </ul>
-<p>Choose the option that best aligns with your needs and data privacy policies. For example, if you opt out of Human Blurring, you acknowledge that uploaded images—and those potentially shared publicly—may include humans, accepting the associated risks. While this choice cannot currently be reversed, adjustments will be supported in the near future.</p>
+<p>Choose the option that best aligns with your needs and data privacy policies. For example, if you opt out of Human Blurring, you acknowledge that uploaded images—and those potentially shared publicly—may include humans, accepting the associated risks.</p>
+<p><a href="assets/human-blurring.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="assets/human-blurring.png" class="img-fluid"></a></p>
 </section>
 <section id="sec-organization-membership" class="level3" data-number="4.1.3">
 <h3 data-number="4.1.3" class="anchored" data-anchor-id="sec-organization-membership"><span class="header-section-number">4.1.3</span> Organization membership</h3>
 <p>After your organization is approved, the <img src="assets/users-menu.png" height="40"> option will appear in the context menu. This will allow you to search for and add any WildTrax user to your organization either as an administrator or read-only member.</p>
+<p><img src="assets/assign-org-users.png" class="img-fluid"></p>
 <p><strong>Organization administrators</strong> collaboratively manage the media and metadata of the organization and have the ability to:</p>
 <ul>
 <li>Enjoy administrator privileges by default on all projects belonging to the Organization</li>
@@ -709,26 +719,62 @@ Tip
 <li>The organization dashboard lists all organizations in WildTrax. The View Only My Organizations toggle in the top-right filters the list to only organizations you’re a part of.</li>
 </ul>
 <p>If the organization is greyed out, you are not a member of that organization. Click the drop-down arrow beside the organization name and then click <img src="assets/request-access-button.png" height="40"> and fill in the Request Access form to request membership. Administrators of the organization will receive a notification and will either approve or deny your membership request.</p>
-<p><a href="assets/request-access.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="assets/request-access.png" class="img-fluid"></a></p>
+<p><a href="assets/request-access.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="assets/request-access.png" class="img-fluid"></a></p>
 <p>Once the organization has been approved, The <strong>principal investigators</strong> of the organization are users who respond to access requests related to the organization or its projects. Without a principal or secondary investigator, all organization and project access requests will default to organization then project administrators, in order. Once you create an Organization, you can add yourself as one of the principal investigators or <a href="#sec-organization-membership">add more users</a> to your Organization and then assign them those privileges.</p>
-<p><a href="assets/principal-investigators.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="assets/principal-investigators.png" class="img-fluid"></a></p>
+<p><a href="assets/principal-investigators.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="assets/principal-investigators.png" class="img-fluid"></a></p>
+</section>
+<section id="starting-a-project" class="level3" data-number="4.1.4">
+<h3 data-number="4.1.4" class="anchored" data-anchor-id="starting-a-project"><span class="header-section-number">4.1.4</span> Starting a project</h3>
+<div class="callout-question" data-collapse="true" style="background-color: #f9f9f9; border-left: 5px solid #dc3545; padding: 15px; margin: 15px 0; color: #343a40;">
+<p><em>What Should I Do Next?</em></p>
+<ul>
+<li><strong>Define Your Questions</strong><br>
+What research questions or objectives do you want this project to address? Clarity here will guide your data setup and analysis.<br>
+</li>
+<li><strong>Determine Your Upload Strategy</strong><br>
+Are you uploading acoustic recordings at the project level or at the organization level? Choose the approach that aligns with your workflow.<br>
+</li>
+<li><strong>Set Membership Privileges</strong><br>
+What access levels (e.g., read-only, admin) are required for project participants? Assign roles accordingly.<br>
+</li>
+<li><strong>Establish Location Privacy</strong><br>
+Do you need public, restricted, or private location settings? Consider the privacy needs of your data.</li>
+</ul>
+<p><em>For more guidance, refer to <a href="#sec-permissions">Accounts, membership and permissions</a>.</em></p>
+</div>
 </section>
 </section>
 <section id="sec-locations" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="sec-locations"><span class="header-section-number">4.2</span> Locations</h2>
-<p><a href="assets/locations-tab.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="assets/locations-tab.png" class="img-fluid"></a></p>
+<p><a href="assets/locations-tab.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="assets/locations-tab.png" class="img-fluid"></a></p>
 <p><strong>Locations</strong> refer to the physical, geographic places at which environmental sensors were deployed and/or biological data was collected on the landscape. They are one of the most important components in WildTrax as media and metadata are linked by the location.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>All locations are stored exclusively as latitude and longitude coordinates in the <a href="https://epsg.io/4326">WGS84</a> format.</p>
+</div>
+</div>
+</div>
 <section id="create-locations" class="level3" data-number="4.2.1">
 <h3 data-number="4.2.1" class="anchored" data-anchor-id="create-locations"><span class="header-section-number">4.2.1</span> Create locations</h3>
 <p>Click the Locations tab in your organization dashboard. Clicking ”Create Location” will open the location form, where you can add the spatial metadata to the location or configure the location’s settings. You only need to enter the location name, latitude and longitude in order to create a location. When you’ve filled in the form click Save. The map tab will appear allowing you to visualize the point on the landscape. The location will also be visible on maps across WildTrax.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-89b77c8d3d9769bbe390" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-89b77c8d3d9769bbe390">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Location","Latitude","Longitude","Elevation (m)","Location visibility","Location buffering","Buffer radius (m)","Location description"],["Name of the location.","Latitude in decimal degrees (max 10 digits)","Longitude in decimal degrees (max 10 digits)","Elevation above sea level (metres)","'Visible,' 'Hidden – Location,' or 'Hidden – Location+Data'","True or Buffered Location","Buffer radius (metres) for randomized coordinates (0 if not hidden)","Brief description; more details in visit metadata"],["LOCATION-ABC","54.11910100","-118.1728210","500","Visible","True Location","0","Creek nearby, off game trail"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Field<\/th>\n      <th>Description<\/th>\n      <th>Example<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Field","targets":1},{"name":"Description","targets":2},{"name":"Example","targets":3}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-f1590c1fb8d0a91d2cc3" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-f1590c1fb8d0a91d2cc3">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Location","Latitude","Longitude","Elevation (m)","Location visibility","Location buffering","Buffer radius (m)","Location description"],["Name of the location.","Latitude in decimal degrees (max 10 digits)","Longitude in decimal degrees (max 10 digits)","Elevation above sea level (metres)","'Visible,' 'Hidden – Location,' or 'Hidden – Location+Data'","True or Buffered Location","Buffer radius (metres) for randomized coordinates (0 if not hidden)","Brief description; more details in visit metadata"],["LOCATION-ABC","54.11910100","-118.1728210","500","Visible","True Location","0","Creek nearby, off game trail"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Field<\/th>\n      <th>Description<\/th>\n      <th>Example<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Field","targets":1},{"name":"Description","targets":2},{"name":"Example","targets":3}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" style="background-color: #f4f4f4; padding: 20px;">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -737,7 +783,7 @@ Tip
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Did you know locations are created in the organization when media are <a href="#sec-upload-recordings-tasks">uploaded via a project</a>? If a location name already exists in the organization, WildTrax will append the media to it, and if it is a new location WildTrax will prompt you during the upload process if you want to add spatial coordinates to these new locations.</p>
 <p><img src="assets/aru-upload-coordinates.png" class="img-fluid"></p>
@@ -762,30 +808,84 @@ Tip
 </ul>
 <p>The link to the <a href="#sec-location-reports"><strong>location reports</strong></a> is also available at the bottom of the form.</p>
 </section>
-<section id="sync-locations" class="level3" data-number="4.2.3">
-<h3 data-number="4.2.3" class="anchored" data-anchor-id="sync-locations"><span class="header-section-number">4.2.3</span> Sync locations</h3>
-<p>WildTrax also allows you to batch upload and download locations and location metadata by clicking the Manage button. This allows you to manage and edit location information more flexibly outside of WildTrax and then sync it back with your modifications. You need to be an organization administrator in order to upload data, however, as a read-only member, you can download data.</p>
-<p>To sync locations:</p>
+<section id="sec-location-sync" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="sec-location-sync"><span class="header-section-number">4.2.3</span> Sync Locations</h3>
+<p>WildTrax provides the flexibility to sync location data in batch by uploading and downloading location information and metadata. This feature allows you to manage and edit location data outside of WildTrax and sync it back with your modifications. To upload data, you need organization administrator privileges, but read-only members can still download data. To sync locations, first go to the menu <img src="assets/dropdown-arrow.png" height="20"> and select <img src="assets/locations-sync-menu.png" height="30">:</p>
 <ul>
-<li>Click the Download Location CSV button under “Manage” to get the current list of all locations and metadata in your organization. If you don’t have any metadata yet, a template CSV will be provided.</li>
-<li>Conduct the edits or changes to your CSV. You can modify entries that were downloaded, or -Click on Upload Location CSV This will take you to the Upload CSV form; choose your local CSV file and click Preview Changes – this will allow you to preview the changes you’ll be making to your location data. If there are no differences, a prompt indicating ”No changes detected in this file” will appear To accept the modifications, scroll down and click Apply Changes. All batch upload processes to WildTrax work on add and update only. You cannot delete anything in batch, even if you are an administrator and accidentally uploaded an empty csv, for example.</li>
+<li><strong>Download Location Data</strong>: Click the <img src="assets/download-sync-menu.png" height="30"> to download the current list of all locations and metadata in your organization. If no metadata exists, a template CSV will be provided will column headers (see <a href="#tbl-location-sync" class="quarto-xref">Table&nbsp;1</a>).</li>
+<li><strong>Edit the CSV File</strong>: Open the downloaded CSV file and make any necessary changes or edits. You can modify existing entries or add new ones. Do not modify the fields beginning with <em>internal_</em> as they are for WildTrax use only.</li>
+<li><strong>Upload the Edited CSV</strong>: Click the <img src="assets/upload-sync-menu.png" height="30"> button to upload your edited CSV. This will take you to the <strong>Upload CSV</strong> form. Select your local CSV file and click <strong>Preview Changes</strong> to review the updates.</li>
 </ul>
+<p>Batch upload processes in WildTrax support <strong>add</strong> and <strong>update</strong> operations only; deletions are not allowed. For example, if you accidentally upload an empty CSV, no existing data will be deleted.</p>
+<div class="cell">
+<div id="tbl-location-sync" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-location-sync-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1
+</figcaption>
+<div aria-describedby="tbl-location-sync-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-4e5ce10bfa5de9feb928" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-4e5ce10bfa5de9feb928">{"x":{"filter":"none","vertical":false,"caption":"<caption style=\"caption-side: top; text-align: center;\">Location Sync Field Descriptions<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10"],["location","location_latitude","location_longitude","elevation","location_buffer_m","location_visibility","location_true_coordinates","comments","internal_wildtrax_id","internal_update_ts"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Value<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"dom":"t","autoWidth":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"value","targets":1}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</figure>
+</div>
+</div>
 </section>
 <section id="merge-locations" class="level3" data-number="4.2.4">
-<h3 data-number="4.2.4" class="anchored" data-anchor-id="merge-locations"><span class="header-section-number">4.2.4</span> Merge locations</h3>
-<p>WildTrax allows you to merge multiple locations together. You may want to merge locations if the location has been visited multiple times but was named something different on each visit or if the locations are at the same place on the landscape.</p>
-<p>To merge locations:</p>
+<h3 data-number="4.2.4" class="anchored" data-anchor-id="merge-locations"><span class="header-section-number">4.2.4</span> Merge Locations</h3>
+<p>WildTrax allows you to merge multiple locations into one. This feature is particularly useful if a location has been visited multiple times but was assigned different names for each visit or if the locations represent the same physical place on the landscape. To merge locations:</p>
 <ul>
-<li>Select a location and click the drop-down arrow Click ”Merge Location” The location merge form will appear; ensure you are selecting the correct source location (location you want to change) and target location (location you are merging to) which you can choose from the dropdown list. The media will merge together but only the metadata from the target location is preserved. Click Merge; you should now see data for only the target location chosen in the previous step.</li>
+<li>Select the <em>source</em> location (the location you want to modify) and click the <img src="assets/dropdown-arrow.png" height="20">, or right-click the location row and select <img src="assets/merge-menu.png" height="30">.</li>
+<li>The location merge form will appear. From the dropdown list, select the <em>target</em> location (the location to merge into).</li>
+<li>Confirm your selection: the media from both locations will be combined, but only the metadata from the target location will be preserved.</li>
+<li>Click <img src="assets/merge-button.png" height="30"> to complete the process. After merging, all data will be consolidated under the target location.</li>
 </ul>
-<p>Only locations that have the same spatial coordinates can be merged. If a source or target location is missing spatial coordinates, WildTrax uses the existing entry during the merge. The merged location will also not generate spatial coordinates if a source and target location both did not contain any.</p>
+<p><a href="assets/merge-location-form.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="assets/merge-location-form.png" class="img-fluid"></a></p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Merging locations is an irreversible process. Double-check your selections before proceeding.</p>
+<p>Merging locations is also only possible when one or both locations lack spatial coordinates (latitude and longitude). If only one location has coordinates, those will be retained during the merge. However, merging is not allowed if both locations contain different spatial coordinates.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="delete-locations" class="level3" data-number="4.2.5">
-<h3 data-number="4.2.5" class="anchored" data-anchor-id="delete-locations"><span class="header-section-number">4.2.5</span> Delete locations</h3>
-<p>You can delete locations using the Delete Location button located using the drop-down arrow beside any location name. If any data (i.e., visits, media or tags) require a location to be supported, you will not be able to delete the location until these other data are removed first (button will appear grey). The sections on projects and the three sensor types (ARU, camera, point count) discuss how to do this more in depth. Given that locations support all cascading data beneath them, WildTrax has implemented these security measures to ensure that it is difficult to lose data.</p>
+<h3 data-number="4.2.5" class="anchored" data-anchor-id="delete-locations"><span class="header-section-number">4.2.5</span> Delete Locations</h3>
+<p>You can delete locations using the <img src="assets/delete-menu.png" height="30"> option, accessible via the <img src="assets/dropdown-arrow.png" height="20"> next to any location name. However, if any data—such as visits, media, or tags—are associated with a location, deletion will not be allowed until those dependencies are removed (the delete button will appear greyed out). Detailed instructions for managing these dependencies can be found in the sections on projects and sensor types (ARU, camera, point count). Since locations serve as the foundation for all associated data, WildTrax has implemented safeguards to prevent accidental data loss, ensuring secure and reliable management of cascading data.</p>
+<p><a href="assets/delete-location-form.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="assets/delete-location-form.png" class="img-fluid"></a></p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Note that deleting locations is an irreversible process.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="mapping-locations" class="level3" data-number="4.2.6">
 <h3 data-number="4.2.6" class="anchored" data-anchor-id="mapping-locations"><span class="header-section-number">4.2.6</span> Mapping locations</h3>
+<p>For each individual locations, or a group of selected locations using the <img src="assets/manage.png" height="30"> feature, you can visualize the locations on a map within <a href="#sec-data-discover">Data Discover</a>, further gaining insights. Click the <img src="assets/dropdown-arrow.png" height="20"> or right-click the location and select <img src="assets/map-menu.png" height="30">. A new tab will also visualizing the location in Data Discover.</p>
+<p><img src="assets/mapping-location.png" class="img-fluid"></p>
 </section>
 <section id="sec-location-reports" class="level3" data-number="4.2.7">
 <h3 data-number="4.2.7" class="anchored" data-anchor-id="sec-location-reports"><span class="header-section-number">4.2.7</span> Location reports</h3>
@@ -795,12 +895,12 @@ Tip
 <section id="sec-location-photos" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="sec-location-photos"><span class="header-section-number">4.3</span> Location Photos</h2>
 <p><strong>Location photos</strong> are photos taken as a means to record the landscape around where a sensor was deployed. WildTrax has the ability to upload, store and manage location photos and attribute basic metadata for them. You can also filter and sort through your photos within the location photos tab.</p>
-<p><a href="assets/location-photos.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="assets/location-photos.png" class="img-fluid"></a></p>
+<p><a href="assets/location-photos.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="assets/location-photos.png" class="img-fluid"></a></p>
 <section id="uploading-location-photos" class="level3" data-number="4.3.1">
 <h3 data-number="4.3.1" class="anchored" data-anchor-id="uploading-location-photos"><span class="header-section-number">4.3.1</span> Uploading location photos</h3>
 <p>Organize your location photos by ensuring each folder on your computer is named to correspond with the specific location where the photos were taken. During the upload process, the system will automatically search within each folder and assign the images to the matching location based on the folder name. Go to the Location photos tab and click on <img src="assets/upload-location-photos-button.png" height="30">. Each individual location with the files will be in view. When you are ready, click <img src="assets/confirm-and-upload.png" height="30"></p>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -809,10 +909,10 @@ Warning
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>If the location doesn’t exist in the organization yet, you’ll have to add it first otherwise you’ll get a warning during the upload process. Go to the Location tab and click <img src="assets/create-location.png" height="30">.</p>
-<p><a href="assets/location-photo-upload-error.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="assets/location-photo-upload-error.png" class="img-fluid"></a></p>
+<p><a href="assets/location-photo-upload-error.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img src="assets/location-photo-upload-error.png" class="img-fluid"></a></p>
 </div>
 </div>
 </div>
@@ -864,7 +964,7 @@ Warning
 <h2 data-number="4.5" class="anchored" data-anchor-id="sec-equipment"><span class="header-section-number">4.5</span> Equipment</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="assets/equipment-tab.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18" title="Equipment tab"><img src="assets/equipment-tab.png" class="img-fluid figure-img" alt="Equipment tab"></a></p>
+<p><a href="assets/equipment-tab.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21" title="Equipment tab"><img src="assets/equipment-tab.png" class="img-fluid figure-img" alt="Equipment tab"></a></p>
 <figcaption>Equipment tab</figcaption>
 </figure>
 </div>
@@ -885,7 +985,7 @@ Warning
 <h2 data-number="4.6" class="anchored" data-anchor-id="deployments"><span class="header-section-number">4.6</span> Deployments</h2>
 <p><img src="assets/lots-of-aru.png" class="img-fluid"></p>
 <p><strong>Deployments</strong> are equipment with their associated location and visit during deployment and / or retrieval from the field. Once locations and visits are created and equipment inventories added to the <a href="#sec-equipment">Equipment</a> table, users can then take advantage of the Deployments tab to associate the history of what is happening at location or equipment over time.</p>
-<p><a href="assets/deployments.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="assets/deployments.png" class="img-fluid"></a></p>
+<p><a href="assets/deployments.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img src="assets/deployments.png" class="img-fluid"></a></p>
 <section id="add-deployments" class="level3" data-number="4.6.1">
 <h3 data-number="4.6.1" class="anchored" data-anchor-id="add-deployments"><span class="header-section-number">4.6.1</span> Add deployments</h3>
 <p>Go to the Deployments tab in the Organization and</p>
@@ -904,48 +1004,123 @@ Warning
 <h2 data-number="4.7" class="anchored" data-anchor-id="recordings"><span class="header-section-number">4.7</span> Recordings</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="assets/recordings-tab.png" class="img-fluid figure-img"></p>
+<p><a href="assets/recordings-tab.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23" title="Recordings tab"><img src="assets/recordings-tab.png" class="img-fluid figure-img" alt="Recordings tab"></a></p>
 <figcaption>Recordings tab</figcaption>
 </figure>
 </div>
 <section id="upload-recordings" class="level3" data-number="4.7.1">
 <h3 data-number="4.7.1" class="anchored" data-anchor-id="upload-recordings"><span class="header-section-number">4.7.1</span> Upload recordings</h3>
+<p>To upload recordings for processing, navigate to the Recordings tab and then click <img src="assets/upload.png" height="30"> This opens the recording upload window, where you can configure settings before uploading your files.</p>
+<div class="callout callout-style-default callout-tip callout-titled" style="background-color: #f4f4f4; padding: 20px;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For a stable and secure upload process, it’s strongly recommended to use an ethernet connection before proceeding. Large uploads can take a while, so start with smaller batches to gauge your upload time, and then proceed with larger batches.</p>
+</div>
+</div>
+</div>
+<p>WildTrax provides several options to optimize your upload process:</p>
+<ul>
+<li><strong>Including Subdirectories</strong>: Useful if your media is organized hierarchically.</li>
+<li><strong>Removing Leading Zeros</strong>: Standardizes location naming to a generic WildTrax format (optional but recommended).</li>
+<li><strong>Trigger Marking</strong>: Distinguishes triggered recordings from schedule-based ones. See <a href="#sec-setting-up-ultrasonic">Setting up an ultrasonic project</a></li>
+<li><strong>Pre-Scanning</strong>: Displays sample rate and length during the upload process for better oversight.</li>
+</ul>
+<p><a href="assets/upload-recordings.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img src="assets/upload-recordings.png" class="img-fluid"></a></p>
+<p>To begin, click <strong>Choose a Folder to Upload</strong>, select the directory containing your recordings, and let WildTrax scan the files. Once scanning is complete, you can proceed to the next step. In the next step, optionally enter spatial coordinates for new locations or update missing coordinates. This can also be done later using <a href="#sec-location-sync">location sync</a>. Note, if a location doesn’t exist in the organization, WildTrax will create it through the upload process.</p>
+<p><a href="assets/add-coordinates-upload.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img src="assets/add-coordinates-upload.png" class="img-fluid"></a></p>
+<p>Once you’ve reviewed the queue, click <img src="assets/begin-upload.png" height="30"> to start the upload.</p>
+<p><a href="assets/upload-queue.png" class="lightbox" data-gallery="quarto-lightbox-gallery-26"><img src="assets/upload-queue.png" class="img-fluid"></a></p>
+<p>You can follow along the the uploads in the interface. After the uploads are complete, you can download and review the Log to ensure that all files were succesfully uploaded.</p>
+<p><img src="assets/upload-success.png" class="ligthbox img-fluid"></p>
 </section>
 <section id="acoustic-classifiers" class="level3" data-number="4.7.2">
 <h3 data-number="4.7.2" class="anchored" data-anchor-id="acoustic-classifiers"><span class="header-section-number">4.7.2</span> Acoustic classifiers</h3>
+<p>An <strong>acoustic classifier</strong> is a computer algorithm designed to analyze audio recordings and identify the species producing the sounds. These classifiers interpret spectrograms, visual representations of sound frequencies over time, to determine the presence of specific bird species or other acoustic taxa. <a href="https://birdnet.cornell.edu/">BirdNET</a> and <a href="https://www.sciencedirect.com/science/article/pii/S1574954125001311">HawkEars</a> are two examples of such classifiers, trained to process audio recordings and classify the species captured within them. The algorithms behind these classifiers differ, which can result in varying levels of accuracy depending on the species and recording conditions, performing differently in specific situations.</p>
+<p><a href="assets/recordings-with-species.png" class="lightbox" data-gallery="quarto-lightbox-gallery-27"><img src="assets/recordings-with-species.png" class="img-fluid"></a></p>
+<ul>
+<li><strong>BirdNET</strong> <img src="assets/birdnet.png" height="30"> is a worldwide bioacoustic classifier, which has been trained to classify thousands of species</li>
+<li><strong>HawkEars</strong> <img src="assets/hawkears.png" height="30"> is a regional classifier that has been trained to classify hundreds of species, mostly Canadian and northern US species</li>
+</ul>
+<p>BirdNET and HawkEars analyze 3-second <em>windows</em> (i.e.&nbsp;periods of time) of the <a href="#sec-acoustic-data-concepts">spectrograms</a>, providing confidence scores from 0 to 1 for each species in their model. In other words, a score of 0.9 is more likely a hit of an American Robin than a score of 0.2.</p>
+<div class="callout callout-style-default callout-tip callout-titled" style="background-color: #f4f4f4; padding: 20px;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>See <a href="https://link.springer.com/article/10.1007/s10336-024-02144-5">Wood and Kahl</a> for more information on score thresholds.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="filter-recordings" class="level3" data-number="4.7.3">
 <h3 data-number="4.7.3" class="anchored" data-anchor-id="filter-recordings"><span class="header-section-number">4.7.3</span> Filter recordings</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="assets/filter-recordings.png" class="img-fluid figure-img"></p>
+<p><a href="assets/filter-recordings.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28" title="Filter panel"><img src="assets/filter-recordings.png" class="img-fluid figure-img" alt="Filter panel"></a></p>
 <figcaption>Filter panel</figcaption>
 </figure>
 </div>
+<p><a href="assets/filter-recordings-form.png" class="lightbox" data-gallery="quarto-lightbox-gallery-29"><img src="assets/filter-recordings-form.png" class="img-fluid"></a></p>
 </section>
 <section id="generate-tasks" class="level3" data-number="4.7.4">
 <h3 data-number="4.7.4" class="anchored" data-anchor-id="generate-tasks"><span class="header-section-number">4.7.4</span> Generate tasks</h3>
-<p><img src="assets/generate-tasks.png" class="img-fluid"></p>
+<p><a href="assets/generate-tasks.png" class="lightbox" data-gallery="quarto-lightbox-gallery-30"><img src="assets/generate-tasks.png" class="img-fluid"></a></p>
 </section>
 <section id="delete-recordings" class="level3" data-number="4.7.5">
 <h3 data-number="4.7.5" class="anchored" data-anchor-id="delete-recordings"><span class="header-section-number">4.7.5</span> Delete recordings</h3>
-<p><img src="assets/multiselect-options.png" class="img-fluid"></p>
+<p><a href="assets/multiselect-options.png" class="lightbox" data-gallery="quarto-lightbox-gallery-31"><img src="assets/multiselect-options.png" class="img-fluid"></a></p>
 </section>
 </section>
 <section id="image-sets" class="level2" data-number="4.8">
 <h2 data-number="4.8" class="anchored" data-anchor-id="image-sets"><span class="header-section-number">4.8</span> Image sets</h2>
 <p>You can access image set metadata from the image sets tab. Note that this information differs in the project’s image sets tab.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="assets/image-sets-tab.png" class="lightbox" data-gallery="quarto-lightbox-gallery-32" title="Image sets tab"><img src="assets/image-sets-tab.png" class="img-fluid figure-img" alt="Image sets tab"></a></p>
+<figcaption>Image sets tab</figcaption>
+</figure>
+</div>
 <p>Here you will find summaries of the following information:</p>
-<p>Location: the name of the location Image set start date/time: the date and time of the first image collected in the image set (in the format YYYY-MM-DD HH:MM:SS) End date: the date and time of the last image collected in the image set (in the format YYYY-MM-DD HH:MM:SS) Total image count: the total number of images Motion image count: the total number of images where the camera was triggered due to heat or motion (i.e., Trigger mode = “Motion Detection” or “M”) in an image set Task count: the total number of tasks Details drop-down: clicking on the drop-down arrow will show the projects the image set is associated with, the observer who tagged the task, the number of unique species detected, and the series gap used in the project.</p>
-<p><img src="assets/imagesets-tab.png" class="img-fluid" alt="Image sets tab"> ## DOIs</p>
-<p>Within the DOIs tab, users can create DOIs via <a href="https://datacite.org/">DataCite</a> that allows users to create DOIs links for their projects. There are certain restrictions for creating DOIs:</p>
+<ul>
+<li><strong>Location</strong>: the name of the location</li>
+<li><strong>Image set start date/time</strong>: the date and time of the first image collected in the image set (in the format YYYY-MM-DD HH:MM:SS)</li>
+<li><strong>Total image count</strong>: the total number of images Motion image count: the total number of images where the camera was triggered due to heat or motion (i.e., Trigger mode = “Motion Detection” or “M”) in an image set Task count: the total number of tasks Details drop-down: clicking on the drop-down arrow will show the projects the image set is associated with, the observer who tagged the task, the number of unique species detected, and the series gap used in the project.</li>
+</ul>
+</section>
+<section id="dois" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="dois"><span class="header-section-number">4.9</span> DOIs</h2>
+<p><mark>Within the DOIs tab, users can create DOIs via <a href="https://datacite.org/">DataCite</a> that allows users to create DOIs links for their projects. There are certain restrictions and conditions for creating and using DOIs:</mark></p>
 <ul>
 <li>You must at least an Organization administrator to create DOIs for the underlying projects</li>
 <li>DOIs can only be created for projects belonging to the Organization</li>
+<li>When a project is deleted or merged, the DOI …</li>
 </ul>
-<section id="creating-a-doi" class="level3" data-number="4.8.1">
-<h3 data-number="4.8.1" class="anchored" data-anchor-id="creating-a-doi"><span class="header-section-number">4.8.1</span> Creating a DOI</h3>
-<p>Click on the DOIs tab in the Organization. Go to</p>
+<p><a href="assets/dois-tab.png" class="lightbox" data-gallery="quarto-lightbox-gallery-33"><img src="assets/dois-tab.png" class="img-fluid"></a></p>
+<section id="creating-a-doi" class="level3" data-number="4.9.1">
+<h3 data-number="4.9.1" class="anchored" data-anchor-id="creating-a-doi"><span class="header-section-number">4.9.1</span> Creating a DOI</h3>
+<p>Click on the DOIs tab in the Organization and then click <img src="assets/create-doi-button.png" height="30">. The form will then appear allowing you to give a <strong>Title</strong> and select which <strong>Projects</strong> will belong to the DOI.</p>
+<p><a href="assets/create-doi.png" class="lightbox" data-gallery="quarto-lightbox-gallery-34"><img src="assets/create-doi.png" class="img-fluid"></a></p>
+</section>
+<section id="deleting-a-doi" class="level3" data-number="4.9.2">
+<h3 data-number="4.9.2" class="anchored" data-anchor-id="deleting-a-doi"><span class="header-section-number">4.9.2</span> Deleting a DOI</h3>
+<p>For any DOI in the menu, right-click or select through the <img src="assets/dropdown-arrow.png" height="30"> the <img src="assets/delete-doi.png" class="img-fluid"> option. You can also delete multiple DOIs by selecting multiple DOIs and going to <img src="assets/manage.png" height="30">. You’ll be prompted to go through the process of confirming the deletion prior to it taking place.</p>
+<p><a href="assets/delete-dois-form.png" class="lightbox" data-gallery="quarto-lightbox-gallery-35"><img src="assets/delete-dois-form.png" class="img-fluid"></a></p>
 </section>
 </section>
 </section>
@@ -953,9 +1128,9 @@ Warning
 <h1 data-number="5"><span class="header-section-number">5</span> ARU Projects 🎧</h1>
 <p><strong>Projects</strong> are purposeful groupings of an organization‘s media and metadata to answer specific questions or implement a study design. Projects can be one of three sensors: ARUs, cameras or point counts. For each of these sensor types, a collection of tasks (ARU), image sets (camera) or surveys (point counts) are processed or uploaded in order retrieve species data.</p>
 <p>The goal of an ARU project is to upload media, process tasks, verify tags and publish the results. Projects belong to organizations and use organization media on order to generate and report on a certain set of results designed by the project administrators. Clicking on the ARU sensor on the main project dashboard will show which projects you have access to. The list of projects you see is determined by your organization membership, project membership and status of the project. You can use the filter and sort some of the project attributes to find what you’re looking for:</p>
-<p><img src="assets/aru-projects.png" class="img-fluid"></p>
+<p><a href="assets/aru-projects.png" class="lightbox" data-gallery="quarto-lightbox-gallery-36"><img src="assets/aru-projects.png" class="img-fluid"></a></p>
 <div class="callout callout-style-default callout-note callout-titled" style="background-color: #f4f4f4; padding: 20px;">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -964,14 +1139,14 @@ Note
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>This section pertains to managing ARU projects. If you are looking to create or manage <a href="">camera</a> or <a href="">point count data</a>, jump to the appropriate sections.</p>
 </div>
 </div>
 </div>
-<section id="acoustic-data-concepts" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="acoustic-data-concepts"><span class="header-section-number">5.1</span> Acoustic data concepts</h2>
+<section id="sec-acoustic-data-concepts" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="sec-acoustic-data-concepts"><span class="header-section-number">5.1</span> Acoustic data concepts</h2>
 <p>Acoustic recordings are made by sampling sound pressure waves from the environment. Sampling rate (the number of samples taken per second) and bit depth (degree of quantization of pressure measurements) are two important values to consider when making sound recordings. Waveforms or the shape of the total acoustic signal over time are difficult to interpret.</p>
 <p>These waveforms can be transformed into spectrograms. This is done using algorithms called Fourier transformations to make acoustic data more intelligible to a human or other software. These spectrograms contain patterns that a human can more easily use to recognize an acoustic signal and convert into biological data, such as animal vocalizations.</p>
 <p>Animals use acoustic signals to communicate messages for mate attraction, territorial defense, identification, or alarm. Acoustic signals are important metrics that biologists and scientists can use to study animal populations, community assemblages, or individual fitness. Collecting sound signals also provides a permanent, unbiased, analyzable, and reproducible dataset for researchers in contrast to point count data.</p>
@@ -992,12 +1167,28 @@ Note
 <section id="sec-upload-recordings-tasks" class="level3" data-number="5.2.4">
 <h3 data-number="5.2.4" class="anchored" data-anchor-id="sec-upload-recordings-tasks"><span class="header-section-number">5.2.4</span> Uploading recordings and creating tasks</h3>
 <p>In order to process data, a task must be generated and assigned in WildTrax. A task is a unique combination of an acoustic recording, a processing method, and an observer. The observer needs to be at least a read-only project member and assigned the recording in order to process it. WildTrax has the ability to process acoustic recordings with multiple methods and users, however, please contact WildTrax Support to provide this service.</p>
+<p>To upload recordings for processing, navigate to the Recordings tab and then click <img src="assets/upload.png" height="30"> This opens the recording upload window, where you can configure settings before uploading your files.</p>
+<p>WildTrax provides several options to optimize your upload process:</p>
+<ul>
+<li><strong>Including Subdirectories</strong>: Useful if your media is organized hierarchically.</li>
+<li><strong>Removing Leading Zeros</strong>: Standardizes location naming to a generic WildTrax format (optional but recommended).</li>
+<li><strong>Automatic Task Generation</strong>: Recordings uploaded through a project automatically generate tasks, enabling spectrogram creation and dashboard integration.</li>
+<li><strong>Trigger Marking</strong>: Distinguishes triggered recordings from schedule-based ones.</li>
+<li><strong>Pre-Scanning</strong>: Displays sample rate and length during the upload process for better oversight.</li>
+</ul>
+<p>To begin, click <strong>Choose a Folder to Upload</strong>, select the directory containing your recordings, and let WildTrax scan the files. Once scanning is complete, you can proceed to the next step.</p>
+<p>In the next step, optionally enter spatial coordinates for new locations or update missing coordinates. This can also be done later using the Upload and Download Location tool. Key points to note:</p>
+<ul>
+<li>If a location doesn’t exist in the organization, WildTrax will create it.</li>
+<li>Recordings shorter than the specified method length by more than 3 seconds will trigger an error (e.g., a 56-second recording for a 60-second method).</li>
+</ul>
+<p>Once you’ve reviewed the form, click <strong>Upload Files in Queue</strong> to start the upload. For a stable and secure upload process, it’s strongly recommended to use an ethernet connection.</p>
 </section>
 <section id="syncing-data-to-aru-projects" class="level3" data-number="5.2.5">
 <h3 data-number="5.2.5" class="anchored" data-anchor-id="syncing-data-to-aru-projects"><span class="header-section-number">5.2.5</span> Syncing data to ARU projects</h3>
 <p>You can sync locations, tasks and tags via an ARU project. This allows you to make changes across many locations, tasks or tags as needed throughout the processing workflow. You may need to use sync to make large changes to location names or visibility settings, edit who is assigned tasks, or change metadata related to species tags. The logic of sync lies in downloading the data from a project (or a template with column headers if there is no data in the project yet).</p>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1006,21 +1197,21 @@ Warning
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>You may be running a classifier outside of WildTrax on your raw media, wishing to sync the classifier hits as tags within a project. Note that some classifiers use windows of data, and syncing these as tags should be proceed with caution. Your best bet when syncing classifier hits is simply to note the start_time of the t</p>
 </div>
 </div>
 </div>
 </section>
-<section id="setting-up-an-ultrasonic-project" class="level3" data-number="5.2.6">
-<h3 data-number="5.2.6" class="anchored" data-anchor-id="setting-up-an-ultrasonic-project"><span class="header-section-number">5.2.6</span> Setting up an ultrasonic project 🦇</h3>
+<section id="sec-setting-up-ultrasonic" class="level3" data-number="5.2.6">
+<h3 data-number="5.2.6" class="anchored" data-anchor-id="sec-setting-up-ultrasonic"><span class="header-section-number">5.2.6</span> Setting up an ultrasonic project 🦇</h3>
 <p>There are some specific steps needed in order to setup a project appropriate for ultrasonic data. Note that the majority of WildTrax’s</p>
 <section id="uploading-recordings" class="level4" data-number="5.2.6.1">
 <h4 data-number="5.2.6.1" class="anchored" data-anchor-id="uploading-recordings"><span class="header-section-number">5.2.6.1</span> Uploading recordings</h4>
 <p>Under the My Projects tab you can find your project and manage it to upload recordings.</p>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1029,7 +1220,7 @@ Warning
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Currently WildTrax does not accept zero-cross files then you will need to upload them as other files into your project.</p>
 </div>
@@ -1060,7 +1251,7 @@ Warning
 <h3 data-number="5.3.1" class="anchored" data-anchor-id="recommended-equipment-1"><span class="header-section-number">5.3.1</span> Recommended equipment</h3>
 <p>Recommended equipment The following equipment is recommended for processing acoustic data. Proper equipment will enhance your experience and data quality using WildTrax.</p>
 <p>Computer with stable, high-speed internet connection and a minimum screen size of 15” Headphones with the following specifications: Stereo Circumaural (fully enclosing the ear) Minimum frequency response: 20 – 20000 Hz No bass boost (flat frequency response) Contact WildTrax Info regarding headphone specifications if you are unsure if your headphones meet specifications.</p>
-<p><img src="assets/aru-processing.png" class="img-fluid"></p>
+<p><a href="assets/aru-processing.png" class="lightbox" data-gallery="quarto-lightbox-gallery-37"><img src="assets/aru-processing.png" class="img-fluid"></a></p>
 </section>
 <section id="spectrogram-controls-and-audio-settings" class="level3" data-number="5.3.2">
 <h3 data-number="5.3.2" class="anchored" data-anchor-id="spectrogram-controls-and-audio-settings"><span class="header-section-number">5.3.2</span> Spectrogram controls and audio settings</h3>
@@ -1097,7 +1288,7 @@ Warning
 </section>
 <section id="sec-camera-projects" class="level1" data-number="6">
 <h1 data-number="6"><span class="header-section-number">6</span> Camera Projects 📸</h1>
-<p><img src="assets/camera-projects.png" class="img-fluid"></p>
+<p><a href="assets/camera-projects.png" class="lightbox" data-gallery="quarto-lightbox-gallery-38"><img src="assets/camera-projects.png" class="img-fluid"></a></p>
 <p>The goal of a camera project is to upload image sets (i.e., tasks), process tasks (i.e., tag species and individuals within images), verify tags, and publish the results. The main interface you will interact with when processing image sets is the camera project dashboard. Projects are purposeful groupings of an organization’s media and metadata to answer specific questions or implement a study design.</p>
 <section id="camera-data-concepts" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="camera-data-concepts"><span class="header-section-number">6.1</span> Camera data concepts</h2>
@@ -1105,7 +1296,7 @@ Warning
 </section>
 <section id="camera-project-management" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="camera-project-management"><span class="header-section-number">6.2</span> Camera project management</h2>
-<p><img src="assets/camera-project-page.png" class="img-fluid"></p>
+<p><a href="assets/camera-project-page.png" class="lightbox" data-gallery="quarto-lightbox-gallery-39"><img src="assets/camera-project-page.png" class="img-fluid"></a></p>
 <section id="create-a-camera-project" class="level3" data-number="6.2.1">
 <h3 data-number="6.2.1" class="anchored" data-anchor-id="create-a-camera-project"><span class="header-section-number">6.2.1</span> Create a camera project</h3>
 </section>
@@ -1152,7 +1343,7 @@ Warning
 </section>
 <section id="image-tagging" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="image-tagging"><span class="header-section-number">6.3</span> Image Tagging</h2>
-<p><img src="assets/image-tagging-page.png" class="img-fluid"></p>
+<p><a href="assets/image-tagging-page.png" class="lightbox" data-gallery="quarto-lightbox-gallery-40"><img src="assets/image-tagging-page.png" class="img-fluid"></a></p>
 <section id="tagging-page-controls-and-settings" class="level3" data-number="6.3.1">
 <h3 data-number="6.3.1" class="anchored" data-anchor-id="tagging-page-controls-and-settings"><span class="header-section-number">6.3.1</span> Tagging page controls and settings</h3>
 </section>
@@ -1179,7 +1370,7 @@ Warning
 <section id="sec-point-count-projects" class="level1" data-number="7">
 <h1 data-number="7"><span class="header-section-number">7</span> Point Count Projects 🐦</h1>
 <p><strong>Point counts</strong> are a methodology used to survey animals, mainly birds. It involves an observer standing at a pre-determined location for specific period of time, counting the individuals they detect. Specifically for birds, this detection can either be aurally or visually. To account for error in detecting a species, either because it didn’t sing or wasn’t observed during the survey, or the observer misses or misidentifies it, distance estimation and duration intervals are used. All these attributes are what define a survey in WildTrax. When the observer detects a species, it is assigned into a <strong>distance band</strong>, the <strong>duration interval</strong> it was detected, a species and the abundance (or count of individuals). Each detection then becomes an observation.</p>
-<p><img src="assets/point-count-projects.png" class="img-fluid"></p>
+<p><a href="assets/point-count-projects.png" class="lightbox" data-gallery="quarto-lightbox-gallery-41"><img src="assets/point-count-projects.png" class="img-fluid"></a></p>
 <p>The majority of the point count data available in WildTrax is through a collaboration with the <a href="borealbirds.ca">Boreal Avian Modelling Centre</a> who support the conservation of North America’s boreal birds through high-quality, data-driven and collaborative science and help users harmonize their point count data to a standard that can be used with many other data sets, including ARUs.</p>
 <section id="point-count-project-management" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="point-count-project-management"><span class="header-section-number">7.1</span> Point count project management</h2>
@@ -1202,8 +1393,8 @@ Warning
 </section>
 <section id="viewing-point-count-data" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="viewing-point-count-data"><span class="header-section-number">7.2</span> Viewing point count data</h2>
-<p><img src="assets/point-count-survey-page.png" class="img-fluid"></p>
-<p>The point count survey page outlines the observations and many other attributes of the survey. The header contains information on the duration method, distance method, location name and date and time of the survey. It also contains the weather panel indicating the local weather conditions. You can also use the <img src="assets/pencil.png" height="20"> or <img src="assets/dropdwon.png" height="20"> at any time to access any project level functions. Species are then listed on the left side of the page with their appropriate distance and time intervals bins they were detected in. You also have the location map available on the map from where the survey took place.</p>
+<p><a href="assets/point-count-survey-page.png" class="lightbox" data-gallery="quarto-lightbox-gallery-42"><img src="assets/point-count-survey-page.png" class="img-fluid"></a></p>
+<p>The point count survey page outlines the observations and many other attributes of the survey. The header contains information on the duration method, distance method, location name and date and time of the survey. It also contains the weather panel indicating the local weather conditions. You can also use the <img src="assets/pencil.png" height="20"> or <img src="assets/dropdown-arrow.png" height="20"> at any time to access any project level functions. Species are then listed on the left side of the page with their appropriate distance and time intervals bins they were detected in. You also have the location map available on the map from where the survey took place.</p>
 </section>
 <section id="publishing-a-point-count-project" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="publishing-a-point-count-project"><span class="header-section-number">7.3</span> Publishing a point count project</h2>
@@ -1634,7 +1825,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","loop":false,"descPosition":"bottom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

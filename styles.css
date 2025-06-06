@@ -1,6 +1,32 @@
-<style>
-  .small-grey {
-    font-size: 9px;
-    color: #555555; /* A dark grey color */
-  }
-</style>
+/* Apply max-width and centering to the main content */
+main {
+    max-width: 700px; /* Adjust as needed */
+    margin: 0 auto;   /* Center the content */
+    padding: 20px;    /* Optional padding for better readability */
+}
+
+/* Ensure paragraph alignment and readability */
+p, ul, ol, blockquote {
+    margin: 1em 0; /* Spacing between elements */
+    line-height: 1.6; /* Better line spacing */
+    font-family: 'Arial', sans-serif; /* Default font */
+}
+
+/* Align headings and give them a visual hierarchy */
+h1, h2, h3, h4, h5, h6 {
+    text-align: left; /* Default left alignment */
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Optional: Adjust table styles for consistency */
+table {
+    margin: 1em auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+table th, table td {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    text-align: left;
+}
