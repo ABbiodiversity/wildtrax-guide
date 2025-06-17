@@ -274,7 +274,6 @@ You can change the language in the site at anytime from the top ribbon toggle ![
 **Data Discover** is the central hub for exploring environmental sensor data in WildTrax. Data Discover allows you to see which organizations have published data on WildTrax and which species were detected, and explore media elements such as images and sounds captured in the environment. In Data Discover, you can search for data from ARUs, cameras, and point counts, using a variety of attribute filters, and create summary statistics within a dynamic mapping interface where you can gain a comprehensive understanding of environmental sensor data in an area that interests you.
 
 ::: {.callout-question collapse="true" style="background-color: #f9f9f9; border-left: 5px solid #dc3545; padding: 15px; margin: 15px 0; color: #343a40;"}
-### Once you've found data you're interested in
 After using Data Discover, you may have found an organization or project that you’re interested in – so what’s next? Head over to either the [Organization](#sec-organizations) or [Project](#sec-aru-projects) dashboard to find out more about the data owners or the project or to request access to the data. Once you are granted access by the project administrators, proceed to Data Downloads to acquire the data.
 :::
 
@@ -457,9 +456,7 @@ Once the organization has been approved, The **principal investigators** of the 
 ![](assets/principal-investigators.png){.lightbox}
 
 ::: {.callout-question collapse="true" style="background-color: #f9f9f9; border-left: 5px solid #dc3545; padding: 15px; margin: 15px 0; color: #343a40;"}
-### Getting started with your first organization
-
-**What Should I Do Next?**
+Get started using your first Organization by doing any of the following next:
 
 **Manage Organization Metadata**
 
