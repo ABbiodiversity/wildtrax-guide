@@ -103,8 +103,6 @@ WildTrax is continuously improved based on user needs and stakeholder engagement
 The pronoun “you” throughout this guide refers to the reader. “We” refers to the WildTrax Team in general.
 :::
 
-------------------------------------------------------------------------
-
 ## Creating an account
 
 You can explore WildTrax data for free anytime. While the [Data Discover](https://discover.wildtrax.ca) tool lets you browse and map public data without an account, creating an account unlocks roles and privileges to fully access and use the system. Visit [**wildtrax.ca**](wildtrax.ca) and click on the ![](assets/login.png){height="28px"} button in the top ribbon.
@@ -131,15 +129,17 @@ Your individual user account ensures data security and assigns specific roles wi
 
 ![](assets/locations.png){.lightbox}
 
-- **Projects** are groups of specific media to address research questions or implement study designs. Projects can be one of three sensors: [ARUs](#sec-aru-projects), [cameras](#sec-camera-projects) or [point counts](#sec-point-count-projects).
+- **Projects** are groups of specific media to address research questions or implement study designs. Projects can be one of three sensors: [ARUs](#sec-aru-projects) for acoustic data, [cameras](#sec-camera-projects) or [point counts](#sec-point-count-projects).
 
 ![](assets/projects.png){.lightbox}
 
-- **Tasks** are specific assignments given to users to process media, such as audio recordings or image sets, into biological data. Within each task, species **tags** are applied to extract meaningful information, such as species presence, absence, or counts, which contribute to further metrics.
+- **Tasks** are specific assignments given to users to process media, such as audio recordings or image sets, into biological data. Within each task, species **tags** are applied to extract meaningful information, such as species presence or abundance. Equivalent to tasks in the [point count](#sec-point-count-projects) sensor are **surveys** with species **observations** further contributing to the biological data available.
 
-<div style="display: flex; justify-content: center; gap: 40px;"> <img src="assets/aru-processing.png" alt="ARU Processing" style="width: 45%; height: auto;"><img src="assets/camera-processing.png" alt="Camera Processing" style="width: 45%; height: auto;"> </div>
+::: {style="display: flex; justify-content: center; gap: 40px;"}
+<img src="assets/aru-processing.png" alt="ARU Processing" style="width: 45%; height: auto;"/><img src="assets/camera-processing.png" alt="Camera Processing" style="width: 45%; height: auto;"/>
+:::
 
-- After processing, projects can be [**published**](#sec-publishing-and-sharing) in order to shared with other WildTrax users or the public. Projects will become available in the dashboard and within [**Data Discover**](discover.wildtrax.ca).
+-   After processing, projects can be [**published**](#sec-publishing-and-sharing) in order to shared with other WildTrax users or the public. Projects will become available in the dashboard and within [**Data Discover**](discover.wildtrax.ca).
 
 ![](assets/data-discover-landing-page.png){.lightbox}
 
@@ -165,16 +165,16 @@ Check out this video tutorial on WildTrax's Privacy Settings.
 
 WildTrax provides robust tools to manage environmental sensor data. Following these steps will help you seamlessly integrate your data and maximize the platform's capabilities. The general life cycle of data within WildTrax involves:
 
-- **Create an [Organization](#sec-organizations)**: Set up an organization to manage and store your data.\
-- **Create a [Project](#sec-aru-projects)**: Establish a project to process your data to answer a specific question.\
-- **Add Users**: Invite team members with specific roles to your organization and project for collaborative data management.\
-- **Upload recordings or images**: Upload and organize your recordings and images files for upload and processing.
-- **Create or Upload Tasks/Surveys**: Define tasks or upload surveys to guide data processing with specific methodology.
-- **Process or Upload Tags/Observations**: Generate tags or observations during processing, or upload pre-existing ones.\
-- **Verify and Quality Control**: Review and validate tags to ensure accuracy.\
-- **Publish the Project**: Finalize and publish the project for access and use.
+-   **Create an [Organization](#sec-organizations)**: Set up an organization to manage and store your data.\
+-   **Create a [Project](#sec-aru-projects)**: Establish a project to process your data to answer a specific question.\
+-   **Add Users**: Invite team members with specific roles to your organization and project for collaborative data management.\
+-   **Upload recordings or images**: Upload and organize your recordings and images files for upload and processing.
+-   **Create or Upload Tasks/Surveys**: Define tasks or upload surveys to guide data processing with specific methodology.
+-   **Process or Upload Tags/Observations**: Generate tags or observations during processing, or upload pre-existing ones.\
+-   **Verify and Quality Control**: Review and validate tags to ensure accuracy.\
+-   **Publish the Project**: Finalize and publish the project for access and use.
 
-## Publishing and sharing data {#sec-publishing-and-sharing}
+## Publishing, sharing and downloading data {#sec-publishing-and-sharing}
 
 When the project is completed and all data processed, the status of the project can be changed to a published status. Project publication allows other WildTrax users, who are not project members, to access the media, metadata or species detections from the project either through the project dashboard or [Data Discover](#sec-data-discover). The publication status will control how data will become visible across the system. Project publication will also lock users from editing species detections and is considered the final version of the data. You can change the status of a project at any time. [Location](#sec-locations) and project membership settings will also determine what you and others can see. Ensure you have these correctly set before publishing a project. Here are some in-depth descriptions of each of the published statuses and what they mean.
 
@@ -200,40 +200,46 @@ Need to understand more about how to publish a project? Check out the video tuto
 
 See more about sharing data within an open data network like WildTrax in the [Open Data](https://wildtrax.ca/about/open-data/) section.
 
+### Downloading data
+
+Reports in WildTrax can be accessed at the project level. They provide high and low level detail about the data in the project and provide everything you need for downstream analysis and decision-making. Right-click, select multiple or click the pencil icon and select ![](assets/download-report.png){height="30px"}
+
 ## Recommended equipment
 
 Proper equipment will enhance your experience and data quality using WildTrax. The following equipment is recommended for processing camera image data.
 
-- A computer with a minimum screen size of 15″
-- A stable, high speed internet connection
+-   A computer with a minimum screen size of 15″
+-   A stable, high speed internet connection
 
 For acoustic data processing:
 
-- Headphones with the following specifications:
-- Stereo
-- Circumaural (fully enclosing the ear)
-- Minimum frequency response: 20 – 20000 Hz
-- No bass boost (flat frequency response)
+-   Headphones with the following specifications:
+-   Stereo
+-   Circumaural (fully enclosing the ear)
+-   Minimum frequency response: 20 – 20000 Hz
+-   No bass boost (flat frequency response)
 
 ------------------------------------------------------------------------
 
-# Accounts, membership and permissions 👥 {#sec-permissions}
+# Accounts and Membership 👥 {#sec-acccounts-membership}
 
-WildTrax operates under a role-based access control system, meaning a user in the system represents an individual, not an organization or a group of people. This restricts access to authorized users and is a policy-neutral mechanism designed to create roles and privileges. These users can then collaborate to manage data or share data to answer broader scientific questions. This means your access to certain features, tools, or data may vary based on your permission level. For example, access to project data can be restricted by [location settings](#sec-location-settings) or the project's [publication status](#sec-publishing-and-sharing). Here's an overview of the key permissions levels:
+WildTrax operates under a [role-based access control](https://en.wikipedia.org/wiki/Role-based_access_control) meaning users can collaborate to manage or share data to answer broader scientific questions by assigning appropriate privileges to the data. Access to certain features, tools, or data may vary based on your permission level. For example, access to project data can be restricted by [location settings](#sec-location-settings) or the project's [publication status](#sec-publishing-and-sharing). Here's an overview of the key permissions levels:
 
 - [Organization membership](#sec-organization-membership) all you to see or govern access to all projects and data under an Organization. Permissions at the Organization level include:
-    - Administrator
-    - Read-Only Member
+    - **Administrator**
+    - **Read-Only Member**
 - [Location visibility](#sec-location-settings) and buffering controls whether whether locations are visible or hidden for privacy purposes
 - [Project membership](#sec-aru-project-users) dictates what you can do within specific projects such as uploading media, processing tasks or verify species tags roles include:
-    - Administrator
-    - Tagger
-    - Read-Only Member
+    - **Administrator**
+    - **Tagger**
+    - **Read-Only Member**
 - [Project Status](#sec-publishing-and-sharing) dictates whether members or the public can access a project or its data. Active and Test projects are accessible only to members of the respective Organization or Project. Once a project is published, the visibility and access to its data depend on the permission level assigned to the user.
 
-The interaction of these permission levels defines the scope of data you can view and how you can engage with it on WildTrax. Since Organizations are parent entities to projects, Organization administrators automatically inherit Project Administrator privileges. However, users assigned read-only access at the project level will not gain access to the parent Organization.
+::: {.callout-tip collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
+The interaction of these permission levels defines the scope of data you can view and how you can engage with it on WildTrax. For example, since Organizations are parent entities to projects, Organization administrators automatically inherit Project Administrator privileges. However, users assigned read-only access at the project level will not gain access to the parent Organization.
+:::
 
-If certain components are not available or options are locked or greyed out, it is likely that you do not have access to those data. member of that organization. **Requesting access** is the easiest way to gain higher level access by having [Organization](#sec-organizations) or [Project](#sec-aru-projects) administrators approve your access request. Click the drop-down arrow beside the organization name and then click ![](assets/request-access-button.png){height="30px"} and fill in the Request Access form to request membership. Administrators of the organization will receive a notification and will either approve or deny your membership request. Clearly specify the type of access privileges you are requesting, such as read-only access or administrator-level permissions.
+If components are unavailable or options are greyed out, you likely lack access to the data, organization, or project. To gain access, request it by clicking the ![](assets/dropdown-arrow.png){height="30px"} next to the organization name, selecting ![](assets/request-access-button.png){height="30px"} and completing the form. Administrators will review your request and either approve or deny it. Be sure to specify the level of access you need, such as read-only or administrator.
 
 ![](assets/request-access.png){.lightbox}
 
@@ -243,18 +249,18 @@ The user settings dashboard can be accessed by clicking on your username in the 
 
 The user settings dashboard controls the following properties related to your account:
 
--   **Name**: your full name
--   **Initials**: an acronym or set of initials you can use to define an observer or user
--   **Subscribe to Newsletter**: a toggle that will opt you in for occasional WildTrax newsletters delivered to your email
--   **Language**: your default language. Currently available in English and French.
--   **Affiliation (optional)**: the organization, institution or group of which you’re a member or user in the system.
+- **Name**: your full name
+- **Initials**: an acronym or set of initials you can use to define an observer or user
+- **Subscribe to Newsletter**: a toggle that will opt you in for occasional WildTrax newsletters delivered to your email
+- **Language**: your default language. Currently available in English and French.
+- **Affiliation (optional)**: the organization, institution or group of which you’re a member or user in the system.
 
 Once you’ve made your desired changes, click the ![](assets/update.png){height="30px"} button.
 
 ![](assets/user-settings-panel.png){.lightbox}
 
 ::: {.callout-note collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
-The JWT token is a unique authentication token used for accessing WildTrax via the **wildrtrax** package associated to your email. It also enables secure and flexible integration with WildTrax APIs for building custom applications.
+The JWT token is a unique authentication token used for accessing WildTrax via the [**wildrtrax**](https://abbiodiversity.github.io/wildrtrax/) package associated to your email. It also enables secure and flexible integration with WildTrax APIs for building custom applications.
 :::
 
 You can change the language in the site at anytime from the top ribbon toggle ![](assets/top-ribbon-language.png){height="30px"}. If you want to permanently change the language, go to [User settings](#sec-user-settings) and change it to your preferred language.
@@ -267,10 +273,9 @@ You can change the language in the site at anytime from the top ribbon toggle ![
 
 **Data Discover** is the central hub for exploring environmental sensor data in WildTrax. Data Discover allows you to see which organizations have published data on WildTrax and which species were detected, and explore media elements such as images and sounds captured in the environment. In Data Discover, you can search for data from ARUs, cameras, and point counts, using a variety of attribute filters, and create summary statistics within a dynamic mapping interface where you can gain a comprehensive understanding of environmental sensor data in an area that interests you.
 
+::: {.callout-question collapse="true" style="background-color: #f9f9f9; border-left: 5px solid #dc3545; padding: 15px; margin: 15px 0; color: #343a40;"}
+### Once you've found data you're interested in
 After using Data Discover, you may have found an organization or project that you’re interested in – so what’s next? Head over to either the [Organization](#sec-organizations) or [Project](#sec-aru-projects) dashboard to find out more about the data owners or the project or to request access to the data. Once you are granted access by the project administrators, proceed to Data Downloads to acquire the data.
-
-::: {.callout-tip icon="false" collapse="true" style="padding: 20px;"}
-Advanced users can also download data using the package [wildrtrax](https://abbiodiversity.github.io/wildrtrax) to download data.
 :::
 
 ## Filters
@@ -281,11 +286,11 @@ Use attribute filters or select a specific sensor to search available data withi
 
 You can search by:
 
--   **Taxonomy**: Classify data based on class, order, family, and genus.
--   **Species**: Search for individual species or add multiple species to your selection.
--   [**Organizations**](#sec-organizations)
--   **Projects** by sensor, either [ARU](#sec-aru-projects), [camera](#ec-camera-projects), or [point count](#sec-point-count-projects)
--   **Dates and times** (also months and hours) within set intervals or with start and end dates
+- **Taxonomy**: Classify data based on class, order, family, and genus.
+- **Species**: Search for individual species or add multiple species to your selection.
+- [**Organizations**](#sec-organizations)
+- **Projects** by sensor, either [ARU](#sec-aru-projects), [camera](#ec-camera-projects), or [point count](#sec-point-count-projects)
+- **Dates and times** (also months and hours) within set intervals or with start and end dates
 
 Note you must select one sensor must be selected before you can proceed with other You can delete the selected options in the filter panel at the bottom left of the panel using Delete Layer.
 
@@ -309,8 +314,8 @@ Click the **Layer Summary** icon in the bottom-right corner to view a visual rep
 
 ![Summary window](assets/data-discover-summaries.png){.lightbox}
 
--   **Summary Tab**: View pie charts detailing the number of organizations, projects, and species for your selected area. Scroll down for bar charts representing tag counts across months and hours.
--   **Media Tab**: Tiles correspond to species tags. Play audio clips or view images. Observe the minimum and maximum frequency of an audio clip in its ARU spectogram. Note that point counts do not include any media.
+- **Summary Tab**: View pie charts detailing the number of organizations, projects, and species for your selected area. Scroll down for bar charts representing tag counts across months and hours.
+- **Media Tab**: Tiles correspond to species tags. Play audio clips or view images. Observe the minimum and maximum frequency of an audio clip in its ARU spectogram. Note that point counts do not include any media.
 
 ![](assets/media-tab.png){.lightbox}
 
@@ -318,7 +323,7 @@ Click the **Layer Summary** icon in the bottom-right corner to view a visual rep
 
 # Organizations 🏢 {#sec-organizations}
 
-**Organizations** sit at the top of the WildTrax hierarchy and are the central entity to which environmental sensor data, biological data and metadata are associated. When in doubt, if you’re looking for any information in WildTrax, you can likely find it under the organization. Organizations represent groups of users who collect data, design and publish projects, manage equipment and survey locations. Organizations allow you to coordinate efforts with multiple WildTrax users to create a structured, standardized dataset. Examples of organizations include government branches, industry, research labs and non-profits.
+**Organizations** sit at the top of the WildTrax hierarchy and are the central entity to which environmental sensor data, biological data and metadata are associated. When in doubt, if you’re looking for any information in WildTrax, you can likely find it under the organization. Organizations represent groups of users who collect data, design and publish projects, manage equipment and survey locations. Organizations allow you to coordinate efforts with multiple WildTrax users to create a structured, standardized dataset. Examples of organizations in WildTrax include government branches, industry, research labs, communities, non-profits and NGOs and citizen scientists.
 
 ![](assets/organizations.png){.lightbox}
 
@@ -332,7 +337,7 @@ You can jump to any Organization or Project at any time using `CTRL + /`. This w
 
 Click on ![](assets/my-data.png){height="30px"} in the top ribbon, followed by My Organizations. This will take you to the organization dashboard. Click the ![](assets/create-organization.png){height="30px"} button, from here the Organization Settings form will appear.
 
-![](assets/new-organization.png)
+![](assets/new-organization.png){.lightbox}
 
 Fill in the fields in the form and click Save. A WildTrax administrator will need to confirm your identity before approving your new Organization request. If you’re having any technical difficulties creating an Organization contact WildTrax Support at support\@widltrax.ca.
 
@@ -385,9 +390,9 @@ datatable(
 
 WildTrax offers multiple choices for data storage designed to support the platform's growing user base and evolving data management needs. Each Organization must select the storage location where they need to store their media. This allows you to quickly access an image or recording at a moment's need. The current options as of `r format(Sys.Date(), "%B %d, %Y")` currently include:
 
--   **WildTrax Live Servers**: Hosted at the University of Alberta in Edmonton, Alberta, Canada. These servers provide a cost-effective and sustainable solution with live and off-site backups using [Amazon Deep Glacier](https://aws.amazon.com/s3/storage-classes/glacier/), ensuring secure and reliable data storage for Canadian and international organizations.
+- **WildTrax Live Servers**: Hosted at the University of Alberta in Edmonton, Alberta, Canada. These servers provide a cost-effective and sustainable solution with live and off-site backups using [Amazon Deep Glacier](https://aws.amazon.com/s3/storage-classes/glacier/), ensuring secure and reliable data storage for Canadian and international organizations.
     -   <mark>Free Storage Tier: 250 GB, Annual Cost: \$ 75.00 CAD / TB</mark>
--   [**Amazon Web Services (AWS)**](https://aws.amazon.com/): Retained as an option for users requiring cloud-based storage with global accessibility and high-performance capabilities with international storage base options. Current locations include **Oregon** and **Montreal**.
+- [**Amazon Web Services (AWS)**](https://aws.amazon.com/): Retained as an option for users requiring cloud-based storage with global accessibility and high-performance capabilities with international storage base options. Current locations include **Oregon** and **Montreal**.
     -   <mark>Free Storage Tier: 50 GB, Annual Cost: \$ 360.00 CAD / TB</mark>
 
 The selection of a default storage location now balances data sovereignty, cost efficiency, and upload/download performance based on geographic proximity. For detailed guidance, refer to WildTrax’s [Terms and Conditions of Use and Data Access Policies](https://wildtrax.ca/about/policies/), or contact info\@wildtrax.ca for additional support.
@@ -404,20 +409,20 @@ Organizations can manage the privacy of locations and images within the system t
 
 For location privacy, two approaches are available within the **Default Location Buffering** field.
 
--   **True locations**: Upload exact coordinates into the system. If a buffer is added, non-members or public viewers will only see buffered locations. This allows you to have access to and manage the true locations within WildTrax while simulatenously allowing users to gain access to the data without knowing the true coordinates
--   **Buffered locations**: Supply pre-buffered coordinates to the system, specifying the radius used. This ensures the displayed locations are already obscured as intended.
+- **True locations**: Upload exact coordinates into the system. If a buffer is added, non-members or public viewers will only see buffered locations. This allows you to have access to and manage the true locations within WildTrax while simulatenously allowing users to gain access to the data without knowing the true coordinates
+- **Buffered locations**: Supply pre-buffered coordinates to the system, specifying the radius used. This ensures the displayed locations are already obscured as intended.
 
 The **Allow Location Reports** feature enables you to create shareable links for external audiences, such as collaborators or landowners, without granting them privileges or exposing unnecessary details about your organization. The **Default Location Photo Access** field governs global permissions for accessing [location photos](#sec-location-photos).
 
--   **Private**: Only members of the organization or project can view the location photos even if the project is published
--   **Project-level Access**: members of the project can view the location photos, but non-members cannot even if the project is published
--   **Publicly Viewable**: if a project is published, non-members can view the location photos within the tasks
+- **Private**: Only members of the organization or project can view the location photos even if the project is published
+- **Project-level Access**: members of the project can view the location photos, but non-members cannot even if the project is published
+- **Publicly Viewable**: if a project is published, non-members can view the location photos within the tasks
 
 **Human Blurring** applies organization-wide settings to blur humans detected in images. The available options include:
 
--   **Blur for anonymous users (if applicable)**: images of humans will be blurred for all non-read only/non-admin WildTrax users if project data is visible based on the project status.
--   **Blur for non-admins**: images of humans will be blurred for all WildTrax users regardless of their organization or project membership.
--   **Blur for everyone**: images of humans will be blurred for all read-only WildTrax users.
+- **Blur for anonymous users (if applicable)**: images of humans will be blurred for all non-read only/non-admin WildTrax users if project data is visible based on the project status.
+- **Blur for non-admins**: images of humans will be blurred for all WildTrax users regardless of their organization or project membership.
+- **Blur for everyone**: images of humans will be blurred for all read-only WildTrax users.
 
 Choose the option that best aligns with your needs and data privacy policies. For example, if you opt out of Human Blurring, you acknowledge that uploaded images—and those potentially shared publicly—may include humans, accepting the associated risks.
 
@@ -431,17 +436,17 @@ After your organization is approved, the ![](assets/users-menu.png){height="40px
 
 **Organization administrators** collaboratively manage the media and metadata of the organization and have the ability to:
 
--   Enjoy administrator privileges by default on all projects belonging to the Organization
--   Add WildTrax users to the organization or its projects
--   Read and write to organizational locations
--   Read and write to the visit, equipment, deployment and media metadata
+- Enjoy administrator privileges by default on all projects belonging to the Organization
+- Add WildTrax users to the organization or its projects
+- Read and write to organizational locations
+- Read and write to the visit, equipment, deployment and media metadata
 
 **Organization read-only members** can:
 
--   Read the unbuffered locations, i.e., read-only members can see the true locations if they are buffered but cannot modify them
--   Read the visit, equipment, and media metadata
--   Enjoy read-only access to all organizational projects
--   The organization dashboard lists all organizations in WildTrax. The View Only My Organizations toggle in the top-right filters the list to only organizations you’re a part of.
+- Read the unbuffered locations, i.e., read-only members can see the true locations if they are buffered but cannot modify them
+- Read the visit, equipment, and media metadata
+- Enjoy read-only access to all organizational projects
+- The organization dashboard lists all organizations in WildTrax. The View Only My Organizations toggle in the top-right filters the list to only organizations you’re a part of.
 
 If the organization is greyed out, you are not a member of that organization. Click the drop-down arrow beside the organization name and then click ![](assets/request-access-button.png){height="40px"} and fill in the Request Access form to request membership. Administrators of the organization will receive a notification and will either approve or deny your membership request.
 
@@ -451,28 +456,29 @@ Once the organization has been approved, The **principal investigators** of the 
 
 ![](assets/principal-investigators.png){.lightbox}
 
-### What's Next After Creating My Organization?
-
 ::: {.callout-question collapse="true" style="background-color: #f9f9f9; border-left: 5px solid #dc3545; padding: 15px; margin: 15px 0; color: #343a40;"}
+### Getting started with your first organization
+
 **What Should I Do Next?**
 
 **Manage Organization Metadata**
 
 Optimize your organization's metadata by:
 
--   Adding [locations](#sec-locations), [location photos](#sec-location-photos), [visits](#sec-visits), [equipment inventories](#sec-equipment), [deployment information](#sec-deployment), or uploading [acoustic media](#sec-upload-recordings).\
--   Establishing location privacy by setting appropriate privacy levels—public, restricted, or private—tailored to your data-sharing needs.
+- Adding [locations](#sec-locations), [location photos](#sec-location-photos), [visits](#sec-visits), [equipment inventories](#sec-equipment), [deployment information](#sec-deployment), or uploading [acoustic media](#sec-upload-recordings).\
+- Establishing location privacy by setting appropriate privacy tailored to your data-sharing needs.
+- [Generate tasks](#sec-generate-tasks) for projects using acoustic media using [filters](#sec-acoustic-filters) such as weather, landscape features, [artificial intelligence classification](#sec-acoustic-classifiers) and more
 
 **Create a Project**
 
--   **Define Your Research Questions**\
+- **Define Your Research Questions**\
     Clearly outline the objectives or questions your project will address. This will help guide data setup and analysis.\
--   **Decide on an Upload Strategy**\
+- **Decide on an Upload Strategy**\
     Determine if recordings will be uploaded at the project level or organization level to align with your workflow.
--   **Assign Membership Privileges**\
+- **Assign Membership Privileges**\
     Define roles for project participants (e.g., read-only, tagger, admin) based on access requirements.
 
-*Need more help? See [Accounts, Membership, and Permissions](#sec-permissions) for detailed guidance.*
+*Need more help? See [Accounts, Membership, and Permissions](#sec-acccounts-membership) for detailed guidance.*
 :::
 
 ## Locations {#sec-locations}
@@ -523,7 +529,7 @@ datatable(data,
 ```
 
 ::: {.callout-tip collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
-Did you know locations are created in the organization when media are [uploaded via a project](#sec-upload-recordings-tasks)? If a location name already exists in the organization, WildTrax will append the media to it, and if it is a new location WildTrax will prompt you during the upload process if you want to add spatial coordinates to these new locations.
+Did you know locations are created in the organization when media are upload either via [the organization](#sec-upload-recordings) or [a project](#sec-upload-recordings-tasks)? If a location name already exists in the organization, WildTrax will append the media to it, and if it is a new location WildTrax will prompt you during the upload process if you want to add spatial coordinates to these new locations.
 
 ![](assets/aru-upload-coordinates.png)
 :::
@@ -644,7 +650,20 @@ If you’re an organization administrator, you can enable **location reports** f
 
 ### Uploading location photos
 
-Organize your location photos by ensuring each folder on your computer is named to correspond with the specific location where the photos were taken. During the upload process, the system will automatically search within each folder and assign the images to the matching location based on the folder name. Go to the Location photos tab and click on ![](assets/upload-location-photos-button.png){height="30px"}. Each individual location with the files will be in view. When you are ready, click ![](assets/confirm-and-upload.png){height="30px"}
+Organize your location photos by ensuring each folder on your computer is named to correspond with the specific location where the photos were taken. During the upload process, the system will automatically search within each folder and assign the images to the matching location based on the folder name. You do not need to rename any of the images, but should be aware of which images were taken in which corresponding directions and angles the photos were taken so that you can add the corresponding metadata.
+
+::: {.callout-tip icon="false" collapse="true"}
+#### **Location photo folder structure**
+
+The ideal structure for organizing your location photos before uploading is to create folders named after each location, with the corresponding photos placed within those folders.
+
+<a href="assets/location-photo-structure.png" data-lightbox="example">
+    <img src="assets/location-photo-structure.png" alt="Location Photo Structure" style="height: 300px;">
+</a>
+
+:::
+
+Go to the Location photos tab and click on ![](assets/upload-location-photos-button.png){height="30px"}. Each individual location with the files will be in view. When you are ready, click ![](assets/confirm-and-upload.png){height="30px"}
 
 ::: {.callout-warning icon="false" collapse="true"}
 If the location doesn't exist in the organization yet, you'll have to add it first otherwise you'll get a warning during the upload process. Go to the Location tab and click ![](assets/create-location.png){height="30px"}.
@@ -652,56 +671,82 @@ If the location doesn't exist in the organization yet, you'll have to add it fir
 ![](assets/location-photo-upload-error.png){.lightbox}
 :::
 
-### Adding location photo metadata
+### Adding location photo metadata {#sec-adding-locaton-photo-metadata}
 
 Each location photo will also have the following properties that can be assigned to each photo. You can do this for each individual image with the pencil icon below each image, or in batch, by selecting multiple image and then clicking ![](assets/manage.png){height="30px"} then ![](assets/edit-location-photos.png){height="30px"} or ![](assets/delete-location-photos.png){height="30px"} as needed.
 
--   **Direction**: cardinal direction of the location broken down into sub-cardinal units
--   **Vertical Angle**: angle at which the image was taken relative to cardinal north
--   **Access**: the accessibility of the image; this is also determined by organization administrators (see [Default privacy settings](#sec-default-privacy-settings))
--   **Comments**: any useful information about the image
+- **Direction**: cardinal direction of the location broken down into sub-cardinal units
+- **Vertical Angle**: angle at which the image was taken relative to cardinal north
+- **Access**: the accessibility of the image; this is also determined by organization administrators (see [Default privacy settings](#sec-default-privacy-settings))
+- **Comments**: any useful information about the image
 
-## Visits
+# Visits
 
-A **visit** is when an observer has gone to a location to collect environmental sensor or biological data. When equipment is placed at a location during a visit, WildTrax calls this a [deployment](#sec-deployments). At each of these times, you can add sensor (i.e., equipment) metadata to support the visit. The goal is to provide ways of standardizing field metadata collection so that it can be easily shared with other organizations or WildTrax users.
+A **visit** occurs when an observer goes to a location to collect environmental sensor or biological data. If equipment is placed at the location during a visit, this is referred to in WildTrax as a [deployment](#sec-deployments). Visits allow for adding sensor metadata to standardize field data collection, making it easier to share with other organizations or WildTrax users.
 
-*Why are visits important?*
+## Why are Visits Important?
 
--   Visit metadata provides quality control for environmental sensor media and metadata collected at the location
--   Visits relate field activities on the landscape to equipment, media and biological data
--   Visits record general information about the landscape where the environmental sensor was placed or the biological data collected
+- **Quality Control:** Visit metadata ensures accuracy for environmental sensor media and associated metadata.
+- **Data Integration:** Visits link field activities to equipment, media, and biological data.
+- **Contextual Information:** Visits document general landscape details where sensors are placed or data is collected.
 
-*Do I need to collect visit data?*
+## Do You Need to Collect Visit Data?
 
-Visit metadata is not a requirement however you will not be able to upload visit images or equipment metadata without a visit.
+Visit metadata is not mandatory; however, you cannot upload visit images or equipment metadata without recording a visit.
 
-*What visit data is supported in WildTrax?*
+## What Visit Data Does WildTrax Support?
 
-Two major activities can take place during a visit: using an environmental sensor or conducting a point count. WildTrax currently supports the addition of general landscape information and subsequent deployment information.
+Visits typically include two main activities:  
+1. Using an environmental sensor.  
+2. Conducting a point count.  
 
-### Create visits
+WildTrax supports the addition of general landscape information and associated deployment details.
 
-To create a visit:
+## Creating Visits
 
-Go to the Visits tab in the organization. Click Create Visit Select or search for the location from the list in the table. The visit summary form will appear, which is a comprehensive list of all visits and equipment for that location. 5. Click on Create Visit.
+1. Navigate to the **Visits** tab in your organization.
+2. Click **Create Visit** and select a location from the list.
+3. Complete the visit summary form that displays all visits and equipment for the location.
+4. Enter the visit date (required).  
+5. Click **Save** to enable the **Add Sensor** button and access additional metadata options.
 
-6.  Enter the visit date in the visit form Click Save after which the visit images tab will appear, and the Add Sensor button will turn green and allow you to begin adding other metadata to the visit. You only need to enter a date in order to create a visit; the rest of the values are optional.
+## Syncing Visits
 
-### Sync visits
+You can batch upload and download visits for easier management:  
 
-Just like with locations, you can batch upload and download visits and visit metadata by clicking the Manage button.
+1. Click **Manage** and choose **Download Visits** to get a CSV template or existing visit data.  
+2. Edit the CSV with your visit information.  
+3. Click **Upload Visits**, select your file, and preview the changes.  
+4. Apply changes if no issues are detected.  
 
-Click on Download Visits to get the current list of all visits and metadata in your organization. If you don’t have any metadata yet, the CSV will provide the column headers. Conduct the edits or changes to your CSV. Click on Upload Visits. This will take you to the Upload CSV form; choose your local CSV file and click Preview Changes—this will allow you to preview the changes you’ll be making to your location data. If there are no differences, a prompt indicating ”No changes detected in this file” will appear. To accept the modifications, scroll down and click Apply Changes. You only need to enter a date in order to create a visit; the rest of the values are optional.
+### CSV Fields for Syncing Visits
 
-Here’s a list of the CSV fields and their descriptions that can be included when syncing visits:
+- **Location:** Name of the location.  
+- **Visit Date:** Date of the visit (format: YYYY-MM-DD).  
+- **Crew:** Names of crew members.  
+- **Bait/Lure Type:** Type of attractant used (if applicable).  
+- **Access Method:** Method of reaching the location (e.g., “On Foot,” “Helicopter”).  
+- **Walktest Distance (m):** Distance at which walktests are conducted.  
+- **Walktest Height (m):** Height at which walktests are conducted.  
+- **Facing Human Feature:** Flags if a camera or ARU is near a human feature.  
+- **Visit Trigger Mode(s):** Camera activation settings (e.g., “Trigger,” “Time-lapse”).  
+- **Motion Image Interval (s):** Time between images during motion activation.  
+- **Quiet Period (s):** Delay between trigger events.  
+- **Visit Comments:** Additional details about the visit.
 
-Location: the name of the location. Visit date: the date a location was visited (in the format “YYYY-MM-DD”). Crew: the name(s) of the crew member(s) who visited the location. Bait/lure type: the type of wildlife attractant (e.g., scent, lure, bait, etc.) placed in front of the camera (if applicable). Access method: the method that best describes how the crew accessed the location (e.g., “On Foot,” “ATV,” “Helicopter,” etc.). Walktest distance (m): the horizontal distance from the camera (in metres) at which the crew members perform the walktest (using the walktest mode, if applicable). Walktest height (m): the vertical distance from the camera (in metres) at which the crew members perform the walktest (using the walktest mode, if applicable). Facing human feature: flags used to identify whether a camera is facing a human feature or if an ARU is in the range of a human feature (depending on the sensor type). Visit trigger mode(s): the camera setting that determines how the camera is set to activate (i.e., motion/heat \[“Trigger”\] and/or at set intervals \[Time-lapse”\]). Motion image interval (seconds): the camera setting which provides the time (in seconds) between images within multi-image sequences that occur due to motion, heat, or activation of external detector devices. If a motion image interval was not set, enter “0” seconds (i.e., instantaneous). Quiet period (seconds): the camera setting which provides the time (in seconds) between trigger events; that is, if the camera was programmed to pause between firing initially and firing a second time. If a quiet period was not set, enter “0” seconds. The quiet period differs from the motion image interval in that the delay occurs between multi-image sequences rather than between the images contained within multi-image sequences (as in the motion image interval). Visit comments: comments describing additional details about the visit.
+> **Tip:**  
+> Batch uploads support **add** and **update** operations only; deletions are not allowed. For example, an empty CSV upload will not delete existing data.
 
-::: {.callout-tip icon="false" collapse="true"}
-Batch upload processes in WildTrax support **add** and **update** operations only; deletions are not allowed. For example, if you accidentally upload an empty CSV, no existing data will be deleted.
+## Deleting Visits
+
+You can delete visits using the ![](assets/delete-menu.png){height="30px"} option, accessible via the ![](assets/dropdown-arrow.png){height="20px"}. Deletion will not be allowed until all dependencies, such as media, are removed.
+
+![](assets/delete-visit-form.png){.lightbox}
+
+::: {.callout-warning icon="false" collapse="true"}
+Note that deleting locations is an irreversible process.
 :::
 
-### Delete visits
 
 ## Equipment {#sec-equipment}
 
@@ -750,17 +795,16 @@ Batch upload processes in WildTrax support **add** and **update** operations onl
 ::: {.callout-important icon="false" collapse="true"}
 #### **Important upload restrictions**
 
-- For a stable and secure upload process, it’s strongly recommended to use an ethernet connection before proceeding. Large uploads can take a while, so start with smaller batches to gauge your upload time, and then proceed with larger batches.
--Supported format are the following. Each recording uploaded to WildTrax is either compressed as a *flac* or kept as an *mp3* if uploaded as such
-  - *wac* and *w4v* are proprietary, lossless compressed file formats developed by Wildlife Acoustics
-  - *wav* is the standard, ubiquitous uncompressed audio file format
-  - *mp3* a lossy compressed audio file format; works by reducing the accuracy of certain sound components, and eliminating others
-  - *flac* is a lossless compressed audio file format
-- Each recording **must** include a location prefix to be accepted. These are included in [Wildlife Acoustics](https://www.wildlifeacoustics.com/) ARUs but check your make and model type. The **location name** can be changed later (see #sec-locations) if the prefix is incorrect and you do not have a way of changing the name on your local media.
-- Each recording must include a date and time in an accepted format (e.g., YYYYMMDD_HHMMSS). Once uploaded, the recording's date and time cannot be modified, so ensure they are accurate before uploading. If errors are found after upload:
-  - You must [delete the recording](#sec-delete-recordings).
-  - Correct the name or metadata in your local copy.
-  - Re-upload the corrected recording.
+-   For a stable and secure upload process, it’s strongly recommended to use an ethernet connection before proceeding. Large uploads can take a while, so start with smaller batches to gauge your upload time, and then proceed with larger batches. -Supported format are the following. Each recording uploaded to WildTrax is either compressed as a *flac* or kept as an *mp3* if uploaded as such
+    -   *wac* and *w4v* are proprietary, lossless compressed file formats developed by Wildlife Acoustics
+    -   *wav* is the standard, ubiquitous uncompressed audio file format
+    -   *mp3* a lossy compressed audio file format; works by reducing the accuracy of certain sound components, and eliminating others
+    -   *flac* is a lossless compressed audio file format
+-   Each recording must include a [location](#sec-locations) prefix to be accepted. These are included in [Wildlife Acoustics](https://www.wildlifeacoustics.com/) ARUs but check your make and model type. The **location name** can be changed later if the prefix is incorrect and you do not have a way of changing the name on your local media.
+-   Each recording must include a date and time in an accepted format (e.g., YYYYMMDD_HHMMSS). Once uploaded, the recording's date and time cannot be modified, so ensure they are accurate before uploading. If errors are found after upload:
+    -   You must [delete the recording](#sec-delete-recordings).
+    -   Correct the name or metadata in your local copy.
+    -   Re-upload the corrected recording.
 
 Please review all details carefully to avoid upload issues.
 :::
@@ -769,10 +813,10 @@ To upload recordings for storage and processing in WildTrax, navigate to the Rec
 
 WildTrax provides several options to optimize your upload process:
 
--   **Including Subdirectories**: Useful if your media is organized hierarchically.
--   **Removing Leading Zeros**: Uncheck this option to retain leading zeros in location names
--   **Trigger Marking**: Distinguishes triggered recordings from schedule-based ones. See [Setting up an ultrasonic project](#sec-setting-up-ultrasonic)
--   **Pre-Scanning**: Scans for and displays sample rate and recording length during the upload process
+- **Including Subdirectories**: Useful if your media is organized hierarchically.
+- **Removing Leading Zeros**: Uncheck this option to retain leading zeros in location names
+- **Trigger Marking**: Distinguishes triggered recordings from schedule-based ones. See [Setting up an ultrasonic project](#sec-setting-up-ultrasonic)
+- **Pre-Scanning**: Scans for and displays sample rate and recording length during the upload process
 
 ![](assets/upload-recordings.png){.lightbox}
 
@@ -791,10 +835,10 @@ You can follow along the the uploads in the interface. After the uploads are com
 ::: {.callout-note icon="false" collapse="true"}
 #### What's the difference between uploading recordings to the organization versus the project?
 
-- Uploading to a project uploads both the recordings and generates each recording as a task. The recording is still stored in the organization at its full length even if a task was generated at a shorter length. 
+-   Uploading to a project uploads both the recordings and generates each recording as a task. The recording is still stored in the organization at its full length even if a task was generated at a shorter length.
 :::
 
-### Acoustic classifiers
+### Acoustic classifiers {#sec-acoustic-classifiers}
 
 An **acoustic classifier** is a computer algorithm designed to analyze audio recordings and identify the species producing the sounds. These classifiers interpret spectrograms, visual representations of sound frequencies over time, to determine the presence of specific bird species or other acoustic taxa. [BirdNET](https://birdnet.cornell.edu/) and [HawkEars](https://www.sciencedirect.com/science/article/pii/S1574954125001311) are two examples of such classifiers used by WildTrax, trained to process audio recordings and classify the species captured within them. For each recording uploaded to WildTrax, BirdNET and HawkEars are automatically run on the recording, and the results are made available in the **Recordings** tab, allowing users to view or further process the recordings in a project. Similarly, when recordings are [uploaded directly through a project](#sec-uploading-recordings-and-tasks), the [classifier overlays](#sec-acoustic-classifier-overlays) are accessible in the processing interface. The algorithms behind these classifiers differ, which can result in varying levels of accuracy depending on the species and recording conditions, performing differently in specific situations.
 
@@ -809,15 +853,22 @@ BirdNET and HawkEars analyze 3-second *windows* (i.e. periods of time) of the [s
 See [Wood and Kahl](https://link.springer.com/article/10.1007/s10336-024-02144-5) for more information on score thresholds.
 :::
 
-### Filter recordings
+### Filter recordings {#sec-acoustic-filters}
 
 ![Filter panel](assets/filter-recordings.png){.lightbox}
 
 ![](assets/filter-recordings-form.png){.lightbox}
 
-### Generate tasks
+### Generate tasks {#sec-generate-tasks}
 
 ![](assets/generate-tasks.png){.lightbox}
+
+::: {.callout-note collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
+If you haven't created a project yet, a prompt will appear in the Recording tab allowing you to do so directly from the Organization. Once you have your first project created, you can create more directly from the project dashboard by going to ![](assets/my-data.png){height="30px"} and then the appropriate sensor.
+
+![](assets/create-a-new-project.png){.lightbox}
+
+:::
 
 ### Delete recordings
 
@@ -853,13 +904,30 @@ Click on the DOIs tab in the Organization and then click ![](assets/create-doi-b
 
 ### Deleting a DOI
 
-For any DOI in the menu, right-click or select through the ![](assets/dropdown-arrow.png){height="30px"} the ![](assets/delete-doi.png) option. You can also delete multiple DOIs by selecting multiple DOIs and going to ![](assets/manage.png){height="30px"}. You'll be prompted to go through the process of confirming the deletion prior to it taking place.
+For any DOI in the menu, right-click or select through the ![](assets/dropdown-arrow.png){height="28px"} the ![](assets/delete-doi.png){height="30px"} option. You can also delete multiple DOIs by selecting multiple DOIs and going to ![](assets/manage.png){height="30px"}. You'll be prompted to go through the process of confirming the deletion prior to it taking place.
 
 ![](assets/delete-dois-form.png){.lightbox}
 
-# ARU Projects 🎧 {#sec-aru-projects}
+::: {.callout-question collapse="true" style="background-color: #f9f9f9; border-left: 5px solid #dc3545; padding: 15px; margin: 15px 0; color: #343a40;"}
+If you've read up to the end of this section, you're pretty much an expert at Organizations! Now, discover more about the data processing and sharing side with your first projects.
 
-**Projects** are purposeful groupings of an organization‘s media and metadata to answer specific questions or implement a study design. Projects can be one of three sensors: ARUs, cameras or point counts. For each of these sensor types, a collection of tasks (ARU), image sets (camera) or surveys (point counts) are processed or uploaded in order retrieve species data.
+:::
+
+# Projects {#sec-projects}
+
+**Projects** are purposeful groupings of an organization‘s media and metadata to answer specific questions or implement a study design. Projects can be one of three sensors: [ARUs](#sec-), cameras or point counts. For each of these sensor types, a collection of tasks (ARU), image sets (camera) or surveys (point counts) are processed or uploaded in order retrieve species data.
+
+## Project management
+
+* Data and questions
+* Users
+* Publication and sharing
+
+Merge
+Delete
+Download report
+
+# ARU Projects 🎧 {#sec-aru-projects}
 
 The goal of an ARU project is to upload media, process tasks, verify tags and publish the results. Projects belong to organizations and use organization media on order to generate and report on a certain set of results designed by the project administrators. Clicking on the ARU sensor on the main project dashboard will show which projects you have access to. The list of projects you see is determined by your organization membership, project membership and status of the project. You can use the filter and sort some of the project attributes to find what you’re looking for:
 
@@ -891,19 +959,9 @@ Clicking on the ARU sensor on the main project dashboard will show which project
 
 ### Create an ARU project
 
-Click on Create an ARU Project. This will open the Project Settings form allowing you to begin adding information to the project. The Create/Update ARU Project contains the following fields; those marked with an * are mandatory before being able to create the project:
+Click on Create an ARU Project. This will open the Project Settings form allowing you to begin adding information to the project. The Create/Update ARU Project contains the following fields; those marked with an \* are mandatory before being able to create the project:
 
-Project: A short name to identify the project.
-Organization*: Drop-down list of all existing organizations of which you are an admin. This field allows you to group all of your projects together in the database. Once your project is saved, you will be unable to change the organization to which it belongs.
-Data Source: A field used to specify the original source of the data; this field should be entered if you are importing data from an outside source (e.g., previously tagged data).
-Purpose and methods: A short description of the methods used to create this project and goals it hopes to achieve.
-Results summary: A short description of the results your project found.
-ARU project options box:
-Default minimum frequency (Hz) and default maximum frequency (Hz) of the spectrogram that will be displayed
-Default X-Scale: Length displayed in seconds. Corresponds roughly to 0.25x (60 seconds) to 10x (2 seconds) in length displayed
-Default Y-pixels: Height of the spectrogram in pixels 
-Default monochrome: Default to monochrome colour palette toggle. Alternative is colour
-Default light mode: Default to light mode toggle; alternative is darkmode spectrograms
+Project: A short name to identify the project. Organization\*: Drop-down list of all existing organizations of which you are an admin. This field allows you to group all of your projects together in the database. Once your project is saved, you will be unable to change the organization to which it belongs. Data Source: A field used to specify the original source of the data; this field should be entered if you are importing data from an outside source (e.g., previously tagged data). Purpose and methods: A short description of the methods used to create this project and goals it hopes to achieve. Results summary: A short description of the results your project found. ARU project options box: Default minimum frequency (Hz) and default maximum frequency (Hz) of the spectrogram that will be displayed Default X-Scale: Length displayed in seconds. Corresponds roughly to 0.25x (60 seconds) to 10x (2 seconds) in length displayed Default Y-pixels: Height of the spectrogram in pixels Default monochrome: Default to monochrome colour palette toggle. Alternative is colour Default light mode: Default to light mode toggle; alternative is darkmode spectrograms
 
 ### Species assignment
 
@@ -913,7 +971,7 @@ To add species to your project, click on a species in the Not Included column (t
 
 You can also add an entire group of species using the preset groups found in the Apply Preset button. Click Apply Preset and then search and select which groups of species you’d like to use. You can select one or many groups at a time. Once you’re done with your selection, click Submit and the species will be added to the project.
 
-If you have a preset group or species you would like to be available, email info@wildtrax.ca with a request.
+If you have a preset group or species you would like to be available, email info\@wildtrax.ca with a request.
 
 ### User assignment {#sec-aru-project-users}
 
@@ -956,7 +1014,6 @@ A task is a unique combination of a user, a processing method and a recording. T
 
 Go to the project dashboard and click My Tasks. The form will display the list of tasks currently in view depending on the View only my tasks toggle—switching the toggle to red allows you to filter the list to only your assigned tasks. The metadata for each one includes the location name, the date and time of the recording, the method it was assigned, the status of the task and the assigned user.
 
-
 ### Syncing data to ARU projects
 
 You can sync locations, tasks and tags via an ARU project. This allows you to make changes across many locations, tasks or tags as needed throughout the processing workflow. You may need to use sync to make large changes to location names or visibility settings, edit who is assigned tasks, or change metadata related to species tags. The logic of sync lies in downloading the data from a project (or a template with column headers if there is no data in the project yet).
@@ -967,23 +1024,11 @@ Batch upload processes in WildTrax support **add** and **update** operations onl
 
 Administrators can benefit from managing only the locations from the media in the project, This differs from location management at the organization level, where locations from all projects can be managed.
 
-Click the Manage button and go to Download Location CSV to obtain the current list of locations in the project. If you don’t have any locations yet, a template will be provided.
-Make the changes or additions you’d like in the csv and re-upload the csv with the modifications using Upload Location CSV
+Click the Manage button and go to Download Location CSV to obtain the current list of locations in the project. If you don’t have any locations yet, a template will be provided. Make the changes or additions you’d like in the csv and re-upload the csv with the modifications using Upload Location CSV
 
 If you didn’t generate tasks when you uploaded recordings to the project, or, if you’re using an organization’s recordings to create tasks, you can also use the Upload Tasks tool under the Manage button to automatically generate the tasks you need. Use the Download Tasks or Download CSV Template button and fill in the following fields:
 
-Location: The name of the location.
-Recording date/time: The date and time that a ARU recording was collected (in the format “YYYY-MM-DD HH:MM:SS”).
-Task method: The method used to process the recording (SPM = 1 tag per individual per species per minute, SPT = 1 tag per individual per species per task, NONE = other methods).
-Task duration (seconds): The duration the recording was processed during the task or the duration of the point count.
-Observer ID: The unique numeric primary key of the observer that processed the image or recording, or that conducted the point count.
-ARU task status: The processing state of the ARU project task (recording) (i.e., “New,” “In progress,” “Transcribed,” ‘Bad weather,” or “Malfunction”).
-Rain: The average rain on the task
-Wind: The average wind on the task
-Industry noise: The average chronic industrial noise on the task
-Other noise: Other noise averages on the task
-Audio quality: The audio quality of the task (recording).
-If you have hundreds or thousands of tasks without an assigned user, you can use the Randomly Assign button and select users from the dropdown list on the left to assign tasks to. It will randomly, and equally, assign unassigned tasks to the selected user(s).
+Location: The name of the location. Recording date/time: The date and time that a ARU recording was collected (in the format “YYYY-MM-DD HH:MM:SS”). Task method: The method used to process the recording (SPM = 1 tag per individual per species per minute, SPT = 1 tag per individual per species per task, NONE = other methods). Task duration (seconds): The duration the recording was processed during the task or the duration of the point count. Observer ID: The unique numeric primary key of the observer that processed the image or recording, or that conducted the point count. ARU task status: The processing state of the ARU project task (recording) (i.e., “New,” “In progress,” “Transcribed,” ‘Bad weather,” or “Malfunction”). Rain: The average rain on the task Wind: The average wind on the task Industry noise: The average chronic industrial noise on the task Other noise: Other noise averages on the task Audio quality: The audio quality of the task (recording). If you have hundreds or thousands of tasks without an assigned user, you can use the Randomly Assign button and select users from the dropdown list on the left to assign tasks to. It will randomly, and equally, assign unassigned tasks to the selected user(s).
 
 If you’re a project administrator, you can also delete tasks from the project dashboard by clicking the drop-down arrow beside the desired task and clicking Delete Task. Follow the prompts and warnings accordingly as task deletion is permanent and irreversible.
 
@@ -991,20 +1036,9 @@ The “Manage” button also contains functions that allow you to to upload and 
 
 Before you can upload tags into the system, you’ll need to first upload the recordings and create tasks in order to have the proper metadata needed to populate the tag CSVs. You cannot generate tags for tasks or recordings that don’t exist.
 
-Location: The name of the location
-Recording date/time: The date and time that an ARU recording was collected (in the format YYYY-MM-DD HH:MM:SS)
-Task method: The method used to process the recording (SPM = 1 tag per individual per species per minute, SPT = 1 tag per individual per species per task, NONE = other methods).
-Observer ID: The unique numeric primary key of the observer that processed the image or recording, or that conducted the point count.
-Species common name: The common name of the species that was observed in the tag or point count.
-Individual: This field corresponds to uniquely identified individuals of a species on the recording. In other words, if you hear two Ovenbirds (OVEN), the first individual would be tagged as “1” and the second OVEN as “2”. WildTrax has been designed to automatically populate the Individual field as new data is being entered. Therefore, if you forget to add in the individual number, the system will update it for you automatically in sequence.
-Vocalization: The vocalization type of the tag (i.e., “Song,” “Call,” or “Non-vocal signal”).
-Start time (seconds): The start time(s) of the window of the recording processed by the classifier.
-Tag duration (seconds): The duration of the tag (in seconds).
-Minimum frequency (Hz): The minimum frequency (in Hertz) of the tag.
-Maximum frequency (Hz): The maximum frequency (in Hertz) of the tag.
+Location: The name of the location Recording date/time: The date and time that an ARU recording was collected (in the format YYYY-MM-DD HH:MM:SS) Task method: The method used to process the recording (SPM = 1 tag per individual per species per minute, SPT = 1 tag per individual per species per task, NONE = other methods). Observer ID: The unique numeric primary key of the observer that processed the image or recording, or that conducted the point count. Species common name: The common name of the species that was observed in the tag or point count. Individual: This field corresponds to uniquely identified individuals of a species on the recording. In other words, if you hear two Ovenbirds (OVEN), the first individual would be tagged as “1” and the second OVEN as “2”. WildTrax has been designed to automatically populate the Individual field as new data is being entered. Therefore, if you forget to add in the individual number, the system will update it for you automatically in sequence. Vocalization: The vocalization type of the tag (i.e., “Song,” “Call,” or “Non-vocal signal”). Start time (seconds): The start time(s) of the window of the recording processed by the classifier. Tag duration (seconds): The duration of the tag (in seconds). Minimum frequency (Hz): The minimum frequency (in Hertz) of the tag. Maximum frequency (Hz): The maximum frequency (in Hertz) of the tag.
 
 Click on the Manage button and select Upload Tags. In the new pop-up window, select Choose a CSV file to upload to select your tag data. When the file is uploaded, the “QA Tag Data” button will turn green. Click it and WildTrax will ensure that the data you’re uploading fits the WildTrax standard. This may take a few minutes depending how large your file is.
-
 
 ::: {.callout-warning icon="false" collapse="true"}
 You may be running a classifier outside of WildTrax on your raw media, wishing to sync the classifier hits as tags within a project. Note that some classifiers use windows of data, and syncing these as tags should be proceed with caution. Your best bet when syncing classifier hits is simply to note the start_time of the t
@@ -1032,12 +1066,9 @@ Batch upload processes in WildTrax support **add** and **update** operations onl
 
 ### Downloading reports and media
 
-
-
 ### Merge projects
 
-You may need to use environmental sensors across a number of years or for specific questions related to study design. WildTrax offers an unlimited number of projects that can be created at any time in order to cater to this need. However, there are times when these questions and multi-year projects can be unified to collate and make the data more cohesive. WildTrax gives you this ability with the project merging tool.
-Clicking on the drop-down arrow beside the project name on the dashboard will also show the Merge Project button. This function allows you to merge a source project to a target project.
+You may need to use environmental sensors across a number of years or for specific questions related to study design. WildTrax offers an unlimited number of projects that can be created at any time in order to cater to this need. However, there are times when these questions and multi-year projects can be unified to collate and make the data more cohesive. WildTrax gives you this ability with the project merging tool. Clicking on the drop-down arrow beside the project name on the dashboard will also show the Merge Project button. This function allows you to merge a source project to a target project.
 
 ### Delete a project
 
@@ -1055,39 +1086,17 @@ This section is designed to provide a comprehensive overview of the tools and fe
 
 Audio editing controls have been implemented in WildTrax using hotkeys allowing easy navigation through a task. Hovering over the panel above the spectrogram will remind you how to use these controls at any time if you forget.
 
-Z: Jump back 10 seconds
-M: Jump forward 10 seconds
-B: Toggle display for boxes
-T: Toggle display for species | individual text
-L: Show / hide tags on the left channel
-R: Show / hide tags on the right channel
-Left Arrow: Previous marker
-Right Arrow: Next marker
-Up Arrow: Go to the first marker
-Down Arrow: Go to the last marker
-Spacebar: Pause / Play
-Tab: Move between fields
-1: Create a marker
-Enter: Select within a field
+Z: Jump back 10 seconds M: Jump forward 10 seconds B: Toggle display for boxes T: Toggle display for species \| individual text L: Show / hide tags on the left channel R: Show / hide tags on the right channel Left Arrow: Previous marker Right Arrow: Next marker Up Arrow: Go to the first marker Down Arrow: Go to the last marker Spacebar: Pause / Play Tab: Move between fields 1: Create a marker Enter: Select within a field
 
-You can dynamically set the audio settings which control the spectrogram and audio parameters of the recording for the task. These settings are set by default at the project level by an administrator but you can change them at any time while processing a task. You can set the audio settings by either clicking on the gear icon below the spectrogram or going to Manage > Audio Settings above and to the right of the spectrogram. When you have your desired settings, click Apply or Reset to the project defaults.
+You can dynamically set the audio settings which control the spectrogram and audio parameters of the recording for the task. These settings are set by default at the project level by an administrator but you can change them at any time while processing a task. You can set the audio settings by either clicking on the gear icon below the spectrogram or going to Manage \> Audio Settings above and to the right of the spectrogram. When you have your desired settings, click Apply or Reset to the project defaults.
 
-Channel: Set the default channel that will display on the screen (left, right or both)
-Amplify: Increase the gain or amplitude of the audio to hear faint sounds
-Minimum and Maximum Frequency (Hz): The minimum and maximum bounds displayed on the spectrogram. The audio will be played for the entire spectrum unless the Generate Audio toggle is enabled.
-X-Scale: Use the slider to change the amount of seconds displayed on the spectrogram. A lower value will display more time whereas a larger value will display less time.
-Y-Height: The spectrogram height in pixels. A larger number will increase the vertical dimension of the spectrogram
-Use Monochrome: When toggled on, displays spectrogram in a monochrome format (black and white). Toggle off to display colour spectrogram.s
-Generate Audio: When toggled on, only the audio between the selected frequency ranges will be played.
-Noise Filter: Attempts to apply a noise filter to better help hear the signal.
-Contrast: Contrast range in dB. Default is 120 dB. This sets the dynamic-range of the spectrogram to be the selected value dBFS to 0 dBFS. This may range from 20 to 180 dBFS. Decreasing dynamic-range effectively increases the ‘contrast’ of the spectrogram display, and vice versa.
-Brightness: Sets the upper limit of the Z-axis in dBFS. A negative number effectively increases the ‘brightness’ of the spectrogram display, and vice versa.
+Channel: Set the default channel that will display on the screen (left, right or both) Amplify: Increase the gain or amplitude of the audio to hear faint sounds Minimum and Maximum Frequency (Hz): The minimum and maximum bounds displayed on the spectrogram. The audio will be played for the entire spectrum unless the Generate Audio toggle is enabled. X-Scale: Use the slider to change the amount of seconds displayed on the spectrogram. A lower value will display more time whereas a larger value will display less time. Y-Height: The spectrogram height in pixels. A larger number will increase the vertical dimension of the spectrogram Use Monochrome: When toggled on, displays spectrogram in a monochrome format (black and white). Toggle off to display colour spectrogram.s Generate Audio: When toggled on, only the audio between the selected frequency ranges will be played. Noise Filter: Attempts to apply a noise filter to better help hear the signal. Contrast: Contrast range in dB. Default is 120 dB. This sets the dynamic-range of the spectrogram to be the selected value dBFS to 0 dBFS. This may range from 20 to 180 dBFS. Decreasing dynamic-range effectively increases the ‘contrast’ of the spectrogram display, and vice versa. Brightness: Sets the upper limit of the Z-axis in dBFS. A negative number effectively increases the ‘brightness’ of the spectrogram display, and vice versa.
 
 ### Noise, weather and malfunctions 🌬️ 🌧️
 
 ARUs don’t discriminate between noise sources, including geophonic (e.g., wind and rain) and anthropogenic (e.g., human produced) sounds. Assessing, tagging, and recording these noise sources is important as they can affect species detection depending on the frequency range and amplitude of the abiotic signal.
 
-For example, certain recorders can be placed very close to industrial features such as compressor stations where noise is almost constant throughout the entire recording due to motors, fans, engines, etc. Others can be located near busy roads where cars may pass by. All these sounds have distinct acoustic signatures that can be identified and tagged on a spectrogram. Noise sources can also be biotic such as bugs flying past the microphones. 
+For example, certain recorders can be placed very close to industrial features such as compressor stations where noise is almost constant throughout the entire recording due to motors, fans, engines, etc. Others can be located near busy roads where cars may pass by. All these sounds have distinct acoustic signatures that can be identified and tagged on a spectrogram. Noise sources can also be biotic such as bugs flying past the microphones.
 
 Keep in mind that the assessment of noise can be made both through frequency and/or amplitude. Even faint broad-scale sounds will affect species detection, whereas a loud low-frequency sound can also trick the ear into missing biotic signals.
 
@@ -1097,22 +1106,21 @@ As wind, rain, and industrial noise increase in intensity and frequency, biotic 
 
 You can quickly check if the task will be appropriate for conducting an analysis based on the noted noise threshold. Sometimes this can be very easy (e.g.. recording will have obvious heavy rain). Other times you may need to scroll quickly through the recording to check. You can either proceed with the transcription or change the status of the task to Bad Weather and move onto the next task.
 
+The weather panel also provides a way of making assessments of the weather conditions to determine whether or not they are appropriate for processing. WildTrax will develop recommendations for this in the near future.
 
-The weather panel also provides a way of making assessments of the weather conditions to determine whether or not they are appropriate for processing. WildTrax will develop recommendations for this in the near future. 
-
-Conditions recorded at the nearest weather station (at the nearest time to when the ARU recording took place) are located in the panel just above the spectrogram. Clicking on the panel opens the detailed weather information panel describing both hourly and daily conditions recorded at weather stations within a maximum radius of 155 km. You can toggle through the list of stations with the Previous and Next buttons to get the conditions recorded at various stations. 
+Conditions recorded at the nearest weather station (at the nearest time to when the ARU recording took place) are located in the panel just above the spectrogram. Clicking on the panel opens the detailed weather information panel describing both hourly and daily conditions recorded at weather stations within a maximum radius of 155 km. You can toggle through the list of stations with the Previous and Next buttons to get the conditions recorded at various stations.
 
 ### Map and location photos
 
-If the location of the task you’re working on contains spatial metadata and/or photos were taken during the visit, the Map and Location Photos tabs will automatically appear next to the Audit tab. This allows you to know where the task took place and what the habitat looked like to help with your species identifications. The Location Photos tab will sort the images by visit date so if you took photos in the winter and summer you can see on the ground how your location changes over the season! 
+If the location of the task you’re working on contains spatial metadata and/or photos were taken during the visit, the Map and Location Photos tabs will automatically appear next to the Audit tab. This allows you to know where the task took place and what the habitat looked like to help with your species identifications. The Location Photos tab will sort the images by visit date so if you took photos in the winter and summer you can see on the ground how your location changes over the season!
 
 ### Acoustic tagging methods
 
-The acoustic processing methods in WildTrax are designed to emulate avian point counts and are an amalgamation of recommendations provided by the Bioacoustic Unit, the Boreal Avian Modelling project, and Environment and Climate Change Canada based on standard methodologies. 
+The acoustic processing methods in WildTrax are designed to emulate avian point counts and are an amalgamation of recommendations provided by the Bioacoustic Unit, the Boreal Avian Modelling project, and Environment and Climate Change Canada based on standard methodologies.
 
 The processing method is chosen either during the upload stage of the media or by uploading tasks to a project and is based on two values: the processing length of the recording and the “count-removal” method type.
 
-The first component is the length of time in seconds. The easiest way to think of count-removal is when you tag an individual of a species and then want to “remove it” from the rest of tagging. WildTrax will automatically implement this limit depending on the method you choose. Here we define the limit at the individual level, like OVEN 1 and OVEN 2. There are currently options for a tag per minute limit (1SPM), a tag per task limit (1SPT) or an unlimited number of tags (None). 
+The first component is the length of time in seconds. The easiest way to think of count-removal is when you tag an individual of a species and then want to “remove it” from the rest of tagging. WildTrax will automatically implement this limit depending on the method you choose. Here we define the limit at the individual level, like OVEN 1 and OVEN 2. There are currently options for a tag per minute limit (1SPM), a tag per task limit (1SPT) or an unlimited number of tags (None).
 
 Contact WildTrax Support if you would like an additional method added.
 
@@ -1122,40 +1130,29 @@ You can add tags (click and drag a box) or markers (Hotkey: 1) on spectrograms.
 
 The boxes that comprise the tag are the fundamental way that WildTrax differs from many other audio tagging systems: they allow you to enclose a species detection in real-time while providing information about vocalization frequency, length and amplitude using the dimensions of the box. When a box is drawn on the spectrogram, WildTrax requires you to enter species metadata after it is created, which pauses the recording while the metadata is being added.
 
-In contrast, you can use markers to indicate where a signal is detected without stopping the playback. You’ll still need to return later to each marker, draw a box, and enter the appropriate species metadata but this way you can rapidly annotate the vocalizations you want. WildTrax offers these two different ways to tag species to allow you to create your own workflow for data processing. 
+In contrast, you can use markers to indicate where a signal is detected without stopping the playback. You’ll still need to return later to each marker, draw a box, and enter the appropriate species metadata but this way you can rapidly annotate the vocalizations you want. WildTrax offers these two different ways to tag species to allow you to create your own workflow for data processing.
 
-When a signal is detected, click and drag on the spectrogram to create a box. Draw the box around the outside of the signal. Depending on your study design, you may want to include harmonic frequencies. Once you’ve drawn the box, the Add New Tag window will pop up on the right side of the spectrogram. 
+When a signal is detected, click and drag on the spectrogram to create a box. Draw the box around the outside of the signal. Depending on your study design, you may want to include harmonic frequencies. Once you’ve drawn the box, the Add New Tag window will pop up on the right side of the spectrogram.
 
 There are a minimum set of rules that WildTrax uses to create tags. As the system develops, new rules may be applied in the future. Project administrators are invited to instruct their members to annotate species as necessary for the objectives of the project.
 
-Tags are a minimum of 0.1 seconds and a maximum of 20 seconds long as defined by the constraints of the maximum dimensions of the spectrogram currently employed in WildTrax
-Tags will always have a minimum frequency of 0 Hz and a maximum frequency of 12,000 Hz as defined by the constraints of the maximum dimensions of the spectrogram
-Regardless of spectral coverage, a tag must always have minimum dimensions of 0.1 seconds and 200 Hz otherwise the tag will automatically disappear (in reality the tag must have a minimum size of 5 x 5 pixels)
-Depending on what method is applied to the task, the number of tags per species-individual you can make may be restricted
+Tags are a minimum of 0.1 seconds and a maximum of 20 seconds long as defined by the constraints of the maximum dimensions of the spectrogram currently employed in WildTrax Tags will always have a minimum frequency of 0 Hz and a maximum frequency of 12,000 Hz as defined by the constraints of the maximum dimensions of the spectrogram Regardless of spectral coverage, a tag must always have minimum dimensions of 0.1 seconds and 200 Hz otherwise the tag will automatically disappear (in reality the tag must have a minimum size of 5 x 5 pixels) Depending on what method is applied to the task, the number of tags per species-individual you can make may be restricted
 
-The tag should enclose the whole signal
-The tag should be as “tight” as possible around the signal leaving as little space as possible
-The tag should capture important vocalization patterns and repetitions
+The tag should enclose the whole signal The tag should be as “tight” as possible around the signal leaving as little space as possible The tag should capture important vocalization patterns and repetitions
 
 The fields associated with each tag are as follows:
 
-Species: This field is a dropdown that operates through detecting text either by a modified version of the American Ornithology code system or the English common name of the species. 
-Individual: This field corresponds to uniquely identified individuals of a species on the recording. In other words, if you hear two Ovenbirds (OVEN), the first individual would be tagged as “1” and the second OVEN as “2”. WildTrax has been designed to automatically populate the Individual field as new data is being entered. Therefore, if you forget to add in the individual number, the system will update it for you automatically in sequence.
-Needs Review: This checkbox flags tags for expedited verification or if you’re not confident in the identification of the species or the tag metadata.
-Abundance: This field stores abundance information for each detection. It is broken down into two main categories: for amphibian calling intensity(CI) and all other species (1-10 and TMTT).
-Vocalization Type: This field describes the type of vocalization each detected species/individual made. Vocalization type can be changed for each individual in each minute interval as well. The current options are song, call and non-vocal. 
-Comments: Use this field liberally to make notes about any of the songs or calls relating to the species in question, especially in the case of unknowns.
-At any time during tagging you can edit the information stored for each tag either by clicking on the box, or visiting the logged sounds table. Once you click on the box, you can change the dimensions, position or the metadata for any of the fields when the tag panel is open. You can even change the species code of the tag in case it was, for example, accidentally misidentified or you wanted to change it to an unknown. You can also delete the tag altogether.
+Species: This field is a dropdown that operates through detecting text either by a modified version of the American Ornithology code system or the English common name of the species. Individual: This field corresponds to uniquely identified individuals of a species on the recording. In other words, if you hear two Ovenbirds (OVEN), the first individual would be tagged as “1” and the second OVEN as “2”. WildTrax has been designed to automatically populate the Individual field as new data is being entered. Therefore, if you forget to add in the individual number, the system will update it for you automatically in sequence. Needs Review: This checkbox flags tags for expedited verification or if you’re not confident in the identification of the species or the tag metadata. Abundance: This field stores abundance information for each detection. It is broken down into two main categories: for amphibian calling intensity(CI) and all other species (1-10 and TMTT). Vocalization Type: This field describes the type of vocalization each detected species/individual made. Vocalization type can be changed for each individual in each minute interval as well. The current options are song, call and non-vocal. Comments: Use this field liberally to make notes about any of the songs or calls relating to the species in question, especially in the case of unknowns. At any time during tagging you can edit the information stored for each tag either by clicking on the box, or visiting the logged sounds table. Once you click on the box, you can change the dimensions, position or the metadata for any of the fields when the tag panel is open. You can even change the species code of the tag in case it was, for example, accidentally misidentified or you wanted to change it to an unknown. You can also delete the tag altogether.
 
 Every time a tag is made, the information is saved below the spectrogram in the logged sounds table. This is a running list of all of the detections that are currently in the task. The table lets you keep track of the species and individuals that are already tagged and provides another place to edit tags.
 
 Components of the table include the species code, the minute intervals where the species was detected (where applicable depending on method), the abundance, the vocalization type of the species (shaded in different colours to allow ease of visualization) and the confidence of the identification. If you hover over a coloured cell, you can also see the second within the minute interval that the box was created, and by clicking on the cell, WildTrax will transport you directly to the part of the spectrogram where the species was detected and play the recording (if Auto play mode is selected).
 
-This will also open the Tag panel. Clicking on the drop-down arrow beside the Confidence field will also let you navigate back to the species detection and make edits in the Tag panel. The switch just below the spectrogram allows you to toggle auto-playing the recording when you navigate to a tag. 
+This will also open the Tag panel. Clicking on the drop-down arrow beside the Confidence field will also let you navigate back to the species detection and make edits in the Tag panel. The switch just below the spectrogram allows you to toggle auto-playing the recording when you navigate to a tag.
 
 ### Avian individuals and abundance 🐦
 
-Each tag in WildTrax records the individual number and abundance. These fields seem similar but are quite different, and how you use them to tag your data is dependent on your research objectives. Check with your project administrator on how to tag species on your assigned tasks. 
+Each tag in WildTrax records the individual number and abundance. These fields seem similar but are quite different, and how you use them to tag your data is dependent on your research objectives. Check with your project administrator on how to tag species on your assigned tasks.
 
 An individual is the unique identifier for distinct individuals of a species. Here’s an example of a Tennessee Warbler (TEWA) that receives an individual number of 1 (since it is the first) and an abundance of 1 (since it is one individual).
 
@@ -1163,11 +1160,7 @@ If required by your project, it’s important to ensure individuals are tracked 
 
 The number of individuals you can distinguish and track is dependent on multiple factors and these can either facilitate or hinder your ability. Accuracy in individual tagging increases when:
 
-individuals are territorial (separated spatially)
-individuals are sedentary (not moving or not appearing to move via spectrogram attributes such as amplitude or channel)
-individuals have unique song attributes or singing behaviour
-the species richness on the recording is low (there are no masking signals)
-abiotic signals on the recording are low (there is no noise interference)
+individuals are territorial (separated spatially) individuals are sedentary (not moving or not appearing to move via spectrogram attributes such as amplitude or channel) individuals have unique song attributes or singing behaviour the species richness on the recording is low (there are no masking signals) abiotic signals on the recording are low (there is no noise interference)
 
 It becomes difficult to tag distinct individuals when certain species have life history traits or behaviour leading them to be abundant. Alternatively, you can tag multiple individuals of a species at once and change the abundance value to reflect the count of individuals of that species in the tag. You can also use the TMTT (too many to tag) option to indicate an uncountable number of individuals of the species within the bounds of the tag.
 
@@ -1177,20 +1170,15 @@ Increasing the abundance value should only be used when you’re certain you can
 
 During the breeding season, amphibians congregate together making individual counts difficult. Therefore, WildTrax uses a calling intensity (CI) rank as a common measure of estimating amphibian abundance rather than by distinguishing individuals, like with birds or mammals. Call intensity is used as a metric for relative abundance and is adapted from the North American Amphibian Monitoring Program (NAAMP) Amphibian Calling Index (ACI) (2005).
 
-CI 1: Individuals can be counted, there is space between the calls
-CI 2: Calls of individuals can be distinguished but there is overlap
-CI 3: Full chorus, calls are constant, continuous and overlapping
+CI 1: Individuals can be counted, there is space between the calls CI 2: Calls of individuals can be distinguished but there is overlap CI 3: Full chorus, calls are constant, continuous and overlapping
 
 ### Confidence and classifying unknowns
 
-There are degrees of uncertainty in identifying acoustic signals on a recording. Since vocalizing species make a variety of different sounds, the ability of an observer to identify many hundreds of species and all their vocalization types is learned over time. Checking the Needs Review box helps to filter tags for verification. 
+There are degrees of uncertainty in identifying acoustic signals on a recording. Since vocalizing species make a variety of different sounds, the ability of an observer to identify many hundreds of species and all their vocalization types is learned over time. Checking the Needs Review box helps to filter tags for verification.
 
 When you come across a signal you don’t recognize, you can either classify it as Needs Review and/or as unknown. It’s important that these unknowns are incorporated into the dataset accordingly to define that:
 
-The signal is clear but it cannot be identified
-The signal is too degraded, faint or masked
-The signal is a non-descript short call note or alarm call
-As unknowns are detected they should be placed into sub-categories as much as possible to refine how another observer or project administrator will identify it later on. For example, a triller should be identified as UNTL instead of UNPA (unknown passerine) or UNKN (unknown). Be conservative in the categorization process—if you’re not sure, always revert to the more basal category, like UNKN. Some signals are too faint, degraded or masked, that they’re likely not identifiable. The threshold of signal identification is dependent on many factors including amplitude, signal complexity, observer skill, and how much the signal is masked or overlapped by others in the recording. There are certain species complexes that cross over families and genera of species—in this case the more conservative unknown code should be used.
+The signal is clear but it cannot be identified The signal is too degraded, faint or masked The signal is a non-descript short call note or alarm call As unknowns are detected they should be placed into sub-categories as much as possible to refine how another observer or project administrator will identify it later on. For example, a triller should be identified as UNTL instead of UNPA (unknown passerine) or UNKN (unknown). Be conservative in the categorization process—if you’re not sure, always revert to the more basal category, like UNKN. Some signals are too faint, degraded or masked, that they’re likely not identifiable. The threshold of signal identification is dependent on many factors including amplitude, signal complexity, observer skill, and how much the signal is masked or overlapped by others in the recording. There are certain species complexes that cross over families and genera of species—in this case the more conservative unknown code should be used.
 
 Faint, generic, and indistinct call notes tend to be overlooked when conducting community census tagging as they do not provide much information to the occupancy or detectability of that individual over time; the BU uses standardized replication at each station to account for these tendencies.
 
@@ -1202,23 +1190,17 @@ Animals can produce many different vocalizations. In the current version of Wild
 
 Song is loosely defined as the male, territorial, mate-attracting vocalization produced by passerine (songbird) males and some non-passerine species. In many bird studies, passerine song is used to estimate the density and population size of a species and is a reliable metric. This is because a male passerine generally sings in the territory it’s occupying.
 
-Ovenbird (Seiurus aurocapillus) song
-Black-throated Green Warbler (Setophaga virens) multiple song types
-Calls are any vocalization made by individuals where the sex cannot be distinguished and/or the vocalization is not for mate attraction. Some examples of this include the simpler and less melodious vocalizations typical of some non-passerines as well as vocalizations like alarm calls, begging calls, etc.
+Ovenbird (Seiurus aurocapillus) song Black-throated Green Warbler (Setophaga virens) multiple song types Calls are any vocalization made by individuals where the sex cannot be distinguished and/or the vocalization is not for mate attraction. Some examples of this include the simpler and less melodious vocalizations typical of some non-passerines as well as vocalizations like alarm calls, begging calls, etc.
 
 Exceptions can and do exist in the natural world. For example, despite being passerines, all corvid vocalizations are calls, as both males and females can produce them. Conversely, the Yellow Rail (YERA) is a non-passerine but the primary vocalization (“tik-tik tik-tik-tik”) is always entered as a song since it is for territorial delineation and mate attraction, and the female does not produce the vocalization.
 
 Flight calls are other unique vocalizations given by birds that WildTrax differentiates as they come from trigger-based recordings and separate study designs from scheduled-based recordings. It’s possible with certain families like the thrushes (Turdidae) and blackbirds (Icteridae) to identify these call signals to species.
 
-Night flight call notes
-White-throated Sparrow (Zonotrichia leucophrys) call notes
-Swainson’s Thrush (Catharus ustulatus) call notes
+Night flight call notes White-throated Sparrow (Zonotrichia leucophrys) call notes Swainson’s Thrush (Catharus ustulatus) call notes
 
 Non-vocal vocalizations are mechanical sounds made by a species, such as winnows, bleats, drums or booms that are not made by the vocal tract.
 
-Wilson’s Snipe (Gallinago delicata) winnowing
-Yellow-bellied Sapsucker (Sphyrapicus varius) drumming
-Call+Feeding Buzz are the rapid series of calls produced to capture prey by echolocating species.
+Wilson’s Snipe (Gallinago delicata) winnowing Yellow-bellied Sapsucker (Sphyrapicus varius) drumming Call+Feeding Buzz are the rapid series of calls produced to capture prey by echolocating species.
 
 Little Brown Bat (Myotis lucifugus) feeding buzz
 
@@ -1232,84 +1214,47 @@ If enabled in the project, each processing tasks includes the ability to overlay
 
 ### Species verification
 
-The species verification tab houses a set of tools to assist in the quality control of acoustic tags. In species verification, administrators assign users as validators to verify all tags grouped from a species-vocalization type in a project. Species-vocalization type is used for the grouping to allow the user to focus on one signal type at a time, e.g., Wilson’s Snipe (WISN) calling vs. winnowing. Species verification is important because it allows you to efficiently check all the tags produced in a project before publishing it, thereby dramatically increasing data quality output. 
+The species verification tab houses a set of tools to assist in the quality control of acoustic tags. In species verification, administrators assign users as validators to verify all tags grouped from a species-vocalization type in a project. Species-vocalization type is used for the grouping to allow the user to focus on one signal type at a time, e.g., Wilson’s Snipe (WISN) calling vs. winnowing. Species verification is important because it allows you to efficiently check all the tags produced in a project before publishing it, thereby dramatically increasing data quality output.
 
 ARU species verification in WildTrax is a two-stage approach:
 
-1) Create or import tags in a project
+1)  Create or import tags in a project
 
-2) Verify all the tags of a species-vocalization type
+2)  Verify all the tags of a species-vocalization type
 
 This allows a WildTrax user to have the first pass at processing the acoustic data and then use the verification tools to target and verify tags. Verification tags are populated once the task is completed (or switched to Transcribed). Clicking on the Species tab in the project page displays a list of species-vocalization types, summaries of the total number of verified tags, and tools to assign users for verification, in order to help you manage the verification process. Click on any of the species to enter the verification page.
 
 This is the standard practice currently used in WildTrax. Use this route if you have trained taggers who will be generating tags from assigned tasks.
 
-Upload recordings to a project and generate tasks by checking Create a new task
-Assign users as taggers to the tasks
-Tag all of the tasks in a project
-Assign validators under the Species tab
-Verify all of the tags for each species-vocalization type where desired; return to the tasks to change or delete tags where needed
-Filter by verified tags and mark high quality ones as Nice, or mark as Nice as you verify
-Proceed to publishing your verified project
+Upload recordings to a project and generate tasks by checking Create a new task Assign users as taggers to the tasks Tag all of the tasks in a project Assign validators under the Species tab Verify all of the tags for each species-vocalization type where desired; return to the tasks to change or delete tags where needed Filter by verified tags and mark high quality ones as Nice, or mark as Nice as you verify Proceed to publishing your verified project
 
 If you have outputs from a recognizer and wish to verify the hits and share the results in WildTrax:
 
-Upload recordings to a project and create tasks
-Upload tags from the automated classifier
-Assign validators under the Species tab
-Verify all of the tags for each species-vocalization type where desired; return to the tasks to change or delete tags where needed
-Rate the tags to help determine recognizer performance
-Proceed to publishing your verified project
+Upload recordings to a project and create tasks Upload tags from the automated classifier Assign validators under the Species tab Verify all of the tags for each species-vocalization type where desired; return to the tasks to change or delete tags where needed Rate the tags to help determine recognizer performance Proceed to publishing your verified project
 
 The verification page header designates the species-vocalization type you’re verifying and the filters are metadata you can use to filter the list of tags you see in the single tag panels. The single tag panels allow you to individually access and manipulate the audio and spectrogram properties, and take actions in order to verify the tag.
 
-You can listen to any of the audio in the single tag panels by clicking the Play button  in the top-left hand corner. The icons below the spectrogram indicate the following:
+You can listen to any of the audio in the single tag panels by clicking the Play button in the top-left hand corner. The icons below the spectrogram indicate the following:
 
-Verify: when checked green , the tag has been verified. The background of the single tag panel will also change to green. 
-Rating : when checked yellow , the tag has been rated
-Task link : opens a new tab to the task where the tag was created; the tag will be coloured black in the task
-BirdNET probability: maximum probability (0-1) returned from BirdNET. The number is the maximum value found in all of the 3-second windows where BirdNET also positively detected the species and intersected the tag.
-Amplitude : peak amplitude (in dBFS) of the tag
-Abundance: abundance of the species made in the tag. If TMTT, the icon will appear as
+Verify: when checked green , the tag has been verified. The background of the single tag panel will also change to green. Rating : when checked yellow , the tag has been rated Task link : opens a new tab to the task where the tag was created; the tag will be coloured black in the task BirdNET probability: maximum probability (0-1) returned from BirdNET. The number is the maximum value found in all of the 3-second windows where BirdNET also positively detected the species and intersected the tag. Amplitude : peak amplitude (in dBFS) of the tag Abundance: abundance of the species made in the tag. If TMTT, the icon will appear as
 
-WildTrax uses the BirdNET API and returns the maximum probability from all the 3-second windows that intersected the tag. Note, results from other species are not returned. 
+WildTrax uses the BirdNET API and returns the maximum probability from all the 3-second windows that intersected the tag. Note, results from other species are not returned.
 
-WildTrax returns the maximum value in all of the 3-second windows (in dashed blue lines here) generated by BirdNET that intersect the tag. The value indicates the probability of BirdNET having detected the species in that interval. If BirdNET doesn’t detect the same species, the probability will be 0.
-You can also click on the  button which opens the Help menu describing everything from the legend to keyboard shortcuts and tag selection methods so you can customize your verification workflow the way you want.
+WildTrax returns the maximum value in all of the 3-second windows (in dashed blue lines here) generated by BirdNET that intersect the tag. The value indicates the probability of BirdNET having detected the species in that interval. If BirdNET doesn’t detect the same species, the probability will be 0. You can also click on the button which opens the Help menu describing everything from the legend to keyboard shortcuts and tag selection methods so you can customize your verification workflow the way you want.
 
-Clicking on the top-right corner of the single tag panel  opens the detailed verification window. This window allows you to manipulate the audio and spectrogram parameters in order to verify the tag. The main sections of the detailed verification window include:
+Clicking on the top-right corner of the single tag panel opens the detailed verification window. This window allows you to manipulate the audio and spectrogram parameters in order to verify the tag. The main sections of the detailed verification window include:
 
-Task link (in the header)
-Action buttons
-Tag details
-Spectrogram
-Filters
-The task link will open a new tab and jump back to the task to view where the tag took place, highlighting the tag in black. This is useful if you need more context beyond what is available in the detailed verification window.
+Task link (in the header) Action buttons Tag details Spectrogram Filters The task link will open a new tab and jump back to the task to view where the tag took place, highlighting the tag in black. This is useful if you need more context beyond what is available in the detailed verification window.
 
 Actions are where you can quickly validate the tag after you’ve done any filtering or audio manipulation.
 
- to verify. The icon will turn green when the tag is verified.
-Screen Shot 2022 01 27 at 12.31.09 PM to rate the tag following eBird guidelines.
- to delete. This will delete the tag from the system. The changes will also be tracked in the audit table of the task. 
-Tag details in the left column summarize other useful information about the media and tag in order to help make a decision on the verification of the tag.
+to verify. The icon will turn green when the tag is verified. Screen Shot 2022 01 27 at 12.31.09 PM to rate the tag following eBird guidelines. to delete. This will delete the tag from the system. The changes will also be tracked in the audit table of the task. Tag details in the left column summarize other useful information about the media and tag in order to help make a decision on the verification of the tag.
 
-Minimum frequency: minimum frequency of the tag
-Maximum frequency: maximum frequency of the tag
-Length: length of the recording (seconds)
-Default channel: indicates the channel used for default verification. If one of the channels were malfunctioning, the better channel will appear by default. 
-BirdNET probability: maximum value returned from BirdNET
-Peak dBFS: maximum amplitude of the tag
+Minimum frequency: minimum frequency of the tag Maximum frequency: maximum frequency of the tag Length: length of the recording (seconds) Default channel: indicates the channel used for default verification. If one of the channels were malfunctioning, the better channel will appear by default. BirdNET probability: maximum value returned from BirdNET Peak dBFS: maximum amplitude of the tag
 
-You can manipulate the audio and spectrogram using the different filters and editors located below the tag. These include the following settings that you can combine in any way you’d like to generate the best-looking and -sounding spectrogram to verify the tag. 
+You can manipulate the audio and spectrogram using the different filters and editors located below the tag. These include the following settings that you can combine in any way you’d like to generate the best-looking and -sounding spectrogram to verify the tag.
 
-Amplify: increases the gain, or amplitude, of the media.
-Noise filter: runs a noise profile on the tag and attempts to eliminate noise.
-Channel filter: Select the channel you want to display and listen to (Left or Right). By default, the left channel is visible while both channels are audible.
-Z Contrast: Contrast range in dB. Default is 120 dB. This sets the dynamic-range of the spectrogram to be the selected value dBFS to 0 dBFS. This may range from 20 to 180 dBFS. Decreasing dynamic-range effectively increases the ‘contrast’ of the spectrogram display, and vice versa.
-Z Brightness: Sets the upper limit of the Z-axis in dBFS. A negative number effectively increases the ‘brightness’ of the spectrogram display, and vice versa. 
-Y Scale: Expand the number of pixels displayed on the Y axis. Default is 1x. A larger number stretches the spectrogram vertically.
-Frequency filter toggle: when turned on, limits the audio file to playing only the frequency bounds of the tag. Helpful for eliminating other bandwidths to more clearly hear the signal. 
-
+Amplify: increases the gain, or amplitude, of the media. Noise filter: runs a noise profile on the tag and attempts to eliminate noise. Channel filter: Select the channel you want to display and listen to (Left or Right). By default, the left channel is visible while both channels are audible. Z Contrast: Contrast range in dB. Default is 120 dB. This sets the dynamic-range of the spectrogram to be the selected value dBFS to 0 dBFS. This may range from 20 to 180 dBFS. Decreasing dynamic-range effectively increases the ‘contrast’ of the spectrogram display, and vice versa. Z Brightness: Sets the upper limit of the Z-axis in dBFS. A negative number effectively increases the ‘brightness’ of the spectrogram display, and vice versa. Y Scale: Expand the number of pixels displayed on the Y axis. Default is 1x. A larger number stretches the spectrogram vertically. Frequency filter toggle: when turned on, limits the audio file to playing only the frequency bounds of the tag. Helpful for eliminating other bandwidths to more clearly hear the signal.
 
 # Camera Projects 📸 {#sec-camera-projects}
 
@@ -1331,12 +1276,7 @@ WildTrax requires at least one administrator per project. Project administrators
 
 The general life cycle of a project involves:
 
-Creating a project 
-Adding users to the project 
-Uploading media or data depending on the sensor
-Creating or uploading tasks or surveys
-Creating (processing) or uploading tags or observations
-Verifying and quality controlling tags
+Creating a project Adding users to the project Uploading media or data depending on the sensor Creating or uploading tasks or surveys Creating (processing) or uploading tags or observations Verifying and quality controlling tags
 
 ### Create a camera project
 
@@ -1349,8 +1289,6 @@ Verifying and quality controlling tags
 ### Uploading images and creating tasks
 
 ### Image sets
-
-
 
 ### Image auto-classification
 
@@ -1369,9 +1307,7 @@ Administrators can benefit from managing only the locations from the media in th
 
 To sync location information for locations present in the project:
 
-Click on the “Manage” button > “Download Location CSV” to obtain the “manage tags CSV”, which includes the current list of tags in the project.
-Make the changes to location information you’d like. Note that you cannot add or delete locations using the Manage button from the project page.. However, you can add or delete locations using the Manage button on the Organization > Location page. Attempting to add, change, or remove data in the location column will result in an error on re-upload into WildTrax.
-Re-upload the modified CSV by clicking “Manage” >  “Upload Location CSV.”
+Click on the “Manage” button \> “Download Location CSV” to obtain the “manage tags CSV”, which includes the current list of tags in the project. Make the changes to location information you’d like. Note that you cannot add or delete locations using the Manage button from the project page.. However, you can add or delete locations using the Manage button on the Organization \> Location page. Attempting to add, change, or remove data in the location column will result in an error on re-upload into WildTrax. Re-upload the modified CSV by clicking “Manage” \> “Upload Location CSV.”
 
 ::: {.callout-tip icon="false" collapse="true"}
 Batch upload processes in WildTrax support **add** and **update** operations only; deletions are not allowed. For example, if you accidentally upload an empty CSV, no existing data will be deleted.
@@ -1391,12 +1327,7 @@ Tagging images in WildTrax is relatively flexible in that the user can be as gen
 
 From the tagging screen, select one or more images for tagging in multiple ways:
 
-Click on the image to select it.
-Click and drag your cursor over groups of images
-Using Shift, you can click on the first image; then, holding Shift, click on the last image to select all images in between.
-Using Ctrl, you can select multiple images that are not in consecutive order. This includes being able to drag boxes around multiple subsets of images.
-Select images in the panel on the left-hand side of the screen. Note: Selected images will be highlighted in teal in the number panel. Press ESC at any time to deselect highlighted images.
-Apply tag(s) to selected image(s) using the tagging window. With image(s) selected, click on “Tag Selected X,” where X represents the number of images you have highlighted for tagging, and fill in applicable information.
+Click on the image to select it. Click and drag your cursor over groups of images Using Shift, you can click on the first image; then, holding Shift, click on the last image to select all images in between. Using Ctrl, you can select multiple images that are not in consecutive order. This includes being able to drag boxes around multiple subsets of images. Select images in the panel on the left-hand side of the screen. Note: Selected images will be highlighted in teal in the number panel. Press ESC at any time to deselect highlighted images. Apply tag(s) to selected image(s) using the tagging window. With image(s) selected, click on “Tag Selected X,” where X represents the number of images you have highlighted for tagging, and fill in applicable information.
 
 ![](assets/image-tagging-page.png){.lightbox}
 
@@ -1416,139 +1347,89 @@ Some of the tagging field options are “one-to-many fields,” meaning you can 
 
 Since more than one individual-level tag may occur for a single image, it’s important to note that each tag corresponds with a unique row in the tag report (see section 7.1 Data Downloads).
 
-Species
-The species menu is divided into Mammals, Birds, and Human tags. Common and frequently used species appear at the top of the drop-down menu to facilitate quick tagging.
+Species The species menu is divided into Mammals, Birds, and Human tags. Common and frequently used species appear at the top of the drop-down menu to facilitate quick tagging.
 
 Special species tags are also used:
 
-Unidentified: a species tag used if the individual in the image cannot be identified based on visible features. This is often used when the only images of an individual are blurs, blotches of fur, etc.
-NONE: a species tag used for motion-activated images with no individual(s) present.
-STAFF/SETUP: a species tag used for the series of photos taken while staff are setting up or taking down the camera (humans that occur within the first or last series, using a 5-minute series gap). This tag is applied automatically if the STAFF/SETUP auto-tagger is selected in the project settings.
-Count (camera)
-Count is the number of individuals of a particular species, age, sex, behaviour, etc. (i.e., applies to a specific tag where all other fields remain the same rather than an image). For example, if adults and juveniles occurred together in an image, the count would not equate to the number of both adults and juveniles, but rather, a separate tag for juveniles should be applied, and the counts in the separate tags should include the number of adults and the number of juveniles, respectively.
+Unidentified: a species tag used if the individual in the image cannot be identified based on visible features. This is often used when the only images of an individual are blurs, blotches of fur, etc. NONE: a species tag used for motion-activated images with no individual(s) present. STAFF/SETUP: a species tag used for the series of photos taken while staff are setting up or taking down the camera (humans that occur within the first or last series, using a 5-minute series gap). This tag is applied automatically if the STAFF/SETUP auto-tagger is selected in the project settings. Count (camera) Count is the number of individuals of a particular species, age, sex, behaviour, etc. (i.e., applies to a specific tag where all other fields remain the same rather than an image). For example, if adults and juveniles occurred together in an image, the count would not equate to the number of both adults and juveniles, but rather, a separate tag for juveniles should be applied, and the counts in the separate tags should include the number of adults and the number of juveniles, respectively.
 
 The default count for all wild animals is ‘1.’ The number can be changed if the count is greater than one. The default count for domestic animals, birds, vehicles, and humans is ‘VNA.’ Users can also input VNA if they do not want to collect information in this field.
 
-Age class
-Age class is the categorical age class (choose one) of individual(s) in a tag (when identifiable).
+Age class Age class is the categorical age class (choose one) of individual(s) in a tag (when identifiable).
 
 Age class options:
 
-Adult (Adult; default for mammals): an animal that is old enough to breed.
-Juv (Juvenile): an animal during its first summer [mammals older than neonates but still requiring parental care]. The juvenile tag is only used for an animal’s first summer when they have apparent juvenile features, such as spots.
-UNKN (Unknown): the age class of the individual is unclear.
-VNA (Variable not applicable; default for domestic animals, birds, and humans): the tag does not apply, or the user is not interested in collecting information for this field.
-Sex class
-Sex class is the categorical sex class (choose one) of individual(s) in a tag (when identifiable). For example, ungulate species such as deer, elk, and moose can be identified by sex class based on the presence of antlers, but antlers are not manifested year-round. Therefore, it is recommended that antler-less ungulates are only tagged as a female between May 15 and October 1. Outside of these dates, if antlers are not present, the default of UNKN should be used. Some species, such as bears, are often photographed with their young. When an adult mammal is with a juvenile, it can be assumed to be Female and tagged as such.
+Adult (Adult; default for mammals): an animal that is old enough to breed. Juv (Juvenile): an animal during its first summer \[mammals older than neonates but still requiring parental care\]. The juvenile tag is only used for an animal’s first summer when they have apparent juvenile features, such as spots. UNKN (Unknown): the age class of the individual is unclear. VNA (Variable not applicable; default for domestic animals, birds, and humans): the tag does not apply, or the user is not interested in collecting information for this field. Sex class Sex class is the categorical sex class (choose one) of individual(s) in a tag (when identifiable). For example, ungulate species such as deer, elk, and moose can be identified by sex class based on the presence of antlers, but antlers are not manifested year-round. Therefore, it is recommended that antler-less ungulates are only tagged as a female between May 15 and October 1. Outside of these dates, if antlers are not present, the default of UNKN should be used. Some species, such as bears, are often photographed with their young. When an adult mammal is with a juvenile, it can be assumed to be Female and tagged as such.
 
 Sex class options include: Male, Female, Unknown (default), and VNA (variable not applicable). Users can select VNA if they are not interested in collecting this information.
 
-Behaviour
-Behaviour is a one-to-many field (choose all that apply) used to classify behaviour(s) of mammals (reported as a comma-separated list when syncing tags).
+Behaviour Behaviour is a one-to-many field (choose all that apply) used to classify behaviour(s) of mammals (reported as a comma-separated list when syncing tags).
 
 Behaviour options include: Travelling, Standing, Running, Feeding/Foraging, Drinking, Bedding, Inspecting, Inspecting Camera, Vigilant, Territorial Display, Rutting/Matting, Unknown, Other, and VNA (variable not applicable; default).
 
-Health/Disease
-Health/disease is a one-to-many field (choose all that apply) used to classify descriptors of health and/or disease status (reported as a comma-separated list when syncing tags).
+Health/Disease Health/disease is a one-to-many field (choose all that apply) used to classify descriptors of health and/or disease status (reported as a comma-separated list when syncing tags).
 
 Health/Disease options include: Poor Condition, Discolouration, Hair loss, Lumps, Scarring, Injured, Malformed (environmental and/or genetic), Diseased, Ticks, Mange, Dead, and Other.
 
-Direction of travel
-Direction of travel is a categorical field (choose one) used to classify the direction of travel of moving individual(s). The 12 categories represent the 12 positions of a clock. Assuming the camera always faces 12 o’clock position, the option entered for a moving individual should represent the clock position that an animal moves towards in relation to the direction the camera faces. For example, if the animal travels from left to right, and the movement is perpendicular to where the camera faces, the direction of travel would be “3 -o- Clock.”
+Direction of travel Direction of travel is a categorical field (choose one) used to classify the direction of travel of moving individual(s). The 12 categories represent the 12 positions of a clock. Assuming the camera always faces 12 o’clock position, the option entered for a moving individual should represent the clock position that an animal moves towards in relation to the direction the camera faces. For example, if the animal travels from left to right, and the movement is perpendicular to where the camera faces, the direction of travel would be “3 -o- Clock.”
 
 Direction of travel options include: 1 -o- Clock, 2 -o- Clock, 3 -o- Clock, 4 -o- Clock, 5 -o- Clock, 6 -o- Clock, 7 -o- Clock, 8 -o- Clock, 9 -o- Clock, 10 -o- Clock, 11 -o- Clock, and 12 -o- Clock.
 
-Coat colour
-Coat colour is a one-to-many field (choose all that apply) used to classify the coat colour(s) of mammals (reported as a comma-separated list when syncing tags).
+Coat colour Coat colour is a one-to-many field (choose all that apply) used to classify the coat colour(s) of mammals (reported as a comma-separated list when syncing tags).
 
 Coat colour options include: Beige, Cream, Brown, Chocolate Brown, Dark Brown, Black, Blonde, Cinnamon, Grey, Red, Orange, Yellow, White, Melanistic, and Other.
 
-Coat attributes
-Coat attributes is a one-to-many field (choose all that apply) used to classify attributes of mammals’ coats (reported as a comma-separated list when syncing tags).
+Coat attributes Coat attributes is a one-to-many field (choose all that apply) used to classify attributes of mammals’ coats (reported as a comma-separated list when syncing tags).
 
 Coat attributes tag options include: Spots, Speckled, Salt-pepper, Stripes, Cross-Phase, Chest Blaze, and Other.
 
-Antler tine attributes
-Antler tine attributes is a combined field (choose one combination) used to document information on antler tine attributes, including antler position (the side of the rack being categorized), tine count (the number of antler tines present) and tine count precision (the precision of the tine count). Users will only be able to apply this tag to mammal species with antlers (e.g., Moose, White-tailed deer, etc.).
+Antler tine attributes Antler tine attributes is a combined field (choose one combination) used to document information on antler tine attributes, including antler position (the side of the rack being categorized), tine count (the number of antler tines present) and tine count precision (the precision of the tine count). Users will only be able to apply this tag to mammal species with antlers (e.g., Moose, White-tailed deer, etc.).
 
 Antler tine attributes:
 
-Antler position: the side of the rack being categorized (options include: Left, Right, and Symmetrical)
-Tine count: the number of antler tines present.
-Tine count precision: the precision of the tine count (options include: Exact, Approximate, and At least)
-A screenshot of a computer
+Antler position: the side of the rack being categorized (options include: Left, Right, and Symmetrical) Tine count: the number of antler tines present. Tine count precision: the precision of the tine count (options include: Exact, Approximate, and At least) A screenshot of a computer
 
 Description automatically generated
 
 Note that the three antler tine attributes are concatenated into one value in the resulting tag report.
 
-Collar
-Collar flags are used to identify individuals affixed with a collar (e.g., a GPS collar; may be interpreted as “off-leash” for Domestic Dogs) (reported as ‘TRUE’ or ‘FALSE’ when syncing tags).
+Collar Collar flags are used to identify individuals affixed with a collar (e.g., a GPS collar; may be interpreted as “off-leash” for Domestic Dogs) (reported as ‘TRUE’ or ‘FALSE’ when syncing tags).
 
-Ear tag
-Ear tag flags are used to identify individuals with ear tags (reported as ‘TRUE’ or ‘FALSE’ when syncing tags).
+Ear tag Ear tag flags are used to identify individuals with ear tags (reported as ‘TRUE’ or ‘FALSE’ when syncing tags).
 
-Interacting with human feature (IHF)
-Interacting with human feature (IHF) flags are used to indicate when individual mammals use or interact with human features (e.g., an animal walking in the adjacent forest vs. along the fence, or digging in a compost pile) (reported as ‘TRUE’ or ‘FALSE’ when syncing tags).
+Interacting with human feature (IHF) Interacting with human feature (IHF) flags are used to indicate when individual mammals use or interact with human features (e.g., an animal walking in the adjacent forest vs. along the fence, or digging in a compost pile) (reported as ‘TRUE’ or ‘FALSE’ when syncing tags).
 
-Tag needs review
-Tag needs review flags are applied when species attributes are unclear and need to be checked. Each individual-level tag in an image is associated with a review tag, so it is clear which tag needs to be reviewed (reported as ‘TRUE’ or ‘FALSE’ when syncing tags).
+Tag needs review Tag needs review flags are applied when species attributes are unclear and need to be checked. Each individual-level tag in an image is associated with a review tag, so it is clear which tag needs to be reviewed (reported as ‘TRUE’ or ‘FALSE’ when syncing tags).
 
-Tag comments
-Tag comments are any comments entered by the observer to describe any additional details about the individual(s)-level tag. Note there is also a field to document image comments.
+Tag comments Tag comments are any comments entered by the observer to describe any additional details about the individual(s)-level tag. Note there is also a field to document image comments.
 
 Field of View (FOV) is the extent of a scene that is visible in an image (Wearn & Glover-Kapfer, 2017).
 
 For remote cameras, the camera’s FOV is influenced by how the camera is set up (i.e., camera height and angle, slope, etc.), and it often remains largely unchanged throughout a deployment. However, a camera’s FOV can change during deployment, such as snow blocking the lens or because the camera was nudged by an animal moving past it (e.g., and now faces another tree rather than an open area). When the camera’s FOV has changed when compared to the setup view, users should use the image FOV tags to document images that shouldn’t be included as part of the observation period (and thus the sampling effort). It is important to use the image FOV tags correctly since they allow for the correct estimation of each camera’s sampling effort.
 
-FOV
-Field of View tags are only used when the camera’s FOV has changed significantly (for 3+ hours) compared to the FOV at setup. When this occurs, the images are considered to be ‘Out of range,’ and the observation period ends for the camera. The image(s) may be motion or time-lapse-triggered images.
+FOV Field of View tags are only used when the camera’s FOV has changed significantly (for 3+ hours) compared to the FOV at setup. When this occurs, the images are considered to be ‘Out of range,’ and the observation period ends for the camera. The image(s) may be motion or time-lapse-triggered images.
 
 FOV ‘Out of Range’ criteria:
 
-The camera’s FOV changed for 3+ hours
-The change in FOV was “significant”, which may occur due to:
-Loss of visibility – e.g., the lens is more than 50% covered (by snow, vegetation, fallen trees, etc.). Discretion is used where (e.g.) cattle are leaning on a post and making the camera go in and out of position repeatedly. In such cases, the camera is said to be not working properly the whole time this is happening.
-Major changes in the roll, pitch, and yaw of the camera:
-Roll – the tilt is more than 30 degrees from level. Note: The lines in the image below show the angle to which the horizon would need to rotate to be considered out of range.
-Pitch – the camera’s angle shifted upwards or downwards such that the pole (if used) is now beyond the bottom of the image or above the center of the image.
-Yaw – the bottom of the pole (if used) is out of view beyond the right or left side of the image.
-Application of Image FOV tags
-There are four potential FOV tags, “Within,” “Out of Range,” “END – Last good image in FOV,” and “START – First good image in FOV”. Importantly, the Out of Range tag is automatically applied to the images between the END and START tags (if applied) after a FOV review has been completed.
+The camera’s FOV changed for 3+ hours The change in FOV was “significant”, which may occur due to: Loss of visibility – e.g., the lens is more than 50% covered (by snow, vegetation, fallen trees, etc.). Discretion is used where (e.g.) cattle are leaning on a post and making the camera go in and out of position repeatedly. In such cases, the camera is said to be not working properly the whole time this is happening. Major changes in the roll, pitch, and yaw of the camera: Roll – the tilt is more than 30 degrees from level. Note: The lines in the image below show the angle to which the horizon would need to rotate to be considered out of range. Pitch – the camera’s angle shifted upwards or downwards such that the pole (if used) is now beyond the bottom of the image or above the center of the image. Yaw – the bottom of the pole (if used) is out of view beyond the right or left side of the image. Application of Image FOV tags There are four potential FOV tags, “Within,” “Out of Range,” “END – Last good image in FOV,” and “START – First good image in FOV”. Importantly, the Out of Range tag is automatically applied to the images between the END and START tags (if applied) after a FOV review has been completed.
 
-If the FOV remains unchanged (or altered, but for < 3 hours) compared to the setup view, the camera’s FOV is assumed to be “Within” the normal range (the default), and the observation period includes the entire deployment. However, what if, for example, you’re tagging an image set with ~2,500 images, and there was a period in the middle of the deployment (e.g., images 1001-1551) where snow covered the lens of the camera for more than 3 hours, and thus, these images should be considered “Out of Range.” However, users do not need to manually apply the Out of Range tag manually since WildTrax will populate it automatically after the field of view review if the END and/or START tags are applied. For the first 999 images, the user can leave the image FOV as the default (“WITHIN”) since the FOV remained the same as the setup view, and thus the observation period began with the first image and continued until the FOV changed. Users should apply the END tag to image 1000 since it is the last image with the correct FOV and signifies the end of the observational period. Since the snow melted after image 1551, the user should apply the START tag to image 1552 to signify that the observation period has recommenced.
+If the FOV remains unchanged (or altered, but for \< 3 hours) compared to the setup view, the camera’s FOV is assumed to be “Within” the normal range (the default), and the observation period includes the entire deployment. However, what if, for example, you’re tagging an image set with \~2,500 images, and there was a period in the middle of the deployment (e.g., images 1001-1551) where snow covered the lens of the camera for more than 3 hours, and thus, these images should be considered “Out of Range.” However, users do not need to manually apply the Out of Range tag manually since WildTrax will populate it automatically after the field of view review if the END and/or START tags are applied. For the first 999 images, the user can leave the image FOV as the default (“WITHIN”) since the FOV remained the same as the setup view, and thus the observation period began with the first image and continued until the FOV changed. Users should apply the END tag to image 1000 since it is the last image with the correct FOV and signifies the end of the observational period. Since the snow melted after image 1551, the user should apply the START tag to image 1552 to signify that the observation period has recommenced.
 
 To summarize, follow these instructions to use the FOV tags correctly:
 
-WITHIN (default): applied to images where the camera is assumed to have the camera setup FOV (i.e., is “WITHIN” the normal range). The Field of View field defaults to ‘WITHIN’ as images are assumed to be within range.
-Out of Range: applied to images where the camera’s FOV has changed significantly (for 3+ hours) compared to the setup FOV. This tag does not need to be applied manually; WildTrax will complete the process automatically during the Field of View review. Images may be motion or time-lapse images.
-END – Last good image in FOV: if the FOV has changed significantly (for > 3 hours), apply to the last image with the correct FOV (the camera setup FOV) before the FOV changed (e.g., the last image before snow covers the lens or a cow leans against the camera) to signify the end of the observational period.
-Note that the ‘END’ and ‘START’ tags are only used if the view changes compared to the set-up images.
-START – First good image in FOV: applied if a) the END tag was applied, and b) if the camera’s FOV returns to the correct FOV (the camera setup FOV); applied to the first image captured with the corrected FOV (e.g., snow melts or the cows stops leaning against the camera) to signify that the observation period has recommenced.
-Don’t apply a ‘START’ tag at the beginning of an image set to indicate that the camera has been successfully set up.
-Note that the ‘END’ and ‘START’ tags are only used if the view changes compared to the set-up images.
-After the Field of View review is complete (see the section on Field of View review), the ‘Out of Range’ tag will be automatically applied to the images between the END tag (end of the observation period) and the START tag (beginning of a new observation period).
-Snow presence
-Snow presence flags are applied to images where snow is present on the ground (reported as ‘TRUE’ or ‘FALSE’ when syncing tags). If snow is in the air (i.e., it is snowing) but not on the ground, snow presence should not be flagged.
+WITHIN (default): applied to images where the camera is assumed to have the camera setup FOV (i.e., is “WITHIN” the normal range). The Field of View field defaults to ‘WITHIN’ as images are assumed to be within range. Out of Range: applied to images where the camera’s FOV has changed significantly (for 3+ hours) compared to the setup FOV. This tag does not need to be applied manually; WildTrax will complete the process automatically during the Field of View review. Images may be motion or time-lapse images. END – Last good image in FOV: if the FOV has changed significantly (for \> 3 hours), apply to the last image with the correct FOV (the camera setup FOV) before the FOV changed (e.g., the last image before snow covers the lens or a cow leans against the camera) to signify the end of the observational period. Note that the ‘END’ and ‘START’ tags are only used if the view changes compared to the set-up images. START – First good image in FOV: applied if a) the END tag was applied, and b) if the camera’s FOV returns to the correct FOV (the camera setup FOV); applied to the first image captured with the corrected FOV (e.g., snow melts or the cows stops leaning against the camera) to signify that the observation period has recommenced. Don’t apply a ‘START’ tag at the beginning of an image set to indicate that the camera has been successfully set up. Note that the ‘END’ and ‘START’ tags are only used if the view changes compared to the set-up images. After the Field of View review is complete (see the section on Field of View review), the ‘Out of Range’ tag will be automatically applied to the images between the END tag (end of the observation period) and the START tag (beginning of a new observation period). Snow presence Snow presence flags are applied to images where snow is present on the ground (reported as ‘TRUE’ or ‘FALSE’ when syncing tags). If snow is in the air (i.e., it is snowing) but not on the ground, snow presence should not be flagged.
 
-Image snow depth (m)
-Image snow depth (m) is the depth of snow (in metres) at the distance at which the camera detects motion at the ground/snow surface level.
+Image snow depth (m) Image snow depth (m) is the depth of snow (in metres) at the distance at which the camera detects motion at the ground/snow surface level.
 
-Image water depth (m)
-Image water depth (m) isthe depth of water (in metres) at the distance at which the camera detects motion at the water’s surface.
+Image water depth (m) Image water depth (m) isthe depth of water (in metres) at the distance at which the camera detects motion at the water’s surface.
 
-Fire presence
-Fire presence flags are applied to images where the camera was clearly triggered by fire. Note: there may be animals present in these images or not (reported as ‘TRUE’ or ‘FALSE’ when syncing tags).
+Fire presence Fire presence flags are applied to images where the camera was clearly triggered by fire. Note: there may be animals present in these images or not (reported as ‘TRUE’ or ‘FALSE’ when syncing tags).
 
-Malfunction
-Malfunction flags are applied to images when it appears that the camera is not working properly (e.g., images are completely black or pixelated) (reported as ‘TRUE’ or ‘FALSE’ when syncing tags).
+Malfunction Malfunction flags are applied to images when it appears that the camera is not working properly (e.g., images are completely black or pixelated) (reported as ‘TRUE’ or ‘FALSE’ when syncing tags).
 
-Nice
-Nice flags are used to highlight high-quality images, so they are easier to find at a later date (reported as ‘TRUE’ or ‘FALSE’ when syncing tags).
+Nice Nice flags are used to highlight high-quality images, so they are easier to find at a later date (reported as ‘TRUE’ or ‘FALSE’ when syncing tags).
 
-Image comments
-Image comments are comments entered by the observer to describe any additional details about the image. Note: there is also a field to document individual(s)-level comments.
-
+Image comments Image comments are comments entered by the observer to describe any additional details about the image. Note: there is also a field to document individual(s)-level comments.
 
 ### Image-level tags
 
@@ -1556,17 +1437,15 @@ Image-level tags are applied based on information that can only occur once per i
 
 ### Filter panel
 
-Filters panel (b): The filters panel can be used to search for tagged images or filter for certain parameters within an image set. You can filter for tagged images containing any of the tagging field options (see section 5.2.3 – Tag types for more information), such as tags of a specific species, sex, or age, as well as a variety of descriptive tags, date ranges and field of view. From this window, you can view all hidden images (time-lapsed and auto-tagged) as well as select a date and time of images you want to view. 
+Filters panel (b): The filters panel can be used to search for tagged images or filter for certain parameters within an image set. You can filter for tagged images containing any of the tagging field options (see section 5.2.3 – Tag types for more information), such as tags of a specific species, sex, or age, as well as a variety of descriptive tags, date ranges and field of view. From this window, you can view all hidden images (time-lapsed and auto-tagged) as well as select a date and time of images you want to view.
 
 Number of images per page (e): where you can define how many images are displayed per page.
 
-Bounding box display threshold (f): the minimum classifier confidence level for which bounding boxes will be displayed for the selected detection categories. The default is managed in the camera project settings. 
+Bounding box display threshold (f): the minimum classifier confidence level for which bounding boxes will be displayed for the selected detection categories. The default is managed in the camera project settings.
 
-bounding box
-Page numbers (g): depending on the number of images you display per page, your corresponding number of pages will increase or decrease.
+bounding box Page numbers (g): depending on the number of images you display per page, your corresponding number of pages will increase or decrease.
 
-page numbers
-Image information icon (h): The icon at the bottom right-hand corner of an image can be used to see the image metadata (e.g., Equipment make, Equipment model, Flash mode, etc.). The icon will also display the image URL, which can be used to download a specific image.
+page numbers Image information icon (h): The icon at the bottom right-hand corner of an image can be used to see the image metadata (e.g., Equipment make, Equipment model, Flash mode, etc.). The icon will also display the image URL, which can be used to download a specific image.
 
 ### Image classifiers
 
@@ -1574,18 +1453,17 @@ Image information icon (h): The icon at the bottom right-hand corner of an image
 
 There are four main tagging scenarios you may encounter:
 
-≥ 1 images / 1 individual / 1 species: if you select one or more images with a single individual of a species, then a single tag is applied. Once the tag fields are completed, click “Save All and Close” to apply the tag.
-1 image / >1 individuals / 1 species: if you select a single image that contains > 1 individual of a single species, but age and/or sex differ among these individuals, then multiple tags are applied. Once you have completed the tag fields for the first individual, click  to create a new tag for the next individual. Example: an image with a female moose with a calf. In this case, you would create a unique tag for each individual.
-3) 1 image / ≥ 2 species: If you select a single image that contains > 1 species, then multiple tags are applied. Once you have completed the tag fields for the first species/individual, click “Add Tag” to create a new tag for the next species/individual. Example: an image where a deer triggered the camera and a coyote was also captured in the background. In this case, you would tag the deer and then click “Add Tag” to create a second tag for the coyote (or vice versa).
+≥ 1 images / 1 individual / 1 species: if you select one or more images with a single individual of a species, then a single tag is applied. Once the tag fields are completed, click “Save All and Close” to apply the tag. 1 image / \>1 individuals / 1 species: if you select a single image that contains \> 1 individual of a single species, but age and/or sex differ among these individuals, then multiple tags are applied. Once you have completed the tag fields for the first individual, click to create a new tag for the next individual. Example: an image with a female moose with a calf. In this case, you would create a unique tag for each individual. 3) 1 image / ≥ 2 species: If you select a single image that contains \> 1 species, then multiple tags are applied. Once you have completed the tag fields for the first species/individual, click “Add Tag” to create a new tag for the next species/individual. Example: an image where a deer triggered the camera and a coyote was also captured in the background. In this case, you would tag the deer and then click “Add Tag” to create a second tag for the coyote (or vice versa).
 
-4) >1 image / >1 individuals / 1 species / tags differ: If you select multiple images that contain > 1 individual of a single species and age, sex, or any other tags (e.g., behaviour) differ among these individuals, then multiple tags are applied. Once you have completed the tag fields for the first individual, click “Add Tag” to create a new tag for the next individual.
+4)  
 
-Update all untagged
-Images with abundant species that will all have the same tag, such as Domestic Cows, may be left untagged until the end. Once all other images in the image set (including NONE) have been tagged, you can select the Updated All Untagged button and enter the Domestic Cow tag in the tagging window. Doing so will tag all remaining untagged images (on all pages) as Domestic Cow.  The Updated All Untagged button can be used for any species whose tag attributes (e.g., Individual count, Sex class, or Age class) defaults to ‘VNA.’ Thus, the button can be used for all domestic animals, humans, or NONE. This button cannot be used if the tag attributes vary.
+    > 1 image / \>1 individuals / 1 species / tags differ: If you select multiple images that contain \> 1 individual of a single species and age, sex, or any other tags (e.g., behaviour) differ among these individuals, then multiple tags are applied. Once you have completed the tag fields for the first individual, click “Add Tag” to create a new tag for the next individual.
+
+Update all untagged Images with abundant species that will all have the same tag, such as Domestic Cows, may be left untagged until the end. Once all other images in the image set (including NONE) have been tagged, you can select the Updated All Untagged button and enter the Domestic Cow tag in the tagging window. Doing so will tag all remaining untagged images (on all pages) as Domestic Cow. The Updated All Untagged button can be used for any species whose tag attributes (e.g., Individual count, Sex class, or Age class) defaults to ‘VNA.’ Thus, the button can be used for all domestic animals, humans, or NONE. This button cannot be used if the tag attributes vary.
 
 ### Field of view review
 
-A Field of View review is completed is only if an ‘Out of Range,’ ‘END,’ and/or ‘START’ tag was previously applied during the tagging process, and after all images in an image set have been tagged. 
+A Field of View review is completed is only if an ‘Out of Range,’ ‘END,’ and/or ‘START’ tag was previously applied during the tagging process, and after all images in an image set have been tagged.
 
 ### Species verification
 
@@ -1593,22 +1471,15 @@ Species verification is completed as part of a quality control step within WildT
 
 The main objectives for species verification are:
 
-Ensure manually-applied species tags are correct
-Ensure context-tagged species tags are correct
-Ensure auto-tagged species tags are correct (if applicable)
-Conduct additional analyses on verified images
-To complete species verification:
+Ensure manually-applied species tags are correct Ensure context-tagged species tags are correct Ensure auto-tagged species tags are correct (if applicable) Conduct additional analyses on verified images To complete species verification:
 
 Access your assigned species through the Verify Species tab of the project page.
 
-Checks to complete during species verification: Correct species ID tag(s) and use of attributes tags.
-If errors are found, you can edit the tag by open the tagging form either by: clicking on the image and selecting the “Tag Selected” button in the top right-hand corner of the screen or clicking on the tag below the image. In both cases, edit the tag in the tagging form and click “Save All and Close.”
-Once all images on a page have been checked, click on the “Verify Species” button (e.g., Verify Canada Lynx) at the bottom of the screen. The next page of images to verify will automatically appear. When all images on a page are verified, the images and page navigation boxes turn green to indicate they are complete.
+Checks to complete during species verification: Correct species ID tag(s) and use of attributes tags. If errors are found, you can edit the tag by open the tagging form either by: clicking on the image and selecting the “Tag Selected” button in the top right-hand corner of the screen or clicking on the tag below the image. In both cases, edit the tag in the tagging form and click “Save All and Close.” Once all images on a page have been checked, click on the “Verify Species” button (e.g., Verify Canada Lynx) at the bottom of the screen. The next page of images to verify will automatically appear. When all images on a page are verified, the images and page navigation boxes turn green to indicate they are complete.
 
 Notes on species verification
 
-If a tag was given a “Tag Needs Review” tag during the first round of tagging, that image will have an orange border around it in the side panel to emphasize that this image’s species tag needs to be reviewed with extra care.
-‘Unidentified’ and ‘Tag Needs Review’ tags: Images labelled as ‘Unidentified’ and ‘Tag Needs Review’ are either unidentifiable species and shapes that triggered the camera or identifications that taggers are not 100% sure of, respectively. These tags should be double-checked to verify that tags have been applied correctly. Tags with the ‘Tag Needs Review’ flag that cannot be identified but still possess identifying features should remain as ‘Tag Needs Review.’ However, if the species in the tag cannot be identified and there are no identifiable features, re-tag the species as ‘Unidentified’ and remove the ‘Tag Needs Review’ tag.
+If a tag was given a “Tag Needs Review” tag during the first round of tagging, that image will have an orange border around it in the side panel to emphasize that this image’s species tag needs to be reviewed with extra care. ‘Unidentified’ and ‘Tag Needs Review’ tags: Images labelled as ‘Unidentified’ and ‘Tag Needs Review’ are either unidentifiable species and shapes that triggered the camera or identifications that taggers are not 100% sure of, respectively. These tags should be double-checked to verify that tags have been applied correctly. Tags with the ‘Tag Needs Review’ flag that cannot be identified but still possess identifying features should remain as ‘Tag Needs Review.’ However, if the species in the tag cannot be identified and there are no identifiable features, re-tag the species as ‘Unidentified’ and remove the ‘Tag Needs Review’ tag.
 
 ### Location verification
 
@@ -1616,15 +1487,15 @@ Double-checking the location information is an easy but important task. It shoul
 
 If applicable, you can review the initial STAFF/SETUP photos and compare the location name on the reference sign against the photo labels on WildTrax. If the STAFF/SETUP portion of the auto-tagger and ‘Hide Auto-’ were selected in the camera project settings, STAFF/SETUP photos will be automatically hidden from view in the image tagging page. If these settings apply, the filter will need to be adjusted to complete location validaton.
 
-1) Click on a task to be taken to the tagging page.
+1)  Click on a task to be taken to the tagging page.
 
-2) On the filter panel, Uncheck image 119
+2)  On the filter panel, Uncheck image 119
 
 Notify the project admin if there are any mismatches.
 
 # Point Count Projects 🐦 {#sec-point-count-projects}
 
-**Point counts** are a methodology used to survey animals, mainly birds. It involves an observer standing at a pre-determined location for specific period of time, counting the individuals they detect. Specifically for birds, this detection can either be aurally or visually. To account for error in detecting a species, either because it didn’t sing or wasn't observed during the survey, or the observer misses or misidentifies it, distance estimation and duration intervals are used. All these attributes are what define a survey in WildTrax. When the observer detects a species, it is assigned into a **distance band**, the **duration interval** it was detected, a species and the abundance (or count of individuals). Each detection then becomes an observation.
+**Point counts** are a methodology used to survey animals, mainly birds. It involves an observer standing at a pre-determined location for specific period of time, counting the individuals they detect. Specifically for birds, this detection can either be aurally or visually. To account for error in detecting a species, either because it didn’t sing or wasn't observed during the survey, or the observer misses or misidentifies it, distance estimation and duration intervals are used. All these attributes are what define a survey in WildTrax. When the observer detects a species, it is assigned into a **distance band**, the **duration interval** it was detected, a species and the abundance (or count of individuals). Each detection then becomes an **observation**.
 
 ![](assets/point-count-projects.png){.lightbox}
 
@@ -1632,7 +1503,7 @@ The majority of the point count data available in WildTrax is through a collabor
 
 ## Point count project management
 
-To create a new project, click the Add Point Count Project button in the project dashboard under the point tab. You must be the administrator of at least one organization within WildTrax in order to create a project. The main settings panel will have general information fields and a description of the project. 
+To create a new project, click the Add Point Count Project button in the project dashboard under the point tab. You must be the administrator of at least one organization within WildTrax in order to create a project. The main settings panel will have general information fields and a description of the project.
 
 The general life cycle of a point count project includes:
 
@@ -1640,13 +1511,7 @@ The general life cycle of a point count project includes:
 -   Uploading surveys
 -   Publishing the project
 
-Project Title: The full name used to identify the project as defined by the admin.
-Organization: The name of the organization.
-Year: The year the data was collected.
-Data Source: A field used to specify the original source of the data; this field should be entered if you are importing data from an outside source (e.g., previously tagged data).
-Organization description: A short description about the organization..
-Status: The status of the project (i.e., “Active,” “Test Only,” “Published – Private,” “Published – Public,” “Published – Map+Report Only,” or “Published – Map Only”).
-Once you save your project details, you will be able to manage your users. Select the User Assignment tab to add and view current administrator and read-only project members.
+Project Title: The full name used to identify the project as defined by the admin. Organization: The name of the organization. Year: The year the data was collected. Data Source: A field used to specify the original source of the data; this field should be entered if you are importing data from an outside source (e.g., previously tagged data). Organization description: A short description about the organization.. Status: The status of the project (i.e., “Active,” “Test Only,” “Published – Private,” “Published – Public,” “Published – Map+Report Only,” or “Published – Map Only”). Once you save your project details, you will be able to manage your users. Select the User Assignment tab to add and view current administrator and read-only project members.
 
 ### Syncing point count surveys
 
@@ -1664,25 +1529,53 @@ wt_get_sync_columns("download-point-count-by-project-id", project = 804)
 Batch upload processes in WildTrax support **add** and **update** operations only; deletions are not allowed. For example, if you accidentally upload an empty CSV, no existing data will be deleted.
 :::
 
-You can upload your point count data directly to a project in WildTrax. Here are the required CSV fields : 
+You can upload your point count data directly to a project in WildTrax. Here are the required CSV fields :
 
-Location: The name of the location.
-Point count date/time: The date and time that the point count was conducted (in the format ” YYYY-MM-DD HH:MM:SS”).
-Task method: The method used to process the recording (SPM = 1 tag per individual per species per minute, SPT = 1 tag per individual per species per task, NONE = other methods).
-Task distance: The distance method used during the point count.
-Observer ID: The unique numeric primary key of the observer that processed the image or recording, or that conducted the point count.
-Species common name: The common name of the species that was observed in the tag or point count.
-Distance detection: The distance at which the individual/species was detected.
-Detection time: The time(s) within a recording or point count that a tagged individual/species was detected (in the format “HH:MM:SS”).
-Abundance: The number of individuals; 1-10, TMTT (too many to tag), or CI1, CI2, CI3 for amphibians.
-Detection seen: Was the observation made visually?
-Detection heard: Was the observation made acoustically?
-Task comments: Comments entered by the observer about the task or point count.
-Click on the Manage button and select Upload Surveys. In the new pop-up window, select Choose a CSV file to upload to select your survey data. When the file is uploaded the QA Project Data button will turn green. Click it and WildTrax will ensure that the data you’re uploading fits the WildTrax standard. This may take a few minutes depending how large your file is. 
+```{r}
+point_count_data <- data.frame(
+  Field = c(
+    "Location", "Point Count Date/Time", "Task Method", "Task Distance", 
+    "Observer ID", "Species Common Name", "Distance Detection", 
+    "Detection Time", "Abundance", "Detection Seen", 
+    "Detection Heard", "Task Comments"
+  ),
+  Description = c(
+    "Name of the location.",
+    "The date and time of the point count in the format YYYY-MM-DD HH:MM:SS.",
+    "Method used for processing recordings: SPM = 1 tag per individual per species per minute, SPT = 1 tag per individual per species per task, NONE = Other methods.",
+    "Distance method used during the point count.",
+    "Unique numeric identifier for the observer who processed the image, recording, or conducted the point count.",
+    "Common name of the observed species.",
+    "Distance at which the individual/species was detected.",
+    "Time(s) within a recording or point count when a tagged individual/species was detected, formatted as HH:MM:SS.",
+    "Number of individuals observed: 1-10, TMTT (too many to tag), CI1, CI2, CI3 (for amphibians).",
+    "Was the observation made visually?",
+    "Was the observation made acoustically?",
+    "Observer's comments on the task or point count."
+  )
+)
 
-Just like with ARU and camera media upload, survey data will also implicitly create locations that don’t yet exist in the organization. If the location exists, it will automatically join it to the spatial metadata provided the names match. You can merge locations if you need to later. Furthermore, since surveys only typically contain one visit, you can easily autogenerate them in the organization as well.
+# Render the interactive table
+datatable(
+  point_count_data,
+  options = list(pageLength = 12, autoWidth = TRUE),
+  rownames = FALSE,
+  caption = "Key Fields for Point Count Data"
+)
+
+```
+
+To upload and sync your survey data:
+
+* Click the Manage button and select Upload Surveys.
+* In the pop-up window, select Choose a CSV file to upload your survey data.
+* Once uploaded, the QA Project Data button will turn green. Click it to verify that your data adheres to WildTrax standards. Note: This process may take a few minutes depending on the file size.
+
+Survey data automatically creates new locations if they don’t already exist in the organization and links existing locations to spatial metadata if names match. Locations can be merged as needed, and visits for single-visit surveys can be generated directly within the organization, ensuring seamless integration of survey data into WildTrax while maintaining metadata consistency.
 
 ### Adding location information
+
+
 
 ## Viewing point count data
 
