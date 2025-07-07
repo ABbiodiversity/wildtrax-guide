@@ -8,7 +8,7 @@
 
 <meta name="author" content="Alex MacPhail">
 <meta name="author" content="Another author">
-<meta name="dcterms.date" content="2025-06-17">
+<meta name="dcterms.date" content="2025-07-07">
 
 <title>WildTrax User Guide</title>
 <style>
@@ -83,6 +83,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="guide2.0_files/libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
 <link href="guide2.0_files/libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
 <script src="guide2.0_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const tocItems = document.querySelectorAll('.toc a');
+    tocItems.forEach(item => {
+      item.addEventListener('click', function(event) {
+        event.preventDefault();
+        tocItems.forEach(link => link.parentElement.classList.remove('expanded'));
+        this.parentElement.classList.add('expanded');
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  });
+</script>
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  .toc .expanded {
+    font-weight: bold;
+  }
+  .toc .expanded ul {
+    display: block !important;
+  }
+  .toc ul {
+    display: none;
+  }
+</style>
 
 
 </head>
@@ -303,7 +335,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 17, 2025</p>
+      <p class="date">July 7, 2025</p>
     </div>
   </div>
   
@@ -676,13 +708,13 @@ Tip
 <p>Fill in the fields in the form and click Save. A WildTrax administrator will need to confirm your identity before approving your new Organization request. If you’re having any technical difficulties creating an Organization contact WildTrax Support at support@widltrax.ca.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-f74b961e0fb38c916588" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-f74b961e0fb38c916588">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11"],["Organization acronym","Organization full name","Institution / company / group","Storage location","Default location buffering","Default buffer radius (m)","Allow location reports","Default visit image access","Human blurring","Organization description","Default settings"],["A short-hand name for your organization (e.g., ABMI).","The full name of the organization.","The institution the organization is part of, such as a university or government branch.","Where the data will be stored.","The organization’s default for whether the coordinates entered are exact ('True Locations') or randomly offset ('Buffered Locations') by a specified radius.","The organization’s default location buffer radius (in metres). The radius of the buffer around the location within which the coordinates are randomized (0 if not hidden).","Enables location summary reports when turned on.","Default privacy setting for visit photos uploaded to the organization.","An organization-wide setting for human blurring in images. Options include 'Blur for anonymous users,' 'Blur for everyone,' and 'Blur for non-admins.'","A short description of the organization.","Default settings can be applied at the organization level for tasks such as location buffering or visit image access."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Field<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Field","targets":1},{"name":"Description","targets":2}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-bc02a2e4fcc2967096f9" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-bc02a2e4fcc2967096f9">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11"],["Organization acronym","Organization full name","Institution / company / group","Storage location","Default location buffering","Default buffer radius (m)","Allow location reports","Default visit image access","Human blurring","Organization description","Default settings"],["A short-hand name for your organization (e.g., ABMI).","The full name of the organization.","The institution the organization is part of, such as a university or government branch.","Where the data will be stored.","The organization’s default for whether the coordinates entered are exact ('True Locations') or randomly offset ('Buffered Locations') by a specified radius.","The organization’s default location buffer radius (in metres). The radius of the buffer around the location within which the coordinates are randomized (0 if not hidden).","Enables location summary reports when turned on.","Default privacy setting for visit photos uploaded to the organization.","An organization-wide setting for human blurring in images. Options include 'Blur for anonymous users,' 'Blur for everyone,' and 'Blur for non-admins.'","A short description of the organization.","Default settings can be applied at the organization level for tasks such as location buffering or visit image access."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Field<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Field","targets":1},{"name":"Description","targets":2}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <section id="media-storage" class="level3" data-number="4.1.1">
 <h3 data-number="4.1.1" class="anchored" data-anchor-id="media-storage"><span class="header-section-number">4.1.1</span> Media storage</h3>
-<p>WildTrax offers multiple choices for data storage designed to support the platform’s growing user base and evolving data management needs. Each Organization must select the storage location where they need to store their media. This allows you to quickly access an image or recording at a moment’s need. The current options as of June 17, 2025 currently include:</p>
+<p>WildTrax offers multiple choices for data storage designed to support the platform’s growing user base and evolving data management needs. Each Organization must select the storage location where they need to store their media. This allows you to quickly access an image or recording at a moment’s need. The current options as of July 07, 2025 currently include:</p>
 <ul>
 <li><strong>WildTrax Live Servers</strong>: Hosted at the University of Alberta in Edmonton, Alberta, Canada. These servers provide a cost-effective and sustainable solution with live and off-site backups using <a href="https://aws.amazon.com/s3/storage-classes/glacier/">Amazon Deep Glacier</a>, ensuring secure and reliable data storage for Canadian and international organizations.
 <ul>
@@ -806,8 +838,8 @@ Note
 <p>Click the Locations tab in your organization dashboard. Clicking ”Create Location” will open the location form, where you can add the spatial metadata to the location or configure the location’s settings. You only need to enter the location name, latitude and longitude in order to create a location. When you’ve filled in the form click Save. The map tab will appear allowing you to visualize the point on the landscape. The location will also be visible on maps across WildTrax.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-2ae722827ed1212ee79a" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-2ae722827ed1212ee79a">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Location","Latitude","Longitude","Elevation (m)","Location visibility","Location buffering","Buffer radius (m)","Location description"],["Name of the location.","Latitude in decimal degrees (max 10 digits)","Longitude in decimal degrees (max 10 digits)","Elevation above sea level (metres)","'Visible,' 'Hidden – Location,' or 'Hidden – Location+Data'","True or Buffered Location","Buffer radius (metres) for randomized coordinates (0 if not hidden)","Brief description; more details in visit metadata"],["LOCATION-ABC","54.11910100","-118.1728210","500","Visible","True Location","0","Creek nearby, off game trail"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Field<\/th>\n      <th>Description<\/th>\n      <th>Example<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Field","targets":1},{"name":"Description","targets":2},{"name":"Example","targets":3}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-bd47f708fe6922464f8d" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-bd47f708fe6922464f8d">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Location","Latitude","Longitude","Elevation (m)","Location visibility","Location buffering","Buffer radius (m)","Location description"],["Name of the location.","Latitude in decimal degrees (max 10 digits)","Longitude in decimal degrees (max 10 digits)","Elevation above sea level (metres)","'Visible,' 'Hidden – Location,' or 'Hidden – Location+Data'","True or Buffered Location","Buffer radius (metres) for randomized coordinates (0 if not hidden)","Brief description; more details in visit metadata"],["LOCATION-ABC","54.11910100","-118.1728210","500","Visible","True Location","0","Creek nearby, off game trail"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Field<\/th>\n      <th>Description<\/th>\n      <th>Example<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"autoWidth":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Field","targets":1},{"name":"Description","targets":2},{"name":"Example","targets":3}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" style="background-color: #f4f4f4; padding: 20px;">
@@ -877,8 +909,8 @@ Table&nbsp;1
 </figcaption>
 <div aria-describedby="tbl-location-sync-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-d7129b46e7e4a6fd07d7" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-d7129b46e7e4a6fd07d7">{"x":{"filter":"none","vertical":false,"caption":"<caption style=\"caption-side: top; text-align: center;\">Location Sync Field Descriptions<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10"],["location","location_latitude","location_longitude","elevation","location_buffer_m","location_visibility","location_true_coordinates","comments","internal_wildtrax_id","internal_update_ts"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Column name<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"dom":"t","autoWidth":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"value","targets":1}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-42d904812c19a0fc1527" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-42d904812c19a0fc1527">{"x":{"filter":"none","vertical":false,"caption":"<caption style=\"caption-side: top; text-align: center;\">Location Sync Field Descriptions<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10"],["location","location_latitude","location_longitude","elevation","location_buffer_m","location_visibility","location_true_coordinates","comments","internal_wildtrax_id","internal_update_ts"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Column name<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"dom":"t","autoWidth":true,"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"value","targets":1}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </figure>
@@ -1868,7 +1900,7 @@ Tip
 <p>Project Title: The full name used to identify the project as defined by the admin. Organization: The name of the organization. Year: The year the data was collected. Data Source: A field used to specify the original source of the data; this field should be entered if you are importing data from an outside source (e.g., previously tagged data). Organization description: A short description about the organization.. Status: The status of the project (i.e., “Active,” “Test Only,” “Published – Private,” “Published – Public,” “Published – Map+Report Only,” or “Published – Map Only”). Once you save your project details, you will be able to manage your users. Select the User Assignment tab to add and view current administrator and read-only project members.</p>
 <section id="syncing-point-count-surveys" class="level3" data-number="9.1.1">
 <h3 data-number="9.1.1" class="anchored" data-anchor-id="syncing-point-count-surveys"><span class="header-section-number">9.1.1</span> Syncing point count surveys</h3>
-<p>You can synchronize your point count with WildTrax in order to batch upload or download and modify and re-upload surveys within the system. The format of the Survey Sync can be found in <a href="#tbl-survey-sync" class="quarto-xref">Table&nbsp;2</a>.</p>
+<p>You can synchronize your point count with WildTrax in order to batch upload or download and modify and re-upload surveys within the system. The format of the sync columns can be found in <a href="#tbl-survey-sync" class="quarto-xref">Table&nbsp;2</a>.</p>
 <div id="tbl-survey-sync" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-survey-sync-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1913,7 +1945,7 @@ Tip
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Common name of the observed species."</span>,</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Distance at which the individual/species was detected."</span>,</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Time(s) within a recording or point count when a tagged individual/species was detected, formatted as HH:MM:SS."</span>,</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Number of individuals observed: 1-10, TMTT (too many to tag), CI1, CI2, CI3 (for amphibians)."</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Number of individuals observed"</span>,</span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Was the observation made visually?"</span>,</span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Was the observation made acoustically?"</span>,</span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Observer's comments on the task or point count."</span></span>
@@ -1928,8 +1960,8 @@ Tip
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">"Key Fields for Point Count Data"</span></span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-1c2c4506d7a4b965f17a" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-1c2c4506d7a4b965f17a">{"x":{"filter":"none","vertical":false,"caption":"<caption>Key Fields for Point Count Data<\/caption>","data":[["Location","Point Count Date/Time","Task Method","Task Distance","Observer ID","Species Common Name","Distance Detection","Detection Time","Abundance","Detection Seen","Detection Heard","Task Comments"],["Name of the location.","The date and time of the point count in the format YYYY-MM-DD HH:MM:SS.","Method used for processing recordings: SPM = 1 tag per individual per species per minute, SPT = 1 tag per individual per species per task, NONE = Other methods.","Distance method used during the point count.","Unique numeric identifier for the observer who processed the image, recording, or conducted the point count.","Common name of the observed species.","Distance at which the individual/species was detected.","Time(s) within a recording or point count when a tagged individual/species was detected, formatted as HH:MM:SS.","Number of individuals observed: 1-10, TMTT (too many to tag), CI1, CI2, CI3 (for amphibians).","Was the observation made visually?","Was the observation made acoustically?","Observer's comments on the task or point count."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":12,"autoWidth":true,"columnDefs":[{"name":"Field","targets":0},{"name":"Description","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[10,12,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-55bddaaa3057f5bbbd90" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-55bddaaa3057f5bbbd90">{"x":{"filter":"none","vertical":false,"caption":"<caption>Key Fields for Point Count Data<\/caption>","data":[["Location","Point Count Date/Time","Task Method","Task Distance","Observer ID","Species Common Name","Distance Detection","Detection Time","Abundance","Detection Seen","Detection Heard","Task Comments"],["Name of the location.","The date and time of the point count in the format YYYY-MM-DD HH:MM:SS.","Method used for processing recordings: SPM = 1 tag per individual per species per minute, SPT = 1 tag per individual per species per task, NONE = Other methods.","Distance method used during the point count.","Unique numeric identifier for the observer who processed the image, recording, or conducted the point count.","Common name of the observed species.","Distance at which the individual/species was detected.","Time(s) within a recording or point count when a tagged individual/species was detected, formatted as HH:MM:SS.","Number of individuals observed","Was the observation made visually?","Was the observation made acoustically?","Observer's comments on the task or point count."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":12,"autoWidth":true,"columnDefs":[{"name":"Field","targets":0},{"name":"Description","targets":1}],"order":[],"orderClasses":false,"lengthMenu":[10,12,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>To upload and sync your survey data:</p>
@@ -2378,7 +2410,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"selector":".lightbox","descPosition":"bottom","openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":false,"openEffect":"zoom","closeEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

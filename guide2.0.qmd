@@ -7,6 +7,42 @@ format:
       body-width: 1100px
       margin-width: 100px
       gutter-width: 1.5rem
+    theme: simplex
+    mainfont: Roboto
+    include-in-header: 
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            const tocItems = document.querySelectorAll('.toc a');
+            tocItems.forEach(item => {
+              item.addEventListener('click', function(event) {
+                event.preventDefault();
+                tocItems.forEach(link => link.parentElement.classList.remove('expanded'));
+                this.parentElement.classList.add('expanded');
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                  targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              });
+            });
+          });
+        </script>
+        <style>
+          body {
+            font-family: 'Roboto', sans-serif;
+          }
+          .toc .expanded {
+            font-weight: bold;
+          }
+          .toc .expanded ul {
+            display: block !important;
+          }
+          .toc ul {
+            display: none;
+          }
+        </style>
 website:
   search: 
     location: navbar
@@ -22,46 +58,9 @@ toc-depth: 5
 toc-location: left
 number-sections: true
 editor: visual
-theme: simplex
 styles: styles.css
-include-in-header: |
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const tocItems = document.querySelectorAll('.toc a');
-      
-      tocItems.forEach(item => {
-        item.addEventListener('click', function(event) {
-          // Prevent default behavior
-          event.preventDefault();
-
-          // Collapse all other sections
-          tocItems.forEach(link => link.parentElement.classList.remove('expanded'));
-
-          // Expand clicked section
-          this.parentElement.classList.add('expanded');
-
-          // Scroll to the linked section
-          const targetId = this.getAttribute('href').substring(1);
-          const targetElement = document.getElementById(targetId);
-          if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        });
-      });
-    });
-  </script>
-  <style>
-    .toc .expanded {
-      font-weight: bold;
-    }
-    .toc .expanded ul {
-      display: block !important;
-    }
-    .toc ul {
-      display: none;
-    }
-  </style>
 ---
+
 
 ```{r}
 #| echo: false
@@ -1512,7 +1511,7 @@ Project Title: The full name used to identify the project as defined by the admi
 
 ### Syncing point count surveys
 
-You can synchronize your point count with WildTrax in order to batch upload or download and modify and re-upload surveys within the system. The format of the Survey Sync can be found in @tbl-survey-sync.
+You can synchronize your point count with WildTrax in order to batch upload or download and modify and re-upload surveys within the system. The format of the sync columns can be found in @tbl-survey-sync.
 
 ```{r}
 #| eval: false
@@ -1545,7 +1544,7 @@ point_count_data <- data.frame(
     "Common name of the observed species.",
     "Distance at which the individual/species was detected.",
     "Time(s) within a recording or point count when a tagged individual/species was detected, formatted as HH:MM:SS.",
-    "Number of individuals observed: 1-10, TMTT (too many to tag), CI1, CI2, CI3 (for amphibians).",
+    "Number of individuals observed",
     "Was the observation made visually?",
     "Was the observation made acoustically?",
     "Observer's comments on the task or point count."
