@@ -11,7 +11,7 @@ format:
     mainfont: Roboto
     include-in-header: 
       text: |
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <script>
           document.addEventListener("DOMContentLoaded", function() {
             const tocItems = document.querySelectorAll('.toc a');
@@ -33,6 +33,16 @@ format:
           body {
             font-family: 'Roboto', sans-serif;
           }
+          strong, b {
+            font-weight: 700;
+          }
+          em, i {
+            font-style: italic;
+          }
+          strong em, strong i, b em, b i {
+            font-weight: 700;
+            font-style: italic;
+          }
           .toc .expanded {
             font-weight: bold;
           }
@@ -47,6 +57,7 @@ website:
   search: 
     location: navbar
     type: overlay
+
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 author: 
   - name: "Alex MacPhail"
@@ -60,7 +71,6 @@ number-sections: true
 editor: visual
 styles: styles.css
 ---
-
 
 ```{r}
 #| echo: false
@@ -138,7 +148,7 @@ Your individual user account ensures data security and assigns specific roles wi
 <img src="assets/aru-processing.png" alt="ARU Processing" style="width: 45%; height: auto;"/><img src="assets/camera-processing.png" alt="Camera Processing" style="width: 45%; height: auto;"/>
 :::
 
--   After processing, projects can be [**published**](#sec-publishing-and-sharing) in order to shared with other WildTrax users or the public. Projects will become available in the dashboard and within [**Data Discover**](discover.wildtrax.ca).
+- After processing, projects can be [**published**](#sec-publishing-and-sharing) in order to shared with other WildTrax users or the public. Projects will become available in the dashboard and within [**Data Discover**](discover.wildtrax.ca).
 
 ![](assets/data-discover-landing-page.png){.lightbox}
 
@@ -164,14 +174,14 @@ Check out this video tutorial on WildTrax's Privacy Settings.
 
 WildTrax provides robust tools to manage environmental sensor data. Following these steps will help you seamlessly integrate your data and maximize the platform's capabilities. The general life cycle of data within WildTrax involves:
 
--   **Create an [Organization](#sec-organizations)**: Set up an organization to manage and store your data.\
--   **Create a [Project](#sec-aru-projects)**: Establish a project to process your data to answer a specific question.\
--   **Add Users**: Invite team members with specific roles to your organization and project for collaborative data management.\
--   **Upload recordings or images**: Upload and organize your recordings and images files for upload and processing.
--   **Create or Upload Tasks/Surveys**: Define tasks or upload surveys to guide data processing with specific methodology.
--   **Process or Upload Tags/Observations**: Generate tags or observations during processing, or upload pre-existing ones.\
--   **Verify and Quality Control**: Review and validate tags to ensure accuracy.\
--   **Publish the Project**: Finalize and publish the project for access and use.
+- **Create an [Organization](#sec-organizations)**: Set up an organization to manage and store your data.\
+- **Create a [Project](#sec-aru-projects)**: Establish a project to process your data to answer a specific question.\
+- **Add Users**: Invite team members with specific roles to your organization and project for collaborative data management.\
+- **Upload recordings or images**: Upload and organize your recordings and images files for upload and processing.
+- **Create or Upload Tasks/Surveys**: Define tasks or upload surveys to guide data processing with specific methodology.
+- **Process or Upload Tags/Observations**: Generate tags or observations during processing, or upload pre-existing ones.\
+- **Verify and Quality Control**: Review and validate tags to ensure accuracy.\
+- **Publish the Project**: Finalize and publish the project for access and use.
 
 ## Publishing, sharing and downloading data {#sec-publishing-and-sharing}
 
@@ -187,8 +197,8 @@ Need to understand more about how to publish a project? Check out the video tuto
 
 *Active Projects*
 
-- **Active**: Active projects are currently being processed or designed, or are in the preliminary stages of data uploading. Use this status for any general use or if the project is actively being worked on. This is the default project status when it is first created.
-- **Test**: Just getting started with an environmental sensor program? Or have some media you want to upload to test WildTrax’s functionalities? Use the Test status in these cases. Project data will not be visible in Data Downloads or Data Discover except to project members.
+-   **Active**: Active projects are currently being processed or designed, or are in the preliminary stages of data uploading. Use this status for any general use or if the project is actively being worked on. This is the default project status when it is first created.
+-   **Test**: Just getting started with an environmental sensor program? Or have some media you want to upload to test WildTrax’s functionalities? Use the Test status in these cases. Project data will not be visible in Data Downloads or Data Discover except to project members.
 
 *Published Projects*
 
@@ -207,16 +217,16 @@ Reports in WildTrax can be accessed at the project level. They provide high and 
 
 Proper equipment will enhance your experience and data quality using WildTrax. The following equipment is recommended for processing camera image data.
 
--   A computer with a minimum screen size of 15″
--   A stable, high speed internet connection
+- A computer with a minimum screen size of 15″
+- A stable, high speed internet connection
 
 For acoustic data processing:
 
--   Headphones with the following specifications:
--   Stereo
--   Circumaural (fully enclosing the ear)
--   Minimum frequency response: 20 – 20000 Hz
--   No bass boost (flat frequency response)
+- Headphones with the following specifications:
+- Stereo
+- Circumaural (fully enclosing the ear)
+- Minimum frequency response: 20 – 20000 Hz
+- No bass boost (flat frequency response)
 
 ------------------------------------------------------------------------
 
@@ -224,15 +234,15 @@ For acoustic data processing:
 
 WildTrax operates under a [role-based access control](https://en.wikipedia.org/wiki/Role-based_access_control) meaning users can collaborate to manage or share data to answer broader scientific questions by assigning appropriate privileges to the data. Access to certain features, tools, or data may vary based on your permission level. For example, access to project data can be restricted by [location settings](#sec-location-settings) or the project's [publication status](#sec-publishing-and-sharing). Here's an overview of the key permissions levels:
 
-- [Organization membership](#sec-organization-membership) all you to see or govern access to all projects and data under an Organization. Permissions at the Organization level include:
-    - **Administrator**
-    - **Read-Only Member**
-- [Location visibility](#sec-location-settings) and buffering controls whether whether locations are visible or hidden for privacy purposes
-- [Project membership](#sec-aru-project-users) dictates what you can do within specific projects such as uploading media, processing tasks or verify species tags roles include:
-    - **Administrator**
-    - **Tagger**
-    - **Read-Only Member**
-- [Project Status](#sec-publishing-and-sharing) dictates whether members or the public can access a project or its data. Active and Test projects are accessible only to members of the respective Organization or Project. Once a project is published, the visibility and access to its data depend on the permission level assigned to the user.
+-   [Organization membership](#sec-organization-membership) all you to see or govern access to all projects and data under an Organization. Permissions at the Organization level include:
+    -   **Administrator**
+    -   **Read-Only Member**
+-   [Location visibility](#sec-location-settings) and buffering controls whether whether locations are visible or hidden for privacy purposes
+-   [Project membership](#sec-aru-project-users) dictates what you can do within specific projects such as uploading media, processing tasks or verify species tags roles include:
+    -   **Administrator**
+    -   **Tagger**
+    -   **Read-Only Member**
+-   [Project Status](#sec-publishing-and-sharing) dictates whether members or the public can access a project or its data. Active and Test projects are accessible only to members of the respective Organization or Project. Once a project is published, the visibility and access to its data depend on the permission level assigned to the user.
 
 ::: {.callout-tip collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
 The interaction of these permission levels defines the scope of data you can view and how you can engage with it on WildTrax. For example, since Organizations are parent entities to projects, Organization administrators automatically inherit Project Administrator privileges. However, users assigned read-only access at the project level will not gain access to the parent Organization.
@@ -248,11 +258,11 @@ The user settings dashboard can be accessed by clicking on your username in the 
 
 The user settings dashboard controls the following properties related to your account:
 
-- **Name**: your full name
-- **Initials**: an acronym or set of initials you can use to define an observer or user
-- **Subscribe to Newsletter**: a toggle that will opt you in for occasional WildTrax newsletters delivered to your email
-- **Language**: your default language. Currently available in English and French.
-- **Affiliation (optional)**: the organization, institution or group of which you’re a member or user in the system.
+-   **Name**: your full name
+-   **Initials**: an acronym or set of initials you can use to define an observer or user
+-   **Subscribe to Newsletter**: a toggle that will opt you in for occasional WildTrax newsletters delivered to your email
+-   **Language**: your default language. Currently available in English and French.
+-   **Affiliation (optional)**: the organization, institution or group of which you’re a member or user in the system.
 
 Once you’ve made your desired changes, click the ![](assets/update.png){height="30px"} button.
 
@@ -284,11 +294,11 @@ Use attribute filters or select a specific sensor to search available data withi
 
 You can search by:
 
-- **Taxonomy**: Classify data based on class, order, family, and genus.
-- **Species**: Search for individual species or add multiple species to your selection.
-- [**Organizations**](#sec-organizations)
-- **Projects** by sensor, either [ARU](#sec-aru-projects), [camera](#ec-camera-projects), or [point count](#sec-point-count-projects)
-- **Dates and times** (also months and hours) within set intervals or with start and end dates
+-   **Taxonomy**: Classify data based on class, order, family, and genus.
+-   **Species**: Search for individual species or add multiple species to your selection.
+-   [**Organizations**](#sec-organizations)
+-   **Projects** by sensor, either [ARU](#sec-aru-projects), [camera](#ec-camera-projects), or [point count](#sec-point-count-projects)
+-   **Dates and times** (also months and hours) within set intervals or with start and end dates
 
 Note you must select one sensor must be selected before you can proceed with other You can delete the selected options in the filter panel at the bottom left of the panel using Delete Layer.
 
@@ -312,8 +322,8 @@ Click the **Layer Summary** icon in the bottom-right corner to view a visual rep
 
 ![Summary window](assets/data-discover-summaries.png){.lightbox}
 
-- **Summary Tab**: View pie charts detailing the number of organizations, projects, and species for your selected area. Scroll down for bar charts representing tag counts across months and hours.
-- **Media Tab**: Tiles correspond to species tags. Play audio clips or view images. Observe the minimum and maximum frequency of an audio clip in its ARU spectogram. Note that point counts do not include any media.
+-   **Summary Tab**: View pie charts detailing the number of organizations, projects, and species for your selected area. Scroll down for bar charts representing tag counts across months and hours.
+-   **Media Tab**: Tiles correspond to species tags. Play audio clips or view images. Observe the minimum and maximum frequency of an audio clip in its ARU spectogram. Note that point counts do not include any media.
 
 ![](assets/media-tab.png){.lightbox}
 
@@ -388,9 +398,9 @@ datatable(
 
 WildTrax offers multiple choices for data storage designed to support the platform's growing user base and evolving data management needs. Each Organization must select the storage location where they need to store their media. This allows you to quickly access an image or recording at a moment's need. The current options as of `r format(Sys.Date(), "%B %d, %Y")` currently include:
 
-- **WildTrax Live Servers**: Hosted at the University of Alberta in Edmonton, Alberta, Canada. These servers provide a cost-effective and sustainable solution with live and off-site backups using [Amazon Deep Glacier](https://aws.amazon.com/s3/storage-classes/glacier/), ensuring secure and reliable data storage for Canadian and international organizations.
+-   **WildTrax Live Servers**: Hosted at the University of Alberta in Edmonton, Alberta, Canada. These servers provide a cost-effective and sustainable solution with live and off-site backups using [Amazon Deep Glacier](https://aws.amazon.com/s3/storage-classes/glacier/), ensuring secure and reliable data storage for Canadian and international organizations.
     -   <mark>Free Storage Tier: 250 GB, Annual Cost: \$ 75.00 CAD / TB</mark>
-- [**Amazon Web Services (AWS)**](https://aws.amazon.com/): Retained as an option for users requiring cloud-based storage with global accessibility and high-performance capabilities with international storage base options. Current locations include **Oregon** and **Montreal**.
+-   [**Amazon Web Services (AWS)**](https://aws.amazon.com/): Retained as an option for users requiring cloud-based storage with global accessibility and high-performance capabilities with international storage base options. Current locations include **Oregon** and **Montreal**.
     -   <mark>Free Storage Tier: 50 GB, Annual Cost: \$ 360.00 CAD / TB</mark>
 
 The selection of a default storage location now balances data sovereignty, cost efficiency, and upload/download performance based on geographic proximity. For detailed guidance, refer to WildTrax’s [Terms and Conditions of Use and Data Access Policies](https://wildtrax.ca/about/policies/), or contact info\@wildtrax.ca for additional support.
@@ -407,20 +417,20 @@ Organizations can manage the privacy of locations and images within the system t
 
 For location privacy, two approaches are available within the **Default Location Buffering** field.
 
-- **True locations**: Upload exact coordinates into the system. If a buffer is added, non-members or public viewers will only see buffered locations. This allows you to have access to and manage the true locations within WildTrax while simulatenously allowing users to gain access to the data without knowing the true coordinates
-- **Buffered locations**: Supply pre-buffered coordinates to the system, specifying the radius used. This ensures the displayed locations are already obscured as intended.
+-   **True locations**: Upload exact coordinates into the system. If a buffer is added, non-members or public viewers will only see buffered locations. This allows you to have access to and manage the true locations within WildTrax while simulatenously allowing users to gain access to the data without knowing the true coordinates
+-   **Buffered locations**: Supply pre-buffered coordinates to the system, specifying the radius used. This ensures the displayed locations are already obscured as intended.
 
 The **Allow Location Reports** feature enables you to create shareable links for external audiences, such as collaborators or landowners, without granting them privileges or exposing unnecessary details about your organization. The **Default Location Photo Access** field governs global permissions for accessing [location photos](#sec-location-photos).
 
-- **Private**: Only members of the organization or project can view the location photos even if the project is published
-- **Project-level Access**: members of the project can view the location photos, but non-members cannot even if the project is published
-- **Publicly Viewable**: if a project is published, non-members can view the location photos within the tasks
+-   **Private**: Only members of the organization or project can view the location photos even if the project is published
+-   **Project-level Access**: members of the project can view the location photos, but non-members cannot even if the project is published
+-   **Publicly Viewable**: if a project is published, non-members can view the location photos within the tasks
 
 **Human Blurring** applies organization-wide settings to blur humans detected in images. The available options include:
 
-- **Blur for anonymous users (if applicable)**: images of humans will be blurred for all non-read only/non-admin WildTrax users if project data is visible based on the project status.
-- **Blur for non-admins**: images of humans will be blurred for all WildTrax users regardless of their organization or project membership.
-- **Blur for everyone**: images of humans will be blurred for all read-only WildTrax users.
+-   **Blur for anonymous users (if applicable)**: images of humans will be blurred for all non-read only/non-admin WildTrax users if project data is visible based on the project status.
+-   **Blur for non-admins**: images of humans will be blurred for all WildTrax users regardless of their organization or project membership.
+-   **Blur for everyone**: images of humans will be blurred for all read-only WildTrax users.
 
 Choose the option that best aligns with your needs and data privacy policies. For example, if you opt out of Human Blurring, you acknowledge that uploaded images—and those potentially shared publicly—may include humans, accepting the associated risks.
 
@@ -434,17 +444,17 @@ After your organization is approved, the ![](assets/users-menu.png){height="40px
 
 **Organization administrators** collaboratively manage the media and metadata of the organization and have the ability to:
 
-- Enjoy administrator privileges by default on all projects belonging to the Organization
-- Add WildTrax users to the organization or its projects
-- Read and write to organizational locations
-- Read and write to the visit, equipment, deployment and media metadata
+-   Enjoy administrator privileges by default on all projects belonging to the Organization
+-   Add WildTrax users to the organization or its projects
+-   Read and write to organizational locations
+-   Read and write to the visit, equipment, deployment and media metadata
 
 **Organization read-only members** can:
 
-- Read the unbuffered locations, i.e., read-only members can see the true locations if they are buffered but cannot modify them
-- Read the visit, equipment, and media metadata
-- Enjoy read-only access to all organizational projects
-- The organization dashboard lists all organizations in WildTrax. The View Only My Organizations toggle in the top-right filters the list to only organizations you’re a part of.
+-   Read the unbuffered locations, i.e., read-only members can see the true locations if they are buffered but cannot modify them
+-   Read the visit, equipment, and media metadata
+-   Enjoy read-only access to all organizational projects
+-   The organization dashboard lists all organizations in WildTrax. The View Only My Organizations toggle in the top-right filters the list to only organizations you’re a part of.
 
 If the organization is greyed out, you are not a member of that organization. Click the drop-down arrow beside the organization name and then click ![](assets/request-access-button.png){height="40px"} and fill in the Request Access form to request membership. Administrators of the organization will receive a notification and will either approve or deny your membership request.
 
@@ -461,17 +471,17 @@ Get started using your first Organization by doing any of the following next:
 
 Optimize your organization's metadata by:
 
-- Adding [locations](#sec-locations), [location photos](#sec-location-photos), [visits](#sec-visits), [equipment inventories](#sec-equipment), [deployment information](#sec-deployment), or uploading [acoustic media](#sec-upload-recordings).\
-- Establishing location privacy by setting appropriate privacy tailored to your data-sharing needs.
-- [Generate tasks](#sec-generate-tasks) for projects using acoustic media using [filters](#sec-acoustic-filters) such as weather, landscape features, [artificial intelligence classification](#sec-acoustic-classifiers) and more
+-   Adding [locations](#sec-locations), [location photos](#sec-location-photos), [visits](#sec-visits), [equipment inventories](#sec-equipment), [deployment information](#sec-deployment), or uploading [acoustic media](#sec-upload-recordings).\
+-   Establishing location privacy by setting appropriate privacy tailored to your data-sharing needs.
+-   [Generate tasks](#sec-generate-tasks) for projects using acoustic media using [filters](#sec-acoustic-filters) such as weather, landscape features, [artificial intelligence classification](#sec-acoustic-classifiers) and more
 
 **Create a Project**
 
-- **Define Your Research Questions**\
+-   **Define Your Research Questions**\
     Clearly outline the objectives or questions your project will address. This will help guide data setup and analysis.\
-- **Decide on an Upload Strategy**\
+-   **Decide on an Upload Strategy**\
     Determine if recordings will be uploaded at the project level or organization level to align with your workflow.
-- **Assign Membership Privileges**\
+-   **Assign Membership Privileges**\
     Define roles for project participants (e.g., read-only, tagger, admin) based on access requirements.
 
 *Need more help? See [Accounts, Membership, and Permissions](#sec-acccounts-membership) for detailed guidance.*
@@ -653,10 +663,7 @@ Organize your location photos by ensuring each folder on your computer is named 
 
 The ideal structure for organizing your location photos before uploading is to create folders named after each location, with the corresponding photos placed within those folders.
 
-<a href="assets/location-photo-structure.png" data-lightbox="example">
-    <img src="assets/location-photo-structure.png" alt="Location Photo Structure" style="height: 300px;">
-</a>
-
+<a href="assets/location-photo-structure.png" data-lightbox="example"> <img src="assets/location-photo-structure.png" alt="Location Photo Structure" style="height: 300px;"/> </a>
 :::
 
 Go to the Location photos tab and click on ![](assets/upload-location-photos-button.png){height="30px"}. Each individual location with the files will be in view. When you are ready, click ![](assets/confirm-and-upload.png){height="30px"}
@@ -671,10 +678,10 @@ If the location doesn't exist in the organization yet, you'll have to add it fir
 
 Each location photo will also have the following properties that can be assigned to each photo. You can do this for each individual image with the pencil icon below each image, or in batch, by selecting multiple image and then clicking ![](assets/manage.png){height="30px"} then ![](assets/edit-location-photos.png){height="30px"} or ![](assets/delete-location-photos.png){height="30px"} as needed.
 
-- **Direction**: cardinal direction of the location broken down into sub-cardinal units
-- **Vertical Angle**: angle at which the image was taken relative to cardinal north
-- **Access**: the accessibility of the image; this is also determined by organization administrators (see [Default privacy settings](#sec-default-privacy-settings))
-- **Comments**: any useful information about the image
+-   **Direction**: cardinal direction of the location broken down into sub-cardinal units
+-   **Vertical Angle**: angle at which the image was taken relative to cardinal north
+-   **Access**: the accessibility of the image; this is also determined by organization administrators (see [Default privacy settings](#sec-default-privacy-settings))
+-   **Comments**: any useful information about the image
 
 # Visits
 
@@ -682,9 +689,9 @@ A **visit** occurs when an observer goes to a location to collect environmental 
 
 ## Why are Visits Important?
 
-- **Quality Control:** Visit metadata ensures accuracy for environmental sensor media and associated metadata.
-- **Data Integration:** Visits link field activities to equipment, media, and biological data.
-- **Contextual Information:** Visits document general landscape details where sensors are placed or data is collected.
+-   **Quality Control:** Visit metadata ensures accuracy for environmental sensor media and associated metadata.
+-   **Data Integration:** Visits link field activities to equipment, media, and biological data.
+-   **Contextual Information:** Visits document general landscape details where sensors are placed or data is collected.
 
 ## Do You Need to Collect Visit Data?
 
@@ -692,45 +699,45 @@ Visit metadata is not mandatory; however, you cannot upload visit images or equi
 
 ## What Visit Data Does WildTrax Support?
 
-Visits typically include two main activities:  
-1. Using an environmental sensor.  
-2. Conducting a point count.  
+Visits typically include two main activities:\
+1. Using an environmental sensor.\
+2. Conducting a point count.
 
 WildTrax supports the addition of general landscape information and associated deployment details.
 
 ## Creating Visits
 
-1. Navigate to the **Visits** tab in your organization.
-2. Click **Create Visit** and select a location from the list.
-3. Complete the visit summary form that displays all visits and equipment for the location.
-4. Enter the visit date (required).  
-5. Click **Save** to enable the **Add Sensor** button and access additional metadata options.
+1.  Navigate to the **Visits** tab in your organization.
+2.  Click **Create Visit** and select a location from the list.
+3.  Complete the visit summary form that displays all visits and equipment for the location.
+4.  Enter the visit date (required).\
+5.  Click **Save** to enable the **Add Sensor** button and access additional metadata options.
 
 ## Syncing Visits
 
-You can batch upload and download visits for easier management:  
+You can batch upload and download visits for easier management:
 
-1. Click **Manage** and choose **Download Visits** to get a CSV template or existing visit data.  
-2. Edit the CSV with your visit information.  
-3. Click **Upload Visits**, select your file, and preview the changes.  
-4. Apply changes if no issues are detected.  
+1.  Click **Manage** and choose **Download Visits** to get a CSV template or existing visit data.\
+2.  Edit the CSV with your visit information.\
+3.  Click **Upload Visits**, select your file, and preview the changes.\
+4.  Apply changes if no issues are detected.
 
 ### CSV Fields for Syncing Visits
 
-- **Location:** Name of the location.  
-- **Visit Date:** Date of the visit (format: YYYY-MM-DD).  
-- **Crew:** Names of crew members.  
-- **Bait/Lure Type:** Type of attractant used (if applicable).  
-- **Access Method:** Method of reaching the location (e.g., “On Foot,” “Helicopter”).  
-- **Walktest Distance (m):** Distance at which walktests are conducted.  
-- **Walktest Height (m):** Height at which walktests are conducted.  
-- **Facing Human Feature:** Flags if a camera or ARU is near a human feature.  
-- **Visit Trigger Mode(s):** Camera activation settings (e.g., “Trigger,” “Time-lapse”).  
-- **Motion Image Interval (s):** Time between images during motion activation.  
-- **Quiet Period (s):** Delay between trigger events.  
-- **Visit Comments:** Additional details about the visit.
+-   **Location:** Name of the location.\
+-   **Visit Date:** Date of the visit (format: YYYY-MM-DD).\
+-   **Crew:** Names of crew members.\
+-   **Bait/Lure Type:** Type of attractant used (if applicable).\
+-   **Access Method:** Method of reaching the location (e.g., “On Foot,” “Helicopter”).\
+-   **Walktest Distance (m):** Distance at which walktests are conducted.\
+-   **Walktest Height (m):** Height at which walktests are conducted.\
+-   **Facing Human Feature:** Flags if a camera or ARU is near a human feature.\
+-   **Visit Trigger Mode(s):** Camera activation settings (e.g., “Trigger,” “Time-lapse”).\
+-   **Motion Image Interval (s):** Time between images during motion activation.\
+-   **Quiet Period (s):** Delay between trigger events.\
+-   **Visit Comments:** Additional details about the visit.
 
-> **Tip:**  
+> **Tip:**\
 > Batch uploads support **add** and **update** operations only; deletions are not allowed. For example, an empty CSV upload will not delete existing data.
 
 ## Deleting Visits
@@ -742,7 +749,6 @@ You can delete visits using the ![](assets/delete-menu.png){height="30px"} optio
 ::: {.callout-warning icon="false" collapse="true"}
 Note that deleting locations is an irreversible process.
 :::
-
 
 ## Equipment {#sec-equipment}
 
@@ -809,10 +815,10 @@ To upload recordings for storage and processing in WildTrax, navigate to the Rec
 
 WildTrax provides several options to optimize your upload process:
 
-- **Including Subdirectories**: Useful if your media is organized hierarchically.
-- **Removing Leading Zeros**: Uncheck this option to retain leading zeros in location names
-- **Trigger Marking**: Distinguishes triggered recordings from schedule-based ones. See [Setting up an ultrasonic project](#sec-setting-up-ultrasonic)
-- **Pre-Scanning**: Scans for and displays sample rate and recording length during the upload process
+-   **Including Subdirectories**: Useful if your media is organized hierarchically.
+-   **Removing Leading Zeros**: Uncheck this option to retain leading zeros in location names
+-   **Trigger Marking**: Distinguishes triggered recordings from schedule-based ones. See [Setting up an ultrasonic project](#sec-setting-up-ultrasonic)
+-   **Pre-Scanning**: Scans for and displays sample rate and recording length during the upload process
 
 ![](assets/upload-recordings.png){.lightbox}
 
@@ -863,7 +869,6 @@ See [Wood and Kahl](https://link.springer.com/article/10.1007/s10336-024-02144-5
 If you haven't created a project yet, a prompt will appear in the Recording tab allowing you to do so directly from the Organization. Once you have your first project created, you can create more directly from the project dashboard by going to ![](assets/my-data.png){height="30px"} and then the appropriate sensor.
 
 ![](assets/create-a-new-project.png){.lightbox}
-
 :::
 
 ### Delete recordings
@@ -906,7 +911,6 @@ For any DOI in the menu, right-click or select through the ![](assets/dropdown-a
 
 ::: {.callout-question collapse="true" style="background-color: #f9f9f9; border-left: 5px solid #dc3545; padding: 15px; margin: 15px 0; color: #343a40;"}
 If you've read up to the end of this section, you're pretty much an expert at Organizations! Now, discover more about the data processing and sharing side with your first projects.
-
 :::
 
 # Projects {#sec-projects}
@@ -915,13 +919,11 @@ If you've read up to the end of this section, you're pretty much an expert at Or
 
 ## Project management
 
-* Data and questions
-* Users
-* Publication and sharing
+-   Data and questions
+-   Users
+-   Publication and sharing
 
-Merge
-Delete
-Download report
+Merge Delete Download report
 
 # ARU Projects 🎧 {#sec-aru-projects}
 
@@ -1563,15 +1565,13 @@ datatable(
 
 To upload and sync your survey data:
 
-* Click the Manage button and select Upload Surveys.
-* In the pop-up window, select Choose a CSV file to upload your survey data.
-* Once uploaded, the QA Project Data button will turn green. Click it to verify that your data adheres to WildTrax standards. Note: This process may take a few minutes depending on the file size.
+-   Click the Manage button and select Upload Surveys.
+-   In the pop-up window, select Choose a CSV file to upload your survey data.
+-   Once uploaded, the QA Project Data button will turn green. Click it to verify that your data adheres to WildTrax standards. Note: This process may take a few minutes depending on the file size.
 
 Survey data automatically creates new locations if they don’t already exist in the organization and links existing locations to spatial metadata if names match. Locations can be merged as needed, and visits for single-visit surveys can be generated directly within the organization, ensuring seamless integration of survey data into WildTrax while maintaining metadata consistency.
 
 ### Adding location information
-
-
 
 ## Viewing point count data
 
