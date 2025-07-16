@@ -86,11 +86,11 @@ library(DT)
 
 **WildTrax** is the leading platform for managing, storing, processing and sharing environmental sensor data. With WildTrax, you can:
 
--   Manage all components of environmental sensor and biological data from field metadata, to media, to species observations
--   Store data safely and securely while still making it accessible to users
--   Process environmental sensor data to a high degree of data quality and integrity
--   Share environmental sensor and biological data with other WildTrax users, collaborators and the public
--   Discover data in your study area or across the WildTrax system
+- Manage all components of environmental sensor and biological data from field metadata, to media, to species observations
+- Store data safely and securely while still making it accessible to users
+- Process environmental sensor data to a high degree of data quality and integrity
+- Share environmental sensor and biological data with other WildTrax users, collaborators and the public
+- Discover data in your study area or across the WildTrax system
 
 **Environmental sensors** (such as autonomous recording units \[ARUs\] or remote cameras) are an increasingly common monitoring method used to measure environmental and ecological attributes across broad geographic scales. These sensors allow for automated collection of data over an extended period and can generate large amounts of valuable biological data.
 
@@ -100,13 +100,11 @@ library(DT)
 
 ------------------------------------------------------------------------
 
-::: small-grey
 The WildTrax platform was developed by the Alberta Biodiversity Monitoring Institute (ABMI) and the [University of Alberta](https://www.ualberta.ca/en/index.html). The [ABMI](https://abmi.ca) is an arm’s length, not-for-profit scientific organization that has been providing scientifically credible tools and information products on Alberta’s biodiversity and human footprint to provincial government, industry, environmental decision-makers, and Albertans since 2003. The ABMI has since become a global leader in the application and development of biodiversity monitoring.
 
 WildTrax acknowledges that it was conceived and is developed on the territory of the Néhiyaw (Cree), Niitsitapi (Blackfoot), Métis, Nakoda (Stoney), Dene, Haudenosaunee (Iroquois) and Anishinaabe (Ojibway/Saulteaux), lands that are now known as part of Treaties 6, 7 and 8 and homeland of the Métis. We respect the sovereignty, lands, histories, languages, knowledge systems and cultures of all First Nations, Métis and Inuit nations.
 
 WildTrax is continuously improved based on user needs and stakeholder engagement processes. Sign up for the newsletter in [User settings](#sec-user-settings) or check out the [News](https://wildtrax.ca/resources/news/) page to get the most up-to-date feature releases. Each sensor in WildTrax is supported organizations who have help pave the way for a multi-sensor experience in WildTrax. Visit our full list of [Partners and Sponsors](https://wildtrax.ca/about/partners-and-sponsors/).
-:::
 
 ::: {.callout-note collapse="true" style="background-color: #f4f4f4; padding: 20px;"}
 The pronoun “you” throughout this guide refers to the reader. “We” refers to the WildTrax Team in general.
@@ -174,13 +172,13 @@ Check out this video tutorial on WildTrax's Privacy Settings.
 
 WildTrax provides robust tools to manage environmental sensor data. Following these steps will help you seamlessly integrate your data and maximize the platform's capabilities. The general life cycle of data within WildTrax involves:
 
-- **Create an [Organization](#sec-organizations)**: Set up an organization to manage and store your data.\
-- **Create a [Project](#sec-aru-projects)**: Establish a project to process your data to answer a specific question.\
-- **Add Users**: Invite team members with specific roles to your organization and project for collaborative data management.\
+- **Create an [Organization](#sec-organizations)**: Set up an organization to manage and store your data.
+- **Create a [Project](#sec-aru-projects)**: Establish a project to process your data to answer a specific question.
+- **Add Users**: Invite team members with specific roles to your organization and project for collaborative data management.
 - **Upload recordings or images**: Upload and organize your recordings and images files for upload and processing.
 - **Create or Upload Tasks/Surveys**: Define tasks or upload surveys to guide data processing with specific methodology.
-- **Process or Upload Tags/Observations**: Generate tags or observations during processing, or upload pre-existing ones.\
-- **Verify and Quality Control**: Review and validate tags to ensure accuracy.\
+- **Process or Upload Tags/Observations**: Generate tags or observations during processing, or upload pre-existing ones.
+- **Verify and Quality Control**: Review and validate tags to ensure accuracy.
 - **Publish the Project**: Finalize and publish the project for access and use.
 
 ## Publishing, sharing and downloading data {#sec-publishing-and-sharing}
@@ -540,7 +538,7 @@ Did you know locations are created in the organization when media are upload eit
 ![](assets/aru-upload-coordinates.png)
 :::
 
-### Location privacy settings {#sec-location-settings}
+### Location privacy settings {#sec-location-privacy-settings}
 
 You can manage a location’s privacy settings individually by clicking the ![](assets/pencil.png){height="30px"} icon next to the location name. These settings control what information users can access about a location and its associated data, ensuring secure and customizable access across the system. WildTrax offers organization administrators multiple tools to define how members view locations and their data, providing robust privacy options to protect sensitive information as needed.
 
@@ -886,32 +884,6 @@ Here you will find summaries of the following information:
 -   **Location**: the name of the location
 -   **Image set start date/time**: the date and time of the first image collected in the image set (in the format YYYY-MM-DD HH:MM:SS)
 -   **Total image count**: the total number of images Motion image count: the total number of images where the camera was triggered due to heat or motion (i.e., Trigger mode = “Motion Detection” or “M”) in an image set Task count: the total number of tasks Details drop-down: clicking on the drop-down arrow will show the projects the image set is associated with, the observer who tagged the task, the number of unique species detected, and the series gap used in the project.
-
-## DOIs
-
-<mark>Within the DOIs tab, users can create DOIs via [DataCite](https://datacite.org/) that allows users to create DOIs links for their projects. There are certain restrictions and conditions for creating and using DOIs:</mark>
-
--   You must at least an Organization administrator to create DOIs for the underlying projects
--   DOIs can only be created for projects belonging to the Organization
--   When a project is deleted or merged, the DOI ...
-
-![](assets/dois-tab.png){.lightbox}
-
-### Creating a DOI
-
-Click on the DOIs tab in the Organization and then click ![](assets/create-doi-button.png){height="30px"}. The form will then appear allowing you to give a **Title** and select which **Projects** will belong to the DOI.
-
-![](assets/create-doi.png){.lightbox}
-
-### Deleting a DOI
-
-For any DOI in the menu, right-click or select through the ![](assets/dropdown-arrow.png){height="28px"} the ![](assets/delete-doi.png){height="30px"} option. You can also delete multiple DOIs by selecting multiple DOIs and going to ![](assets/manage.png){height="30px"}. You'll be prompted to go through the process of confirming the deletion prior to it taking place.
-
-![](assets/delete-dois-form.png){.lightbox}
-
-::: {.callout-question collapse="true" style="background-color: #f9f9f9; border-left: 5px solid #dc3545; padding: 15px; margin: 15px 0; color: #343a40;"}
-If you've read up to the end of this section, you're pretty much an expert at Organizations! Now, discover more about the data processing and sharing side with your first projects.
-:::
 
 # Projects {#sec-projects}
 
