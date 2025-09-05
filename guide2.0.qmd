@@ -76,9 +76,6 @@ styles: styles.css
 library(DT)
 library(tidyverse)
 library(wildrtrax)
-
-Sys.setenv(WT_USERNAME = "agmacpha@ualberta.ca", WT_PASSWORD = "quEenFluff3rton!!2")
-wt_auth()
 ```
 
 ------------------------------------------------------------------------
