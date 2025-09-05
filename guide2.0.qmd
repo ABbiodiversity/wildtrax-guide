@@ -78,7 +78,12 @@ library(tidyverse)
 library(wildrtrax)
 ```
 
-------------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+::: {.callout-warning}
+# 🚧 This Guide is in Beta! 🚧
+Please pardon our dust as we continue adding content and improvements.
+:::
 
 # The Basics 🔰 {#sec-the-basics}
 
@@ -289,7 +294,7 @@ Need to understand more about how to publish a project? Check out the video tuto
 
 See more about sharing data within an open data network like WildTrax in the [Open Data](https://wildtrax.ca/about/open-data/) section.
 
-### Downloading data
+### Download data
 
 Reports provide high and low level detail about project data and provide everything you need for downstream analysis and decision-making. Right-click, select multiple or click the pencil icon and select ![](assets/download-report.png){height="30px"}. As previously mentioned, the reports you can see within the dashboard will be limited to your membership to the organizations and projects or the publication status of the project.
 
