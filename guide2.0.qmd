@@ -297,7 +297,9 @@ See more about sharing data within an open data network like WildTrax in the [Op
 Reports provide high and low level detail about project data and provide everything you need for downstream analysis and decision-making. Right-click, select multiple or click the pencil icon and select ![](assets/download-report.png){height="30px"}. As previously mentioned, the reports you can see within the dashboard will be limited to your membership to the organizations and projects or the publication status of the project.
 
 ![](assets/download-reports.png){.lightbox}
---------
+
+----------
+
 
 # Accounts and Membership 👥 {#sec-acccounts-membership}
 
